@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this research observatory, please cite the repository or the specific dated weekly brief."
+title: "Human Cognition with AI"
+type: dataset
+authors:
+  - family-names: "Xmemo"
+repository-code: "https://github.com/Xmemo/human-cognition-with-ai"
+url: "https://github.com/Xmemo/human-cognition-with-ai"
+license: "CC-BY-4.0"
+version: "0.1.0"
+date-released: "2026-08-28"
+abstract: >-
+  A bilingual, evidence-first research observatory tracking how AI changes human cognition,
+  how human-AI systems can augment cognition, and how these changes propagate through
+  machine culture and collective cognition. Dated weekly briefs should be cited by their
+  individual Markdown file and underlying primary sources.
+keywords:
+  - human cognition
+  - generative AI
+  - cognitive offloading
+  - metacognition
+  - epistemic agency
+  - cognitive augmentation
+  - hybrid intelligence
+  - machine culture
+  - collective cognition
