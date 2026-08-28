@@ -41,12 +41,12 @@ What happens when AI-mediated cognitive changes propagate through populations, n
 
 The map is a **search system, not a claim that these fields are cleanly separable**. Each radar is designed to be searchable every week; a paper may belong to several radars. See the full [research-map mechanism](methodology/research-map.md).
 
-## Latest Brief
+## Latest Brief — 2026-08-28
 
-Launch brief is being prepared on the `launch/2026-08-28` branch.
+**This week's shift:** the field is moving from the vague question of whether AI makes people “think less” toward measurable gaps between output and understanding, process-oriented cognitive scaffolding, and machine-mediated cultural transmission.
 
-- Chinese: `weekly/2026/2026-08-28.zh-CN.md`
-- English: `weekly/2026/2026-08-28.en.md`
+- 🇨🇳 [中文研究周报](weekly/2026/2026-08-28.zh-CN.md)
+- 🇬🇧 [English Research Brief](weekly/2026/2026-08-28.en.md)
 
 ## 🔭 Frontier Track: Machine Culture
 
@@ -105,7 +105,7 @@ These are anchors for the observatory, not an exhaustive bibliography:
 
 - Yan, Greiff, Teuber & Gašević (2024). **Promises and challenges of generative artificial intelligence for human learning.** *Nature Human Behaviour*. DOI: [10.1038/s41562-024-02004-5](https://doi.org/10.1038/s41562-024-02004-5)
 - Vaccaro, Almaatouq & Malone (2024). **When combinations of humans and AI are useful: A systematic review and meta-analysis.** *Nature Human Behaviour*. DOI: [10.1038/s41562-024-02024-1](https://doi.org/10.1038/s41562-024-02024-1)
-- Fan et al. (2025). **Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance.** *British Journal of Educational Technology*. DOI: [10.1111/bjet.13544](https://doi.org/10.1111/bjet.13544)
+- Fan et al. (2024/2025 journal record). **Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance.** *British Journal of Educational Technology*. DOI: [10.1111/bjet.13544](https://doi.org/10.1111/bjet.13544)
 - Singh, Taneja, Guan & Ghosh (2025). **Protecting Human Cognition in the Age of AI.** arXiv. DOI: [10.48550/arXiv.2502.12447](https://doi.org/10.48550/arXiv.2502.12447)
 - Zhang & Reicherts (2025). **Augmenting Human Cognition With Generative AI: Lessons From AI-Assisted Decision-Making.** arXiv. DOI: [10.48550/arXiv.2504.03207](https://doi.org/10.48550/arXiv.2504.03207)
 - Brinkmann et al. (2026). **Propagation and preservation of AI-discovered problem-solving strategies in human culture.** *Nature Communications*. DOI: [10.1038/s41467-026-76113-2](https://doi.org/10.1038/s41467-026-76113-2)
