@@ -16,23 +16,26 @@
 
 ## 最新研究更新
 
-### Weekly Research Update｜2026-08-28
+### Full Research Refresh｜2026-08-29
 
-最新一轮扫描里，有三个变化最值得关注：
+按照最新三层检索机制重新扫描全部 9 条雷达后，有四个变化最值得关注：
 
-**1｜研究正在从“AI 产出好不好”转向“产出与理解之间有没有出现缺口”。**  
-`epistemic debt（认识论债务）`以及新的 STEM Meta-analysis 都在强化同一个区分：AI 辅助下表现变好，不能直接等同于人的独立理解、迁移和可辩护能力变强。`R1 · R2 · R6`
+**1｜“AI 在场时更好”与“AI 离场后更强”的分离获得了更直接证据。**  
+8 月 28 日的新写作研究直接加入 supervised no-AI near-transfer：开放式 AI 协作在 AI 在场时表现最好，但受约束、强制反思的 AI 支持在后续无 AI 写作中表现更好。更早的 PNAS 现场随机实验也出现相同结构。`R1 · R2 · R3 · R4`
 
-**2｜认知增强越来越像“过程设计”，而不只是“给出更好的答案”。**  
-结构化指导 RCT，以及写作 ownership（所有权）和 cognitive resilience（认知韧性）研究，都把注意力推向同一个问题：人在流程里的哪些节点仍然需要自己形成初步判断、引导、比较、编辑、解释、验证并做最终决定？`R2 · R4 · R6`
+**2｜越来越多跨领域证据指向 interaction architecture（交互架构），而不是简单的 AI 使用量。**  
+`human-led`、`bounded support`、`draft-first`、reflection 与 verification 更有机会保留独立表现、ownership 或 diversity；`model-led rewrite`、passive copy 和 open delegation 则更容易出现代价。`R1 · R3 · R4 · R6`
 
-**3｜Machine Culture（机器文化）正在从宏大概念进入可操作的实验研究。**  
-最新工作已经可以分别研究机器发现、人类学习与保留、社会传播，以及信息如何在人机群体中被路由，而不是笼统地讨论“AI 会改变文化”。`R7 · R8 · R9`
+**3｜专家能力没有被 AI 简单拉平，Control 与 agency 也开始出现更可操作的测量。**  
+职业艺术家仍能把专业能力迁移到生成式 AI；新的 critical-AI-use 量表把 Verification、Motivation、Reflection 转成可测变量。`R1 · R2 · R3 · R5 · R6`
 
-→ 🇨🇳 **[阅读完整中文周报](weekly/2026/2026-08-28.zh-CN.md)**  
-→ 🇬🇧 **[Read the full English brief](weekly/2026/2026-08-28.en.md)**
+**4｜Variance 的故事必须从“AI 会同质化”升级成条件模型。**  
+模型主导的 co-creation 可以降低 idea diversity，但新的 hybrid collective search 实验又显示人机混合群体可以同时获得高表现与较高多样性。`R3 · R5 · R8 · R9`
 
-**Weekly Brief（每周周报）回答“最近发生了什么变化”；[Current Evidence Baseline](research/baseline-2026-08-29.zh-CN.md) 回答“截至目前，证据能支持什么”。** 每周有新研究，并不意味着 Baseline 必须更新。
+→ 🇨🇳 **[阅读完整 2026-08-29 中文研究刷新](weekly/2026/2026-08-29.zh-CN.md)**  
+→ 🇬🇧 **[Read the English refresh](weekly/2026/2026-08-29.en.md)**
+
+**Baseline 决策：不创建新版本。** 新证据明显增强了现有 **Control / Retention / Variance** 框架，但没有改变其基本结构；[Current Evidence Baseline](research/baseline-2026-08-29.zh-CN.md) 仍然有效。
 
 ---
 
@@ -81,7 +84,7 @@ AI 可能提高个体平均表现，同时改变群体中的差异、语言、�
 | 你想知道什么？ | 建议从这里开始 |
 |---|---|
 | **这个项目目前到底研究出了什么？** | [Current Evidence Baseline](research/baseline-2026-08-29.zh-CN.md) |
-| **最近一周有什么重要新研究？** | [最新中文周报](weekly/2026/2026-08-28.zh-CN.md) |
+| **最近一轮完整扫描发现了什么？** | [2026-08-29 中文研究刷新](weekly/2026/2026-08-29.zh-CN.md) |
 | **这个项目到底追踪哪些问题？** | [3×3 Research Map](methodology/research-map.md) |
 | **我要找具体论文、DOI 和证据** | [Master Bibliography](references/master-bibliography.md) |
 | **这套框架是怎么一步步形成的？** | [研究演化与迁移](research/research-history.zh-CN.md) |
