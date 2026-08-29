@@ -65,29 +65,33 @@ human-cognition-with-ai/
     ├── src/
     │   ├── content.config.ts
     │   ├── content/docs/generated/   # build-generated, not canonical
+    │   ├── generated/                # build-generated homepage/archive metadata
     │   ├── pages/
     │   │   ├── index.astro
-    │   │   └── zh-cn/index.astro
+    │   │   ├── weekly/index.astro
+    │   │   ├── zh-cn/index.astro
+    │   │   └── zh-cn/weekly/index.astro
     │   ├── components/
     │   └── styles/
     └── public/
 ```
 
-Generated Starlight Markdown is never edited manually and is excluded from Git history. Every build recreates it from root research Markdown.
+Generated content is never edited manually and is excluded from Git history. Every build recreates it from root research Markdown.
 
 ## Single Source of Truth Contract
 
 ### Canonical
 These root paths remain canonical:
-- `research/`
-- `weekly/`
-- `methodology/`
-- `topics/`
-- `people/`
-- `references/`
+- `README.md` and `README.zh-CN.md` for Dashboard copy and current homepage state;
+- `research/`;
+- `weekly/`;
+- `methodology/`;
+- `topics/`;
+- `people/`;
+- `references/`.
 
 ### Generated
-`site/src/content/docs/generated/` exists only as a build artifact.
+`site/src/content/docs/generated/` and `site/src/generated/` exist only as build artifacts.
 
 The sync process must:
 1. read canonical Markdown;
@@ -95,8 +99,12 @@ The sync process must:
 3. inject Starlight frontmatter (`title`, `description`, `slug`, `editUrl`);
 4. normalize internal Markdown links to website routes when a route mapping exists;
 5. preserve external DOI/publisher/arXiv links unchanged;
-6. fail loudly if a required source path is missing;
-7. never write back into the canonical research files.
+6. discover dated weekly files automatically;
+7. extract Dashboard sections from the canonical bilingual READMEs rather than duplicating homepage research copy in website source code;
+8. fail loudly if a required source path or required Dashboard section is missing;
+9. never write back into the canonical research files.
+
+Website source code may contain presentation labels such as “Latest Research” or “Start Here”, but it must not duplicate research findings, weekly summaries, Baseline claims, or bibliography content.
 
 ## URL Architecture
 English is the root locale. Chinese uses `/zh-cn/`.
@@ -134,7 +142,7 @@ The website homepage follows the same reader-first hierarchy already approved fo
 7. **Machine Culture Frontier** — persistent frontier callout.
 8. **How We Research** — concise three-layer retrieval pipeline and evidence policy.
 
-The homepage must not duplicate full weekly or Baseline prose.
+The homepage must not duplicate full weekly or Baseline prose. All research-copy content displayed in these sections is extracted at build time from `README.md` / `README.zh-CN.md`; the website only supplies layout and styling.
 
 ## Research Hub
 The second-level hub preserves four blocks:
@@ -142,6 +150,8 @@ The second-level hub preserves four blocks:
 2. **Research Stream** — latest refresh + archive.
 3. **Evidence Base** — bibliography, BibTeX, Consensus provenance, evidence grading.
 4. **Research Evolution** — research history and methodology.
+
+The rendered Hub comes from canonical `research/README.md` and `research/README.zh-CN.md`.
 
 ## Weekly Archive
 The site automatically discovers dated pairs in `weekly/YYYY/`.
@@ -178,8 +188,9 @@ Search should index:
 - DOI and source links remain crawlable;
 - `lang`/locale handling for English and Chinese;
 - Open Graph metadata for the site and homepage;
-- RSS for the weekly research stream if implementation remains dependency-light;
-- sitemap only when a real deployment URL is available through `SITE_URL`.
+- support a `SITE_URL` build variable so canonical URLs and sitemap can be enabled once the first real deployment hostname exists.
+
+RSS is deferred to v0.2 rather than introducing another feed-generation path before the core site is validated.
 
 ### URL stability
 Routes above are treated as public contracts. Later visual redesigns must not casually change them.
@@ -268,12 +279,13 @@ Do not add:
 - interactive citation graph;
 - full paper filters;
 - automatic machine translation of source research;
+- RSS;
 - client-side analytics requiring consent banners.
 
 ## Acceptance Criteria
 v0.1 is complete when:
 1. a clean checkout can build the site using only canonical repository Markdown plus `site/` code;
-2. English and Chinese Dashboard pages render;
+2. English and Chinese Dashboard pages render from canonical README content;
 3. current Baseline, current research refresh, Research Hub, research map, three topic pages, Rahwan page, methodology, and bibliography are reachable;
 4. weekly archive discovers dated content without manually adding each page to Astro source code;
 5. Pagefind search indexes the rendered research pages;
