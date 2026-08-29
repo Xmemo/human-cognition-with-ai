@@ -9,7 +9,7 @@
 - **Evidence Base｜证据库**：结论和引用从哪里来；
 - **Research Evolution｜研究演化**：这套框架为什么会长成今天这样。
 
-> **Baseline = 当前可支持的研究状态；Weekly Brief = 最近发生的变化。** 每周出现新论文，不等于必须创建新的 Baseline。
+> **Baseline = 当前可支持的研究状态；Weekly Brief / Research Refresh = 最近发生的变化。** 每周出现新论文，不等于必须创建新的 Baseline。
 
 ---
 
@@ -21,6 +21,8 @@
 
 Baseline 是这个项目关于“目前证据能支持什么”的 canonical statement（标准版本）。它包含证据边界、限制、目前不能下的结论、重要未解决问题，以及当前 **Control / Retention / Variance** 工作模型。
 
+**2026-08-29 完整重扫结论：Baseline 保持不变。** 新研究明显增强了 Control 与 Retention 的实证基础，并让 Variance 的表述变得更条件化，但没有改变三维工作模型或 3×3 Research Map，因此没有为了“有更新”而创建重复 Baseline。
+
 ### Current Research Map
 
 **[3 个领域 × 9 条雷达](../methodology/research-map.md)**
@@ -29,27 +31,27 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 
 ### 当前优先证据缺口
 
-目前 Baseline 最需要继续补足的是：
+完整重扫后，最值得继续补足的是：
 
-- AI 离场后的 residual capability（残余能力）；
-- 持续数月乃至数年的纵向研究；
-- 专家与新手在 AI 环境中是趋同还是进一步分化；
-- 教育实验能否迁移到真实知识工作；
-- 群体差异性与探索空间；
-- epistemic agency、authorship、responsibility 的行为测量。
+- AI-on / AI-off 能否延长到数月乃至数年的真实工作；
+- 专家长期使用 AI 后，专业优势是迁移、扩大、重组还是部分衰退；
+- bounded support 中究竟是先做、反思、验证还是延迟帮助在起主要作用；
+- epistemic agency / critical AI use 的量表能否稳定预测真实长期行为；
+- 什么样的人机网络能同时提高 performance 与保留 collective variance；
+- Machine Culture 的传播、规范和伙伴选择效应能否进入真实组织与文化生态。
 
 ---
 
 ## 2｜Research Stream｜研究流
 
-### 最新 Weekly Brief
+### 最新完整研究刷新
 
-- 🇨🇳 **[2026-08-28 中文研究周报](../weekly/2026/2026-08-28.zh-CN.md)**
-- 🇬🇧 **[2026-08-28 English Research Brief](../weekly/2026/2026-08-28.en.md)**
+- 🇨🇳 **[2026-08-29 中文研究刷新](../weekly/2026/2026-08-29.zh-CN.md)**
+- 🇬🇧 **[2026-08-29 English Research Refresh](../weekly/2026/2026-08-29.en.md)**
 
-Weekly Brief 回答的是：**“这一周研究领域哪里发生了变化？”** 它可以加入新论文、前沿信号、反证和新近被发现的重要资料，而不必修改 Baseline。
+这次不是只补一两篇论文，而是按当前正式机制重新扫描全部 **9 条 radar × 3 层 retrieval**。最重要的新变化是：直接测量 no-AI transfer / return-to-manual-work 的研究开始增加，使 **Retention** 从研究理念进一步进入实验设计；同时不同领域对 `human-led / bounded / active` 与 `model-led / passive / open delegation` 的比较，使 **Control** 获得更强的实证支撑。
 
-只有当经过核验的新证据真正改变了某条结论的强度、边界、重要证据缺口，或改变当前工作模型时，才创建新的 dated Baseline。
+Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了变化？”** 只有新证据真正改变结论强度、边界、重要证据缺口或工作模型时，才创建新的 dated Baseline。
 
 ### 历史周报
 
@@ -67,7 +69,7 @@ Weekly Brief 回答的是：**“这一周研究领域哪里发生了变化？�
 ### Consensus provenance｜Consensus 来源台账
 
 - **[首批 Consensus 文献台账](../references/consensus.md)**
-- **[2026-08-29 Consensus 增量台账](../references/consensus/2026-08-29.md)**
+- **[2026-08-29 Consensus 增量与完整重扫台账](../references/consensus/2026-08-29.md)**
 
 Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为 foundational evidence（基础证据）**。
 
@@ -92,11 +94,11 @@ Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；
 ```text
 Legacy questions / hypotheses
           ↓
-3×3 Radar Search
+3×3 Radar × Three-Layer Retrieval
           ↓
 Verified Evidence Pool
           ↓
-Weekly Briefs
+Weekly Briefs / Research Refreshes
           ↓
 Evidence convergence / contradiction
           ↓
