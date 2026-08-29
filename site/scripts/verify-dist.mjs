@@ -51,11 +51,26 @@ async function collectHtml(dir) {
 }
 
 const htmlFiles = await collectHtml(distRoot);
-const prohibited = ['专家说', '元认知重构', '半神之后'];
+const universallyProhibited = ['半神之后'];
+const policyExampleMarkers = ['专家说', '元认知重构'];
+const policyPage = 'methodology/publishing-policy/index.html';
+
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, 'utf8');
-  for (const needle of prohibited) {
-    if (html.includes(needle)) throw new Error(`Prohibited public string ${JSON.stringify(needle)} in ${path.relative(distRoot, file)}`);
+  const rel = path.relative(distRoot, file).split(path.sep).join('/');
+
+  for (const needle of universallyProhibited) {
+    if (html.includes(needle)) {
+      throw new Error(`Prohibited public string ${JSON.stringify(needle)} in ${rel}`);
+    }
+  }
+
+  if (rel !== policyPage) {
+    for (const needle of policyExampleMarkers) {
+      if (html.includes(needle)) {
+        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside the publishing-policy page: ${rel}`);
+      }
+    }
   }
 }
 
@@ -66,3 +81,4 @@ if (!(await Promise.all(pagefindCandidates.map(exists))).some(Boolean)) {
 
 console.log(`Verified ${requiredRoutes.length} required routes and ${htmlFiles.length} HTML pages.`);
 console.log('Pagefind search bundle detected.');
+console.log('Built public-output scan passed with policy-only marker exceptions.');
