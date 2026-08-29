@@ -42,11 +42,9 @@ const requiredGenerated = [
   'references/bibliography.md',
 ];
 
-const prohibited = [
-  '专家说',
-  '元认知重构',
-  '半神之后',
-];
+const universallyProhibited = ['半神之后'];
+const policyExampleMarkers = ['专家说', '元认知重构'];
+const policyPage = 'methodology/publishing-policy.md';
 
 async function assertFile(base, rel) {
   const full = path.join(base, rel);
@@ -77,14 +75,25 @@ if (generated.length < 16) throw new Error(`Expected at least 16 generated Markd
 
 for (const file of generated) {
   const text = await fs.readFile(file, 'utf8');
-  for (const needle of prohibited) {
+  const rel = path.relative(docsRoot, file).split(path.sep).join('/');
+
+  for (const needle of universallyProhibited) {
     if (text.includes(needle)) {
-      throw new Error(`Prohibited public string ${JSON.stringify(needle)} found in ${path.relative(docsRoot, file)}`);
+      throw new Error(`Prohibited public string ${JSON.stringify(needle)} found in ${rel}`);
     }
   }
+
+  if (rel !== policyPage) {
+    for (const needle of policyExampleMarkers) {
+      if (text.includes(needle)) {
+        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside the publishing-policy page: ${rel}`);
+      }
+    }
+  }
+
   const unresolved = text.match(/\]\((?!https?:|mailto:|#)[^)]+\.md(?:#[^)]+)?\)/);
   if (unresolved) {
-    throw new Error(`Unresolved Markdown source link in ${path.relative(docsRoot, file)}: ${unresolved[0]}`);
+    throw new Error(`Unresolved Markdown source link in ${rel}: ${unresolved[0]}`);
   }
 }
 
@@ -96,3 +105,4 @@ if (weeklyEn.length === 0 || weeklyZh.length === 0) {
 
 console.log(`Verified ${generated.length} generated Markdown pages.`);
 console.log(`Weekly pairs available: EN=${weeklyEn.length}, ZH=${weeklyZh.length}.`);
+console.log('Public-content scan passed with policy-only marker exceptions.');
