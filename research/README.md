@@ -9,7 +9,7 @@ This is the second-layer navigation hub behind the public dashboard. It separate
 - **Evidence Base** — where claims and citations come from;
 - **Research Evolution** — how the framework reached its current form.
 
-> **Baseline = current supported state. Weekly Brief = recent change.** A new weekly brief does not automatically justify a new Baseline.
+> **Baseline = current supported state. Weekly Brief / Research Refresh = recent change.** New research does not automatically justify a new Baseline.
 
 ---
 
@@ -21,35 +21,35 @@ This is the second-layer navigation hub behind the public dashboard. It separate
 
 The Baseline is the canonical statement of what the project currently believes the evidence can support. It contains evidence boundaries, caveats, unsupported conclusions, open questions, and the current **Control / Retention / Variance** working model.
 
+**Full-rescan decision on 2026-08-29: Baseline unchanged.** New research strengthened the empirical basis for Control and Retention and made the Variance story more explicitly conditional, but did not change the three-dimensional model or the 3×3 Research Map. No duplicate Baseline was created merely to signal activity.
+
 ### Current Research Map
 
 **[3 Domains × 9 Radars](../methodology/research-map.md)**
 
 The map is a search architecture rather than a claim that the research field divides into nine clean boxes. Every radar is scanned; final selection is competitive across the whole candidate pool.
 
-### Priority evidence gaps
+### Priority evidence gaps after the full refresh
 
-The current Baseline prioritizes:
-
-- post-AI residual capability;
-- longitudinal effects of sustained AI use;
-- expert-vs-novice divergence;
-- transfer from education studies to real knowledge work;
-- collective variance and exploration;
-- behavioral measures of epistemic agency, authorship, and responsibility.
+- months/years-long AI-on / AI-off designs in real work;
+- longitudinal expert trajectories under sustained AI use;
+- decomposition of which bounded-support components actually drive retention;
+- behavioral validation of epistemic-agency / critical-AI-use measures;
+- human–AI network structures that raise performance while preserving collective variance;
+- real-world persistence of Machine Culture transmission, norm, and partner-selection effects.
 
 ---
 
 ## 2｜Research Stream
 
-### Latest Weekly Brief
+### Latest Full Research Refresh
 
-- 🇬🇧 **[2026-08-28 English Research Brief](../weekly/2026/2026-08-28.en.md)**
-- 🇨🇳 **[2026-08-28 中文研究周报](../weekly/2026/2026-08-28.zh-CN.md)**
+- 🇬🇧 **[2026-08-29 English Research Refresh](../weekly/2026/2026-08-29.en.md)**
+- 🇨🇳 **[2026-08-29 中文研究刷新](../weekly/2026/2026-08-29.zh-CN.md)**
 
-Weekly briefs answer **“Where did the field change this week?”** They can add papers, signals, contradictions, and newly relevant evidence without changing the Baseline.
+This was not a narrow paper update. It re-scanned all **9 radars × 3 retrieval layers** under the repository's current protocol. The most important change is that more studies now directly measure no-AI transfer or return-to-manual-work outcomes, moving **Retention** further into experimental design. Cross-domain comparisons between `human-led / bounded / active` and `model-led / passive / open delegation` also give **Control** stronger empirical support.
 
-A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the project’s working model.
+Weekly briefs and research refreshes answer **“Where did the field change?”** A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the working model.
 
 ### Archive
 
@@ -67,7 +67,7 @@ A new dated Baseline is created only when verified evidence materially changes a
 ### Consensus provenance
 
 - **[Initial Consensus ledger](../references/consensus.md)**
-- **[2026-08-29 Consensus refresh](../references/consensus/2026-08-29.md)**
+- **[2026-08-29 Consensus refresh + full-rescan ledger](../references/consensus/2026-08-29.md)**
 
 A Consensus ledger records fetch-verified discovery provenance; inclusion in a ledger does not automatically promote a paper to foundational evidence.
 
@@ -83,7 +83,7 @@ A Consensus ledger records fetch-verified discovery provenance; inclusion in a l
 
 ### How the current framework emerged
 
-**[Research History & Migration](research-history.en.md)** traces the project’s movement from early work on cognitive protection and augmentation, through **AI-assisted writing as a form of thinking**, toward the current `Human Cognition with AI` framing and the 3×3 radar.
+**[Research History & Migration](research-history.en.md)** traces the project's movement from early work on cognitive protection and augmentation, through **AI-assisted writing as a form of thinking**, toward the current `Human Cognition with AI` framing and the 3×3 radar.
 
 The migration rule is strict: **legacy questions and conceptual structures may survive, but old claims, numerical results, or references that cannot be re-verified are not automatically promoted into the current Baseline.**
 
@@ -92,11 +92,11 @@ The migration rule is strict: **legacy questions and conceptual structures may s
 ```text
 Legacy questions / hypotheses
           ↓
-3×3 Radar Search
+3×3 Radar × Three-Layer Retrieval
           ↓
 Verified Evidence Pool
           ↓
-Weekly Briefs
+Weekly Briefs / Research Refreshes
           ↓
 Evidence convergence / contradiction
           ↓

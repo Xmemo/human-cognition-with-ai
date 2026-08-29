@@ -12,6 +12,9 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Wang, G., Wang, W., Yang, D., & Ren, J. (2026). **Generative AI, Cognitive Offloading, and Learner Agency in Higher Education: A Scoping Review.** *Behavioral Sciences, 16*. https://doi.org/10.3390/bs16071150 — `R1 R2 R4 R6`
 - Alubthane, F. (2026). **Amplifier or substitute? A systematic review of generative AI’s impact on higher-order cognitive skills among university students.** *Frontiers in Psychology, 17*. https://doi.org/10.3389/fpsyg.2026.1863931 — `R1 R2 R3 R4`
 - Qian, W., Yang, F., Cao, Y., Yi, L., Gu, R., & Wang, Z. (2026). **Generative AI and cognitive load in education: a systematic review of WoS/SSCI-indexed studies through the lens of cognitive load theory.** *Frontiers in Psychology, 17*. https://doi.org/10.3389/fpsyg.2026.1921504 — `R1 R4`
+- Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., & Mariman, R. (2025). **Generative AI without guardrails can harm learning: Evidence from high school mathematics.** *Proceedings of the National Academy of Sciences, 122*. https://doi.org/10.1073/pnas.2422633122 — randomized field experiment with later unassisted testing; `R1 R4`
+- Chen, X. (2026). **Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes.** *Frontiers in Psychology*. https://doi.org/10.3389/fpsyg.2026.1906199 — 8-week quasi-experiment with supervised no-AI near-transfer; `R1 R2 R3 R4`
+- Eisenmann, T. F., Karjus, A., Canet Sola, M., Brinkmann, L., Supriyatno, B. I., & Rahwan, I. (2026). **Expertise Elevates AI Usage: Experimental Evidence Comparing Laypeople and Professional Artists.** *International Journal of Human–Computer Interaction*. https://doi.org/10.1080/10447318.2026.2669041 — preregistered expert-vs-lay experiment; `R1 R3 R5`
 
 ### Additional evidence / candidates
 
@@ -40,6 +43,9 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Reza, M., Thomas-Mitchell, J., Dushniku, P., Laundry, N., Williams, J. J., & Kuzminykh, A. (2025). **Co-Writing with AI, on Human Terms: Aligning Research with User Demands Across the Writing Process.** *Proceedings of the ACM on Human-Computer Interaction, 9*, 1–37. https://doi.org/10.1145/3757566 — `R3 R4 R6`
 - Helal, M. Y. I., Elgendy, I. A., Albashrawi, M. A., Dwivedi, Y. K., Al-Ahmadi, M. S., & Jeon, I. (2025). **The impact of generative AI on critical thinking skills: a systematic review, conceptual framework and future research directions.** *Information Discovery and Delivery* (accepted/in press). https://doi.org/10.1108/IDD-05-2025-0125 — `R2 R3 R4`
 - Holzner, N., Maier, S., & Feuerriegel, S. (2025). **Generative AI and Creativity: A Systematic Literature Review and Meta-Analysis.** arXiv:2505.17241. https://doi.org/10.48550/arXiv.2505.17241 — `R3 R7`
+- Maier, S., Schneider, M., & Feuerriegel, S. (2026). **Partnering with Generative AI: Experimental Evaluation of Model-Led and Human-Led Interaction in Human-AI Co-Creation.** *CHI 2026*. https://doi.org/10.1145/3772318.3791185 — RCT N=486 + replication N=640; `R3 R4 R5 R6`
+- Lee, E., Yin, Y., Jia, N., & Wakslak, C. (2026). **Relying on AI at work reduces self-efficacy, ownership, and meaning while active collaboration mitigates the effects.** *Scientific Reports, 16*. https://doi.org/10.1038/s41598-026-42312-6 — preregistered experiment + survey; `R1 R4 R6`
+- Lau, G., Low, W. Y., Tay, L., Guevarra, Y. A., Gašević, D., & Hartanto, A. (2026). **Understanding Critical Thinking in Generative Artificial Intelligence Use: Development, Validation, and Correlates of the Critical Thinking in AI Use Scale.** *Computers in Human Behavior Reports, 22*, 101103. https://doi.org/10.1016/j.chbr.2026.101103 — six-study measurement program; `R2 R3 R6`
 
 ### Additional evidence / candidates
 
@@ -57,6 +63,9 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Pennanen, N., Kanerva, P., & Guckelsberger, C. (2026). **How prompting and editing shape psychological ownership in AI-assisted creative writing.** *Computers in Human Behavior: Artificial Humans, 9*, 100381. https://doi.org/10.1016/j.chbah.2026.100381 — preregistered experiment, N=273; `R3 R6`
 - Johnson, S. G. B., Karimi, A.-H., Bengio, Y., Chater, N., Gerstenberg, T., Larson, K., Levine, S., Mitchell, M., Rahwan, I., Schölkopf, B., & Grossmann, I. (2026). **Imagining and building wise machines: the centrality of AI metacognition.** *Trends in Cognitive Sciences* (advance online). https://doi.org/10.1016/j.tics.2026.01.002 — conceptual/opinion; `R2 R5`
 - Samuel, A. (2026). **Learning with machines: Toward a theory of epistemic co-agency.** *Computers and Education: Artificial Intelligence, 10*, 100573. https://doi.org/10.1016/j.caeai.2026.100573 — conceptual framework; `R2 R4 R6`
+- Strong, J., Rogers, H., Sun, E., Todsen, A., Ede, J., Lumley, C., Yeung, N., Higham, H., & Noble, J. A. (2026). **Human-AI Collaboration in Healthcare: A Scoping Review.** *npj Digital Medicine*. https://doi.org/10.1038/s41746-026-02918-6 — 140 empirical studies; `R5 R6`
+- Seo, J., Deldari, E., & Mentis, H. M. (2026). **Whose Code Is It? How AI Autonomy Reshapes Ownership, Responsibility, and Disclosure in AI-Assisted Programming.** *Proceedings of the 31st International Conference on Intelligent User Interfaces*. https://doi.org/10.1145/3742413.3789121 — within-subject experiment; `R3 R6`
+- Nascimento, D. C., & da Silva, D. (2026). **Identical errors, different responsibilities: epistemic duty in AI-assisted scientific writing.** *AI and Ethics*. https://doi.org/10.1007/s43681-026-01330-w — conceptual/normative analysis; `R2 R6`
 
 ## Domain 3 — Machine Culture & Collective Cognition
 
@@ -69,6 +78,13 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Colas, C., Perez, J., Nisioti, E., Mocherla, A., Oudeyer, P.-Y., Moulin-Frier, C., & Derex, M. (2026). **Discovering Adaptive Transmission Programs for Collective Innovation.** arXiv:2608.24545. https://arxiv.org/abs/2608.24545 — `R8 R9`
 - Baumann, F., Arora, N., Rahwan, I., & Czaplicka, A. (2026). **Dynamics of algorithmic content amplification on TikTok.** *EPJ Data Science, 15*, 18. https://doi.org/10.1140/epjds/s13688-026-00629-2 — `R9`
 - Yakura, H., Lopez-Lopez, E., Brinkmann, L., Serna, I., Gupta, P., & Rahwan, I. (2024/2025 versions). **Empirical evidence of Large Language Model's influence on human spoken communication.** arXiv:2409.01754. https://doi.org/10.48550/arXiv.2409.01754 — `R9`
+- Li, C., Marjieh, R., Hu, H., Steyvers, M., Collins, K. M., Sucholutsky, I., & Jacoby, N. (2026). **Human-AI Synergy Supports Collective Creative Search.** arXiv:2602.10001. https://doi.org/10.48550/arXiv.2602.10001 — controlled hybrid collective-search study; `R3 R5 R8`
+- Yang, Y., Liu, S., Gao, X., Sun, H., Liu, C., Zhou, Q., & Nie, B. (2026). **Learning social norms enhances compatibility in dynamic human-AI coordination.** arXiv:2607.07021. https://doi.org/10.48550/arXiv.2607.07021 — controlled preprint; `R5 R9`
+- Jiang, Y., Brinkmann, L., Nussberger, A.-M., Soraperra, I., Bonnefon, J.-F., & Rahwan, I. (2025). **Humans learn to prefer trustworthy AI over human partners.** arXiv:2507.13524. https://doi.org/10.48550/arXiv.2507.13524 — three hybrid-mini-society experiments, N=975; `R8 R9`
+
+### Additional / conceptual
+
+- Sourati, Z., Ziabari, A. S., & Dehghani, M. (2025/2026 versions). **The Homogenizing Effect of Large Language Models on Human Expression and Thought.** Preprint DOI: https://doi.org/10.48550/arXiv.2508.01491 — conceptual/review synthesis; `R7 R8 R9`
 
 ## Cross-domain references from the 2026-08-28 launch scan
 
@@ -87,4 +103,6 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 Every unique paper surfaced through Consensus and retained during project research is recorded in a fetch-verified ledger even when it is not promoted to the curated bibliography:
 
 - [Initial Consensus ledger — 2026-08-28](consensus.md)
-- [Baseline refresh ledger — 2026-08-29](consensus/2026-08-29.md)
+- [Baseline refresh + full-radar ledger — 2026-08-29](consensus/2026-08-29.md)
+
+Freshness-layer papers that are not yet indexed by Consensus are still retained when canonical publisher metadata is verifiable; the ledger marks that provenance explicitly.

@@ -16,23 +16,26 @@ As memory, search, writing, reasoning, and judgment become increasingly external
 
 ## Latest Research
 
-### Weekly Research Update · 2026-08-28
+### Full Research Refresh · 2026-08-29
 
-The latest scan suggests three shifts worth watching:
+A full rescan of all nine radars using the current three-layer retrieval system surfaced four signals worth highlighting:
 
-**1｜The field is moving from output quality toward the gap between output and understanding.**  
-The idea of *epistemic debt* and a new STEM meta-analysis sharpen the same distinction: better AI-assisted performance cannot be assumed to mean stronger independent understanding, transfer, or defensibility. `R1 · R2 · R6`
+**1｜The separation between “better with AI” and “stronger after AI” now has more direct evidence.**  
+A new 28 August writing study added a supervised no-AI near-transfer task: open AI collaboration performed best while AI was present, but bounded support with compulsory reflection performed better in subsequent no-AI writing. An earlier PNAS randomized field experiment shows the same structural distinction. `R1 · R2 · R3 · R4`
 
-**2｜Cognitive augmentation increasingly looks like process design, not simply better answers.**  
-A structured-guidance RCT and related work on writing ownership and cognitive resilience point toward a common design question: where do humans still form an initial view, steer, compare, edit, explain, verify, and exercise final judgment? `R2 · R4 · R6`
+**2｜Cross-domain evidence increasingly points to interaction architecture rather than raw AI-use intensity.**  
+`human-led`, `bounded support`, `draft-first`, reflection, and verification more often preserve independent performance, ownership, or diversity; `model-led rewrite`, passive copying, and open delegation more often introduce trade-offs. `R1 · R3 · R4 · R6`
 
-**3｜Machine Culture is becoming experimentally operational.**  
-Recent work now studies machine discovery, human learning and retention, social transmission, and adaptive information routing as separable mechanisms rather than treating “AI changes culture” as a single vague claim. `R7 · R8 · R9`
+**3｜Expertise is not simply flattened by AI, while Control and agency are becoming more measurable.**  
+Professional artists retain advantages when using generative AI, and a new critical-AI-use measure operationalizes Verification, Motivation, and Reflection. `R1 · R2 · R3 · R5 · R6`
 
-→ 🇬🇧 **[Read the full English brief](weekly/2026/2026-08-28.en.md)**  
-→ 🇨🇳 **[阅读完整中文周报](weekly/2026/2026-08-28.zh-CN.md)**
+**4｜The Variance story must move from “AI homogenizes” to a conditional model.**  
+Model-led co-creation can reduce idea diversity, yet hybrid collective-search experiments show that human–AI groups can preserve diversity while improving performance. `R3 · R5 · R8 · R9`
 
-**Weekly briefs track what changed. The [Current Evidence Baseline](research/baseline-2026-08-29.en.md) tracks what the evidence currently supports.** A weekly update does not automatically create a new Baseline.
+→ 🇬🇧 **[Read the full 2026-08-29 English refresh](weekly/2026/2026-08-29.en.md)**  
+→ 🇨🇳 **[阅读完整中文研究刷新](weekly/2026/2026-08-29.zh-CN.md)**
+
+**Baseline decision: no new version.** The refresh materially strengthens the evidence behind **Control / Retention / Variance** without changing the model itself; the [Current Evidence Baseline](research/baseline-2026-08-29.en.md) remains canonical.
 
 ---
 
@@ -81,7 +84,7 @@ This is a **research-organizing working model, not a fully validated grand theor
 | If you want to know… | Start with… |
 |---|---|
 | **What has this project found so far?** | [Current Evidence Baseline](research/baseline-2026-08-29.en.md) |
-| **What is new this week?** | [Latest Weekly Brief](weekly/2026/2026-08-28.en.md) |
+| **What did the latest full scan find?** | [2026-08-29 English Research Refresh](weekly/2026/2026-08-29.en.md) |
 | **What exactly does the project track?** | [3×3 Research Map](methodology/research-map.md) |
 | **Where are the papers and DOIs?** | [Master Bibliography](references/master-bibliography.md) |
 | **How did the framework evolve?** | [Research History & Migration](research/research-history.en.md) |
