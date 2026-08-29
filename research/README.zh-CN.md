@@ -1,61 +1,108 @@
-# 研究成果总览｜Human Cognition with AI
+# Research Hub｜Human Cognition with AI
 
-[English](README.md) · [当前 Baseline](baseline-2026-08-29.zh-CN.md) · [研究演化与迁移](research-history.zh-CN.md) · [研究地图](../methodology/research-map.md)
+[English](README.md) · [项目首页](../README.zh-CN.md)
 
-这个目录不是每周新闻归档，而是回答一个更稳定的问题：**截至目前，关于 AI 与人类认知，我们已经比较有把握知道什么？**
+这里是首页背后的第二层研究导航。它把四种不同的研究资产明确分开：
 
-项目把证据分成三层：
+- **Current State｜当前状态**：截至目前，证据能支持什么；
+- **Research Stream｜研究流**：最近发生了什么变化；
+- **Evidence Base｜证据库**：结论和引用从哪里来；
+- **Research Evolution｜研究演化**：这套框架为什么会长成今天这样。
 
-1. **Current Baseline｜当前证据基线**：只写经过重新核验、能够公开承担的结论；每条都标明证据强度和边界。
-2. **Research History｜研究演化**：保存项目早期“认知保护 / 认知增强”“AI + 写作 + 思维训练”等研究线如何收敛成现在的 3×3 雷达；这里记录的是理论演化，不把旧观点自动当成已证实事实。
-3. **Weekly Radar｜每周雷达**：负责发现最新论文、预印本、实验室项目和制度信号；真正改变 Baseline 的新证据，才会沉淀回这一层。
+> **Baseline = 当前可支持的研究状态；Weekly Brief = 最近发生的变化。** 每周出现新论文，不等于必须创建新的 Baseline。
 
-## 截至 2026-08-29 的核心判断
+---
 
-### 1. AI 辅助表现提高，不等于人的能力已经提高
+## 1｜Current State｜当前状态
 
-大量研究仍把“AI 在场时完成得更好”作为结果变量，但学习、迁移、AI 移除后的独立表现是另一回事。Human–AI collaboration 的 Meta-analysis 也显示，人+AI 并不天然优于人或 AI 中表现更好的那个主体。
+### Current Evidence Baseline
 
-### 2. 认知外包不是单纯的“多或少”，关键是外包了什么、控制权在哪里
+**[Human Cognition with AI｜证据 Baseline｜2026-08-29](baseline-2026-08-29.zh-CN.md)**
 
-最新研究开始明确区分依赖型与自主型 offloading。更有价值的问题不是“用了多少 AI”，而是：目标设定、问题表征、验证、判断、停止条件等关键认知节点是否仍由人调节。
+Baseline 是这个项目关于“目前证据能支持什么”的 canonical statement（标准版本）。它包含证据边界、限制、目前不能下的结论、重要未解决问题，以及当前 **Control / Retention / Variance** 工作模型。
 
-### 3. 目前最稳定的中介变量之一是 metacognition / epistemic agency
+### Current Research Map
 
-越来越多研究把元认知、校准、验证、反思判断与认识论能动性视为决定 AI 使用是走向 augmentation 还是 substitution 的控制层。
+**[3 个领域 × 9 条雷达](../methodology/research-map.md)**
 
-### 4. Structured / scaffolded use 比“自由地让 AI 帮忙”更值得看好，但长期证据仍不足
+Research Map 首先是一套搜索架构，并不是宣称整个研究领域天然分成九个互不重叠的盒子。每条雷达都必须被扫描，但最终内容在统一候选池中按价值竞争。
 
-2026 年多篇综述与实验开始收敛到同一方向：结构化脚手架、过程型支持、批判性提示、AI-free 阶段与验证环节，通常比 end-to-end 代做更有利于高阶认知参与。但绝大多数研究仍是教育场景、短期任务，不能直接外推为长期认知保护。
+### 当前优先证据缺口
 
-### 5. 写作中的 agency / authorship 不是一个百分比，而是分布在不同认知阶段
+目前 Baseline 最需要继续补足的是：
 
-规划、生成、改写、审阅、监控并不等价。系统综述和实验显示，写作者在不同阶段对所有权和控制的需求不同；直接编辑、迭代提示和自主规划都会影响心理所有权，但纯人工写作仍表现出更高的 ownership。
+- AI 离场后的 residual capability（残余能力）；
+- 持续数月乃至数年的纵向研究；
+- 专家与新手在 AI 环境中是趋同还是进一步分化；
+- 教育实验能否迁移到真实知识工作；
+- 群体差异性与探索空间；
+- epistemic agency、authorship、responsibility 的行为测量。
 
-### 6. AI 可能提高个体创意表现，同时压缩群体创意差异
+---
 
-这为“个人认知增强”与“Machine Culture”之间建立了关键桥梁：个体平均值提高，不意味着群体搜索空间扩大。文化层需要额外考察 variance、传播、选择与累积。
+## 2｜Research Stream｜研究流
 
-### 7. Machine Culture 已从概念框架进入可实验研究
+### 最新 Weekly Brief
 
-Rahwan 等人的研究已从 2023 年提出机器改变文化演化中的 variation / transmission / selection，推进到 2026 年直接实验机器发现如何被人理解、传播并在机器离开后继续保留。它让研究单位从“一个人和 AI”扩大到“人群—机器—文化”的反馈回路。
+- 🇨🇳 **[2026-08-28 中文研究周报](../weekly/2026/2026-08-28.zh-CN.md)**
+- 🇬🇧 **[2026-08-28 English Research Brief](../weekly/2026/2026-08-28.en.md)**
 
-## 目前不能下的结论
+Weekly Brief 回答的是：**“这一周研究领域哪里发生了变化？”** 它可以加入新论文、前沿信号、反证和新近被发现的重要资料，而不必修改 Baseline。
 
-- 不能说“使用生成式 AI 会让人长期变笨”。纵向、跨任务、真实工作环境中的证据仍不足。
-- 不能把一次任务中的脑活动降低、认知负荷降低或答题速度提高直接解释为学习增加或能力退化。
-- 不能说“AI + 人一定比单独的人或 AI 更强”。任务类型、能力差距、交互设计和校准都会改变结果。
-- 不能把“cognitive resilience”“epistemic debt”等有解释力的新概念当成已经完成量化验证的成熟构念。
-- 不能把教育研究直接外推到医生、程序员、研究者、作家等长期专业实践。
-- Machine Culture 的群体选择、文化方差压缩等部分结论仍大量依赖模型与受控实验，距离现实社会的长期因果结论很远。
+只有当经过核验的新证据真正改变了某条结论的强度、边界、重要证据缺口，或改变当前工作模型时，才创建新的 dated Baseline。
 
-## 当前最重要的证据缺口
+### 历史周报
 
-1. **Post-AI residual capability**：AI 拿走以后，能力留下多少？
-2. **Longitudinal evidence**：持续数月乃至数年的真实使用会怎样改变能力？
-3. **Expert cognition**：专家与新手在 AI 环境中会趋同还是进一步分化？
-4. **Real-world knowledge work**：教育实验能否迁移到真实专业工作？
-5. **Collective variance**：个体效率提升是否以群体探索空间为代价？
-6. **Agency metrics**：怎样可操作地测量 epistemic agency、authorship 与判断责任？
+→ **[浏览 2026 Weekly Research Archive](../weekly/2026/)**
 
-完整证据、研究设计和文献见：[2026-08-29 Baseline](baseline-2026-08-29.zh-CN.md)。
+---
+
+## 3｜Evidence Base｜证据库
+
+### 长期参考文献
+
+- **[Master Bibliography](../references/master-bibliography.md)**：按领域 / 雷达整理的长期文献库。
+- **[BibTeX](../references/master.bib)**：可用于论文、报告与引用管理的标准记录。
+
+### Consensus provenance｜Consensus 来源台账
+
+- **[首批 Consensus 文献台账](../references/consensus.md)**
+- **[2026-08-29 Consensus 增量台账](../references/consensus/2026-08-29.md)**
+
+Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为 foundational evidence（基础证据）**。
+
+### 检索与证据评价
+
+- **[Weekly Search Protocol](../methodology/search-protocol.md)**：三层文献雷达——Consensus Evidence Backbone + Freshness Layer + Frontier Signal Layer。
+- **[Evidence Grading](../methodology/evidence-grading.md)**：`[A] 强实证`、`[B] 有价值但有限`、`[C] 理论 / 探索性`、`[S] 战略信号`。
+- **[Publishing Policy](../methodology/publishing-policy.md)**：中英文同步与公开 / 私有内容过滤规则。
+
+---
+
+## 4｜Research Evolution｜研究演化
+
+### 这套框架是怎么形成的？
+
+**[研究演化与迁移记录](research-history.zh-CN.md)** 保存了项目从早期“认知保护 / 认知增强”，经过 **AI + 写作 + 思维训练**，最终收敛到 `Human Cognition with AI` 与当前 3×3 雷达的过程。
+
+迁移规则保持严格：**旧研究的问题意识和理论结构可以保留；无法重新核验的旧论文、数字和强因果判断，不会自动进入当前 Baseline。**
+
+### 当前研究闭环
+
+```text
+Legacy questions / hypotheses
+          ↓
+3×3 Radar Search
+          ↓
+Verified Evidence Pool
+          ↓
+Weekly Briefs
+          ↓
+Evidence convergence / contradiction
+          ↓
+Current Baseline
+          ↓
+只有必要时才修改 Research Map
+```
+
+因此，这个仓库既不是静态 bibliography，也不是把旧笔记搬到 GitHub。它希望保存一条可见的链条：**研究状态 → 新证据 → 判断修订**。

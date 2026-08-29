@@ -1,61 +1,108 @@
-# Research Synthesis｜Human Cognition with AI
+# Research Hub｜Human Cognition with AI
 
-[中文](README.zh-CN.md) · [Current Baseline](baseline-2026-08-29.en.md) · [Research History & Migration](research-history.en.md) · [Research Map](../methodology/research-map.md)
+[中文](README.zh-CN.md) · [Project Dashboard](../README.md)
 
-This directory is not another weekly news archive. It answers the more stable question: **What can we currently say with reasonable confidence about human cognition with AI?**
+This is the second-layer navigation hub behind the public dashboard. It separates four things that should not be confused:
 
-The project separates three layers:
+- **Current State** — what the evidence currently supports;
+- **Research Stream** — what changed recently;
+- **Evidence Base** — where claims and citations come from;
+- **Research Evolution** — how the framework reached its current form.
 
-1. **Current Baseline** — claims that have been re-verified and can be publicly defended, with evidence strength and boundaries.
-2. **Research History** — how earlier work on cognitive protection/augmentation and AI-assisted writing-as-thinking converged into the current 3×3 radar. Legacy ideas are preserved as intellectual history, not automatically promoted to evidence.
-3. **Weekly Radar** — the discovery layer for new papers, preprints, research programs and institutional signals. Only evidence that materially changes the model should flow back into the baseline.
+> **Baseline = current supported state. Weekly Brief = recent change.** A new weekly brief does not automatically justify a new Baseline.
 
-## Current synthesis as of 2026-08-29
+---
 
-### 1. Better AI-assisted performance is not the same as stronger retained human capability
+## 1｜Current State
 
-Many studies still measure performance while AI is present. Learning, transfer and independent performance after AI removal are different outcomes. Meta-analytic evidence on human–AI systems also shows that human+AI does not automatically outperform the better of the human or AI alone.
+### Current Evidence Baseline
 
-### 2. Cognitive offloading is not simply “more vs. less”; what is delegated and where control remains matters
+**[Human Cognition with AI｜Evidence Baseline｜2026-08-29](baseline-2026-08-29.en.md)**
 
-Recent work is beginning to distinguish dependent from autonomous offloading. The better question is whether critical control points—goal setting, problem representation, verification, judgment and stopping conditions—remain human-regulated.
+The Baseline is the canonical statement of what the project currently believes the evidence can support. It contains evidence boundaries, caveats, unsupported conclusions, open questions, and the current **Control / Retention / Variance** working model.
 
-### 3. Metacognition and epistemic agency are emerging as central control variables
+### Current Research Map
 
-Calibration, verification, reflective judgment and the ability to decide when to delegate increasingly appear as the layer that determines whether AI use behaves more like augmentation or substitution.
+**[3 Domains × 9 Radars](../methodology/research-map.md)**
 
-### 4. Structured/scaffolded AI use currently looks more promising than unguided end-to-end delegation—but long-term evidence is still weak
+The map is a search architecture rather than a claim that the research field divides into nine clean boxes. Every radar is scanned; final selection is competitive across the whole candidate pool.
 
-Recent reviews and experiments increasingly converge on process-oriented scaffolds, critical prompts, verification routines and AI-free phases as more supportive of higher-order cognitive engagement than end-to-end solution delivery. Most evidence, however, remains short-term and education-heavy.
+### Priority evidence gaps
 
-### 5. Writing agency and authorship are process-distributed rather than reducible to a percentage of words typed
+The current Baseline prioritizes:
 
-Planning, generation, revision, reviewing and monitoring are not interchangeable. Reviews and experiments show that writers value control differently across stages; direct editing and iterative steering increase psychological ownership, while fully manual writing still tends to produce the strongest ownership.
+- post-AI residual capability;
+- longitudinal effects of sustained AI use;
+- expert-vs-novice divergence;
+- transfer from education studies to real knowledge work;
+- collective variance and exploration;
+- behavioral measures of epistemic agency, authorship, and responsibility.
 
-### 6. AI may raise average individual creative performance while reducing diversity across people
+---
 
-This creates a key bridge from individual cognitive augmentation to Machine Culture: a higher individual mean does not imply a larger collective search space. Population-level analysis must also track variance, transmission, selection and cumulative change.
+## 2｜Research Stream
 
-### 7. Machine Culture has moved from a conceptual agenda toward experimental science
+### Latest Weekly Brief
 
-Rahwan and collaborators progressed from the 2023 framework of machine effects on cultural variation/transmission/selection to 2026 experiments showing that machine-discovered strategies can be understood, transmitted and preserved by humans after the machine is gone.
+- 🇬🇧 **[2026-08-28 English Research Brief](../weekly/2026/2026-08-28.en.md)**
+- 🇨🇳 **[2026-08-28 中文研究周报](../weekly/2026/2026-08-28.zh-CN.md)**
 
-## What we cannot conclude yet
+Weekly briefs answer **“Where did the field change this week?”** They can add papers, signals, contradictions, and newly relevant evidence without changing the Baseline.
 
-- We cannot claim that long-term GenAI use generally makes people cognitively weaker.
-- Lower cognitive load, lower neural activity or faster task completion in a short task cannot by itself be interpreted as either learning gain or cognitive decline.
-- Human+AI is not inherently synergistic; task type, capability gaps, interface design and calibration matter.
-- Useful concepts such as cognitive resilience and epistemic debt should not be treated as mature, fully validated quantitative constructs yet.
-- Education findings should not be automatically generalized to long-term professional work by physicians, programmers, researchers or writers.
-- Population-level claims about cultural collapse or variance compression remain partly model-based and need real-world longitudinal evidence.
+A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the project’s working model.
 
-## Highest-priority evidence gaps
+### Archive
 
-1. **Post-AI residual capability** — what remains when AI is removed?
-2. **Longitudinal evidence** — what changes after months or years of real use?
-3. **Expert cognition** — do experts and novices converge or diverge with AI?
-4. **Real-world knowledge work** — do education findings transfer to professional practice?
-5. **Collective variance** — can individual efficiency gains shrink collective exploration?
-6. **Agency metrics** — how should epistemic agency, authorship and judgment responsibility be operationalized?
+→ **[Browse the 2026 weekly research archive](../weekly/2026/)**
 
-See the full evidence set and source notes in the [2026-08-29 Baseline](baseline-2026-08-29.en.md).
+---
+
+## 3｜Evidence Base
+
+### Curated references
+
+- **[Master Bibliography](../references/master-bibliography.md)** — curated research by domain and radar.
+- **[BibTeX](../references/master.bib)** — citation-ready records.
+
+### Consensus provenance
+
+- **[Initial Consensus ledger](../references/consensus.md)**
+- **[2026-08-29 Consensus refresh](../references/consensus/2026-08-29.md)**
+
+A Consensus ledger records fetch-verified discovery provenance; inclusion in a ledger does not automatically promote a paper to foundational evidence.
+
+### Retrieval and grading
+
+- **[Weekly Search Protocol](../methodology/search-protocol.md)** — three-layer literature radar: Consensus Evidence Backbone + Freshness Layer + Frontier Signal Layer.
+- **[Evidence Grading](../methodology/evidence-grading.md)** — `[A] Strong empirical`, `[B] Promising/moderate`, `[C] Conceptual/exploratory`, `[S] Strategic signal`.
+- **[Publishing Policy](../methodology/publishing-policy.md)** — bilingual and public/private publishing rules.
+
+---
+
+## 4｜Research Evolution
+
+### How the current framework emerged
+
+**[Research History & Migration](research-history.en.md)** traces the project’s movement from early work on cognitive protection and augmentation, through **AI-assisted writing as a form of thinking**, toward the current `Human Cognition with AI` framing and the 3×3 radar.
+
+The migration rule is strict: **legacy questions and conceptual structures may survive, but old claims, numerical results, or references that cannot be re-verified are not automatically promoted into the current Baseline.**
+
+### The current research loop
+
+```text
+Legacy questions / hypotheses
+          ↓
+3×3 Radar Search
+          ↓
+Verified Evidence Pool
+          ↓
+Weekly Briefs
+          ↓
+Evidence convergence / contradiction
+          ↓
+Current Baseline
+          ↓
+Research-map revision only when necessary
+```
+
+The repository is therefore not a static bibliography or a dump of previous notes. It is designed to preserve a visible history of **research state → new evidence → revision**.
