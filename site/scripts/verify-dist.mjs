@@ -53,7 +53,10 @@ async function collectHtml(dir) {
 const htmlFiles = await collectHtml(distRoot);
 const universallyProhibited = ['半神之后'];
 const policyExampleMarkers = ['专家说', '元认知重构'];
-const policyPage = 'methodology/publishing-policy/index.html';
+const policyPages = new Set([
+  'methodology/publishing-policy/index.html',
+  'zh-cn/methodology/publishing-policy/index.html',
+]);
 
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, 'utf8');
@@ -65,10 +68,10 @@ for (const file of htmlFiles) {
     }
   }
 
-  if (rel !== policyPage) {
+  if (!policyPages.has(rel)) {
     for (const needle of policyExampleMarkers) {
       if (html.includes(needle)) {
-        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside the publishing-policy page: ${rel}`);
+        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside publishing-policy routes: ${rel}`);
       }
     }
   }
