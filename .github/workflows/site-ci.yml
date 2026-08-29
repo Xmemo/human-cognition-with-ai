@@ -1,0 +1,62 @@
+name: Research Website CI
+
+on:
+  pull_request:
+    paths:
+      - 'site/**'
+      - 'README.md'
+      - 'README.zh-CN.md'
+      - 'research/**'
+      - 'weekly/**'
+      - 'methodology/**'
+      - 'topics/**'
+      - 'people/**'
+      - 'references/**'
+      - '.github/workflows/site-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'README.md'
+      - 'README.zh-CN.md'
+      - 'research/**'
+      - 'weekly/**'
+      - 'methodology/**'
+      - 'topics/**'
+      - 'people/**'
+      - 'references/**'
+      - '.github/workflows/site-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install pinned dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build and verify
+        run: npm run build
+
+      - name: Upload static site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: human-cognition-with-ai-site
+          path: site/dist
+          if-no-files-found: error
+          retention-days: 7
