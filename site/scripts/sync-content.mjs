@@ -131,7 +131,11 @@ const latestWeeklyDate = sortedWeeklyDates[0];
 
 for (const source of await listMarkdown('methodology')) {
   const stem = path.posix.basename(source, '.md');
-  register(source, `methodology/${stem}.md`, `/methodology/${stem}/`, { locale: 'en' });
+  if (stem === 'research-map') {
+    register(source, 'research-map.md', '/research-map/', { locale: 'en' });
+  } else {
+    register(source, `methodology/${stem}.md`, `/methodology/${stem}/`, { locale: 'en' });
+  }
 }
 for (const source of await listMarkdown('topics')) {
   const stem = path.posix.basename(source, '.md');
