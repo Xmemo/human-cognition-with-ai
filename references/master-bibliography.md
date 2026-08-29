@@ -56,7 +56,7 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Wang, G., Zhang, K., Jiang, J., et al. (2026). **Human–large language model collaboration in clinical medicine: a systematic review and meta-analysis.** *npj Digital Medicine, 9*, 195. https://doi.org/10.1038/s41746-026-02382-2 — `R5`
 - Pennanen, N., Kanerva, P., & Guckelsberger, C. (2026). **How prompting and editing shape psychological ownership in AI-assisted creative writing.** *Computers in Human Behavior: Artificial Humans, 9*, 100381. https://doi.org/10.1016/j.chbah.2026.100381 — preregistered experiment, N=273; `R3 R6`
 - Johnson, S. G. B., Karimi, A.-H., Bengio, Y., Chater, N., Gerstenberg, T., Larson, K., Levine, S., Mitchell, M., Rahwan, I., Schölkopf, B., & Grossmann, I. (2026). **Imagining and building wise machines: the centrality of AI metacognition.** *Trends in Cognitive Sciences* (advance online). https://doi.org/10.1016/j.tics.2026.01.002 — conceptual/opinion; `R2 R5`
-- **Learning with machines: Toward a theory of epistemic co-agency.** (2026). *Computers and Education: Artificial Intelligence, 10*, 100573. https://doi.org/10.1016/j.caeai.2026.100573 — conceptual framework; `R2 R4 R6`
+- Samuel, A. (2026). **Learning with machines: Toward a theory of epistemic co-agency.** *Computers and Education: Artificial Intelligence, 10*, 100573. https://doi.org/10.1016/j.caeai.2026.100573 — conceptual framework; `R2 R4 R6`
 
 ## Domain 3 — Machine Culture & Collective Cognition
 
