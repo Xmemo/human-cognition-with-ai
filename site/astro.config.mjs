@@ -27,10 +27,16 @@ export default defineConfig({
         },
       ],
       customCss: ['./src/styles/custom.css'],
+      components: {
+        Hero: './src/components/ObservatoryHero.astro',
+        Head: './src/components/StructuredHead.astro',
+      },
       pagefind: true,
       head: [
         { tag: 'meta', attrs: { property: 'og:site_name', content: 'Human Cognition with AI' } },
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+        { tag: 'meta', attrs: { name: 'application-name', content: 'Human Cognition with AI' } },
+        { tag: 'meta', attrs: { name: 'color-scheme', content: 'light dark' } },
       ],
       sidebar: [
         {
