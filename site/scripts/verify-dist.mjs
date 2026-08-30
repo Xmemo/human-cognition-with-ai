@@ -16,6 +16,36 @@ async function exists(rel) {
   }
 }
 
+function countToken(html, token) {
+  return html.split(token).length - 1;
+}
+
+function canonicalHref(html, label) {
+  const forward = html.match(/<link\b[^>]*\brel="canonical"[^>]*\bhref="([^"]+)"[^>]*>/i);
+  const reverse = html.match(/<link\b[^>]*\bhref="([^"]+)"[^>]*\brel="canonical"[^>]*>/i);
+  const href = forward?.[1] || reverse?.[1];
+  if (!href) throw new Error(`${label} is missing a canonical link`);
+  return href;
+}
+
+function assertUniqueHreflang(html, label) {
+  for (const lang of ['en', 'zh-CN', 'x-default']) {
+    const count = countToken(html, `hreflang="${lang}"`);
+    if (count !== 1) throw new Error(`${label} must contain exactly one hreflang=${lang}; found ${count}`);
+  }
+}
+
+function assertSelfCanonical(html, label, expectChinese) {
+  const canonical = new URL(canonicalHref(html, label));
+  const hasChinesePrefix = canonical.pathname.includes('/zh-cn/');
+  if (expectChinese && !hasChinesePrefix) {
+    throw new Error(`${label} must self-canonicalize to its /zh-cn/ URL, got ${canonical.href}`);
+  }
+  if (!expectChinese && hasChinesePrefix) {
+    throw new Error(`${label} must self-canonicalize to the English URL, got ${canonical.href}`);
+  }
+}
+
 const requiredRoutes = [
   'index.html',
   'zh-cn/index.html',
@@ -106,9 +136,9 @@ for (const file of htmlFiles) {
 
 const homeHtml = await fs.readFile(path.join(distRoot, 'index.html'), 'utf8');
 const zhHomeHtml = await fs.readFile(path.join(distRoot, 'zh-cn', 'index.html'), 'utf8');
-for (const [label, html, marker] of [
-  ['English homepage', homeHtml, 'Start with what the evidence supports now'],
-  ['Chinese homepage', zhHomeHtml, '先看现在知道什么'],
+for (const [label, html, marker, expectChinese] of [
+  ['English homepage', homeHtml, 'Start with what the evidence supports now', false],
+  ['Chinese homepage', zhHomeHtml, '先看现在知道什么', true],
 ]) {
   if (!html.includes('data-observatory-hero')) {
     throw new Error(`${label} did not render the ObservatoryHero override`);
@@ -128,9 +158,22 @@ for (const [label, html, marker] of [
   if (html.includes('observatoryGrouped')) {
     throw new Error(`${label} still contains the retired client-side DOM regrouping script`);
   }
-  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"') || !html.includes('hreflang="x-default"')) {
-    throw new Error(`${label} is missing bilingual hreflang alternates`);
-  }
+  assertUniqueHreflang(html, label);
+  assertSelfCanonical(html, label, expectChinese);
+}
+
+const pairedCanonicalRoutes = [
+  ['baseline/index.html', 'English baseline', false],
+  ['zh-cn/baseline/index.html', 'Chinese baseline', true],
+  ['research-map/index.html', 'English research map', false],
+  ['zh-cn/research-map/index.html', 'Chinese research map', true],
+  ['topics/human-cognitive-change/index.html', 'English topic', false],
+  ['zh-cn/topics/human-cognitive-change/index.html', 'Chinese topic', true],
+];
+for (const [route, label, expectChinese] of pairedCanonicalRoutes) {
+  const html = await fs.readFile(path.join(distRoot, route), 'utf8');
+  assertUniqueHreflang(html, label);
+  assertSelfCanonical(html, label, expectChinese);
 }
 
 const chineseRouteMarkers = new Map([
@@ -155,8 +198,10 @@ for (const [route, marker] of chineseRouteMarkers) {
 
 for (const route of ['zh-cn/references/bibliography/index.html', 'zh-cn/references/consensus/index.html']) {
   const html = await fs.readFile(path.join(distRoot, route), 'utf8');
-  if (html.includes('hreflang="zh-CN"')) {
-    throw new Error(`Raw English metadata mirror must not advertise itself as a translated hreflang target: ${route}`);
+  for (const lang of ['en', 'zh-CN', 'x-default']) {
+    if (html.includes(`hreflang="${lang}"`)) {
+      throw new Error(`Raw English metadata mirror must not advertise hreflang=${lang}: ${route}`);
+    }
   }
 }
 
@@ -176,6 +221,7 @@ if (!(await Promise.all(pagefindCandidates.map(exists))).some(Boolean)) {
 console.log(`Verified ${requiredRoutes.length} required routes and ${htmlFiles.length} HTML pages.`);
 console.log('CognitiveField hero and server-rendered research portal checks passed.');
 console.log(`Chinese parity markers passed for ${chineseRouteMarkers.size} core routes.`);
-console.log('English-first / Chinese-second robots and hreflang rules passed.');
+console.log('Self-canonical and unique reciprocal hreflang checks passed for paired English/Chinese pages.');
+console.log('English-first / Chinese-second robots and metadata-mirror rules passed.');
 console.log('JSON-LD, sitemap, llms.txt, and Pagefind checks passed.');
 console.log('Built public-output scan passed with publishing-policy-only marker exceptions.');
