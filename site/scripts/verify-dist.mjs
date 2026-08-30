@@ -94,14 +94,22 @@ for (const file of htmlFiles) {
     throw new Error(`Missing structured JSON-LD metadata: ${rel}`);
   }
 
-  if (html.includes('name="robots" content="noindex')) {
-    throw new Error(`Unexpected noindex directive in production page: ${rel}`);
+  const hasNoindex = html.includes('name="robots" content="noindex,follow"');
+  const isChineseReferenceMirror = rel.startsWith('zh-cn/references/');
+  if (isChineseReferenceMirror && !hasNoindex) {
+    throw new Error(`Chinese reference mirror must be noindex,follow: ${rel}`);
+  }
+  if (!isChineseReferenceMirror && hasNoindex) {
+    throw new Error(`Unexpected noindex directive on translated/indexable page: ${rel}`);
   }
 }
 
 const homeHtml = await fs.readFile(path.join(distRoot, 'index.html'), 'utf8');
 const zhHomeHtml = await fs.readFile(path.join(distRoot, 'zh-cn', 'index.html'), 'utf8');
-for (const [label, html] of [['English homepage', homeHtml], ['Chinese homepage', zhHomeHtml]]) {
+for (const [label, html, marker] of [
+  ['English homepage', homeHtml, 'Start with what the evidence supports now'],
+  ['Chinese homepage', zhHomeHtml, '先看现在知道什么'],
+]) {
   if (!html.includes('data-observatory-hero')) {
     throw new Error(`${label} did not render the ObservatoryHero override`);
   }
@@ -111,10 +119,16 @@ for (const [label, html] of [['English homepage', homeHtml], ['Chinese homepage'
   if (html.includes('class="crv-instrument"')) {
     throw new Error(`${label} still renders the retired working-model hero panel`);
   }
-  if (!html.includes('data-observatory-home')) {
-    throw new Error(`${label} did not render the structured homepage content shell`);
+  if (!html.includes('data-observatory-portal')) {
+    throw new Error(`${label} did not render the server-side research portal`);
   }
-  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"')) {
+  if (!html.includes(marker)) {
+    throw new Error(`${label} is missing portal copy marker ${JSON.stringify(marker)}`);
+  }
+  if (html.includes('observatoryGrouped')) {
+    throw new Error(`${label} still contains the retired client-side DOM regrouping script`);
+  }
+  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"') || !html.includes('hreflang="x-default"')) {
     throw new Error(`${label} is missing bilingual hreflang alternates`);
   }
 }
@@ -134,6 +148,16 @@ for (const [route, marker] of chineseRouteMarkers) {
   if (!html.includes(marker)) {
     throw new Error(`Chinese parity route ${route} does not contain expected Chinese source marker ${JSON.stringify(marker)}`);
   }
+  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"')) {
+    throw new Error(`Translated Chinese route ${route} is missing reciprocal hreflang`);
+  }
+}
+
+for (const route of ['zh-cn/references/bibliography/index.html', 'zh-cn/references/consensus/index.html']) {
+  const html = await fs.readFile(path.join(distRoot, route), 'utf8');
+  if (html.includes('hreflang="zh-CN"')) {
+    throw new Error(`Raw English metadata mirror must not advertise itself as a translated hreflang target: ${route}`);
+  }
 }
 
 const llms = await fs.readFile(path.join(distRoot, 'llms.txt'), 'utf8');
@@ -150,7 +174,8 @@ if (!(await Promise.all(pagefindCandidates.map(exists))).some(Boolean)) {
 }
 
 console.log(`Verified ${requiredRoutes.length} required routes and ${htmlFiles.length} HTML pages.`);
-console.log('Animated CognitiveField hero and structured homepage shell checks passed.');
+console.log('CognitiveField hero and server-rendered research portal checks passed.');
 console.log(`Chinese parity markers passed for ${chineseRouteMarkers.size} core routes.`);
-console.log('JSON-LD, hreflang, sitemap, llms.txt, and Pagefind checks passed.');
+console.log('English-first / Chinese-second robots and hreflang rules passed.');
+console.log('JSON-LD, sitemap, llms.txt, and Pagefind checks passed.');
 console.log('Built public-output scan passed with publishing-policy-only marker exceptions.');
