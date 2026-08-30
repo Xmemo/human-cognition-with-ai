@@ -30,6 +30,7 @@ export default defineConfig({
       customCss: [
         './src/styles/custom.css',
         './src/styles/observatory-v0-3.css',
+        './src/styles/portal-v0-3-1.css',
       ],
       components: {
         Hero: './src/components/ObservatoryHero.astro',
