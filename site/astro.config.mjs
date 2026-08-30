@@ -27,10 +27,14 @@ export default defineConfig({
           href: 'https://github.com/Xmemo/human-cognition-with-ai',
         },
       ],
-      customCss: ['./src/styles/custom.css'],
+      customCss: [
+        './src/styles/custom.css',
+        './src/styles/observatory-v0-3.css',
+      ],
       components: {
         Hero: './src/components/ObservatoryHero.astro',
         Head: './src/components/StructuredHead.astro',
+        MarkdownContent: './src/components/ObservatoryContent.astro',
       },
       pagefind: true,
       head: [
