@@ -18,6 +18,15 @@ const githubUrl = 'https://github.com/Xmemo/human-cognition-with-ai';
 const contentLang = route.entryMeta?.lang || route.lang || (isZh ? 'zh-CN' : 'en');
 const shouldIndex = !isFallback && !isChineseReferenceMirror;
 
+// Starlight automatically creates i18n alternates for locale routes, including
+// fallback pages. Remove only those generated hreflang tags and emit a stricter
+// set below so untranslated/fallback pages are never advertised as translations.
+const headWithoutGeneratedHreflang = route.head.filter((item) => {
+  const attrs = item.attrs ?? {};
+  return !(item.tag === 'link' && attrs.rel === 'alternate' && typeof attrs.hreflang === 'string');
+});
+route.head.splice(0, route.head.length, ...headWithoutGeneratedHreflang);
+
 const schema = isHomepage
   ? {
       '@context': 'https://schema.org',
