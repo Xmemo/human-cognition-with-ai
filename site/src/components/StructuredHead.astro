@@ -1,0 +1,71 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+
+const route = Astro.locals.starlightRoute;
+const { data } = route.entry;
+const id = route.id;
+const isZh = id === 'zh-cn' || id.startsWith('zh-cn/');
+const isHomepage = id === '' || id === 'zh-cn';
+const isResearchUpdate = /^(zh-cn\/)?weekly\/\d{4}-\d{2}-\d{2}$/.test(id);
+const dateMatch = id.match(/(\d{4}-\d{2}-\d{2})/);
+const pageUrl = Astro.url.href;
+const baseUrl = new URL(import.meta.env.BASE_URL, Astro.url.origin).href;
+const githubUrl = 'https://github.com/Xmemo/human-cognition-with-ai';
+
+const schema = isHomepage
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Human Cognition with AI',
+      alternateName: isZh ? 'AI 时代人类认知研究观测站' : 'Human Cognition with AI Research Observatory',
+      description: data.description,
+      url: pageUrl,
+      inLanguage: isZh ? 'zh-CN' : 'en',
+      sameAs: [githubUrl],
+      about: [
+        { '@type': 'Thing', name: 'Human cognition' },
+        { '@type': 'Thing', name: 'Artificial intelligence' },
+        { '@type': 'Thing', name: 'Human–AI interaction' },
+      ],
+    }
+  : {
+      '@context': 'https://schema.org',
+      '@type': isResearchUpdate ? 'Article' : 'WebPage',
+      name: data.title,
+      ...(isResearchUpdate ? { headline: data.title } : {}),
+      description: data.description,
+      url: pageUrl,
+      inLanguage: isZh ? 'zh-CN' : 'en',
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Human Cognition with AI',
+        url: baseUrl,
+      },
+      ...(dateMatch ? { datePublished: dateMatch[1], dateModified: dateMatch[1] } : {}),
+      about: [
+        { '@type': 'Thing', name: 'Human cognition' },
+        { '@type': 'Thing', name: 'Artificial intelligence' },
+      ],
+    };
+
+const basePath = import.meta.env.BASE_URL;
+const pathWithinSite = Astro.url.pathname.startsWith(basePath)
+  ? Astro.url.pathname.slice(basePath.length)
+  : Astro.url.pathname.replace(/^\//, '');
+const englishPath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite.slice('zh-cn/'.length) : pathWithinSite;
+const chinesePath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite : `zh-cn/${pathWithinSite}`;
+const hasLanguagePair =
+  isHomepage ||
+  /^(zh-cn\/)?(weekly|baseline|research)(\/|$)/.test(id);
+const englishUrl = new URL(`${basePath}${englishPath}`, Astro.url.origin).href;
+const chineseUrl = new URL(`${basePath}${chinesePath}`, Astro.url.origin).href;
+---
+
+<Default><slot /></Default>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta name="theme-color" content="#0b1118" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f4f2eb" media="(prefers-color-scheme: light)" />
+{hasLanguagePair && <link rel="alternate" hreflang="en" href={englishUrl} />}
+{hasLanguagePair && <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />}
+{hasLanguagePair && <link rel="alternate" hreflang="x-default" href={englishUrl} />}
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
