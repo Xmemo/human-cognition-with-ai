@@ -1,0 +1,92 @@
+/* V0.3.1 — server-rendered portal homepage.
+ * Critical homepage content is present in static HTML; no client-side DOM
+ * regrouping or hiding is required.
+ */
+
+.portal-home .home-module {
+  min-height: 0;
+}
+
+.portal-home .module-latest {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.portal-home .signal-card {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portal-home .signal-card p {
+  margin: 0 0 1rem;
+  color: #aebbc6;
+  line-height: 1.65;
+}
+
+.portal-home .signal-card a,
+.portal-home .domain-card a {
+  margin-top: auto;
+  font-family: var(--hcai-mono);
+  font-size: 0.74rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.portal-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+}
+
+.portal-link-card {
+  display: flex;
+  min-height: 9.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.3rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.24rem;
+  background: var(--sl-color-bg);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.portal-link-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0.75rem 2rem color-mix(in srgb, var(--sl-color-black) 8%, transparent);
+}
+
+.portal-link-card strong {
+  color: var(--sl-color-white) !important;
+  font-family: var(--hcai-display);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.portal-link-card span {
+  color: var(--sl-color-gray-2);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.portal-home .module-frontier {
+  min-height: 22rem;
+}
+
+@media (max-width: 48rem) {
+  .portal-home .module-latest,
+  .portal-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-home .signal-card {
+    min-height: 0;
+  }
+}

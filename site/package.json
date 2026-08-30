@@ -1,15 +1,16 @@
 {
   "name": "human-cognition-with-ai-site",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync-content.mjs",
+    "localize-zh": "node scripts/localize-generated-zh.mjs",
     "agent-index": "node scripts/generate-agent-index.mjs",
     "verify": "node scripts/verify-content.mjs",
     "check": "astro check",
-    "build": "npm run sync && npm run agent-index && npm run verify && astro check && astro build && node scripts/verify-dist.mjs",
-    "dev": "npm run sync && npm run agent-index && astro dev",
+    "build": "npm run sync && npm run localize-zh && npm run agent-index && npm run verify && astro check && astro build && node scripts/verify-dist.mjs",
+    "dev": "npm run sync && npm run localize-zh && npm run agent-index && astro dev",
     "preview": "astro preview",
     "deploy": "npm run build && wrangler deploy"
   },
