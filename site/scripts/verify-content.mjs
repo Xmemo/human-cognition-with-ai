@@ -122,8 +122,11 @@ for (const file of generated) {
   }
 }
 
-const weeklyEn = generated.filter((file) => /[/\\]weekly[/\\]\d{4}-\d{2}-\d{2}\.md$/.test(file));
 const weeklyZh = generated.filter((file) => /[/\\]zh-cn[/\\]weekly[/\\]\d{4}-\d{2}-\d{2}\.md$/.test(file));
+const weeklyEn = generated.filter((file) =>
+  /[/\\]weekly[/\\]\d{4}-\d{2}-\d{2}\.md$/.test(file) &&
+  !/[/\\]zh-cn[/\\]/.test(file),
+);
 if (weeklyEn.length === 0 || weeklyZh.length === 0) {
   throw new Error('Expected at least one dated weekly page in both English and Chinese');
 }
