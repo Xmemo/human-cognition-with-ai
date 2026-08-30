@@ -7,12 +7,16 @@ const id = route.id;
 const isZh = id === 'zh-cn' || id.startsWith('zh-cn/');
 const isHomepage = id === '' || id === 'zh-cn';
 const isResearchUpdate = /^(zh-cn\/)?weekly\/\d{4}-\d{2}-\d{2}$/.test(id);
+const isFallback = route.isFallback === true;
+const isChineseReferenceMirror = /^zh-cn\/references(\/|$)/.test(id);
 const dateMatch = id.match(/(\d{4}-\d{2}-\d{2})/);
 const pageUrl = Astro.url.href;
 const rawBasePath = import.meta.env.BASE_URL || '/';
 const basePath = rawBasePath.endsWith('/') ? rawBasePath : `${rawBasePath}/`;
 const baseUrl = new URL(basePath, Astro.url.origin).href;
 const githubUrl = 'https://github.com/Xmemo/human-cognition-with-ai';
+const contentLang = route.entryMeta?.lang || route.lang || (isZh ? 'zh-CN' : 'en');
+const shouldIndex = !isFallback && !isChineseReferenceMirror;
 
 const schema = isHomepage
   ? {
@@ -22,7 +26,7 @@ const schema = isHomepage
       alternateName: isZh ? 'AI 时代人类认知研究观测站' : 'Human Cognition with AI Research Observatory',
       description: data.description,
       url: pageUrl,
-      inLanguage: isZh ? 'zh-CN' : 'en',
+      inLanguage: contentLang,
       sameAs: [githubUrl],
       about: [
         { '@type': 'Thing', name: 'Human cognition' },
@@ -37,7 +41,7 @@ const schema = isHomepage
       ...(isResearchUpdate ? { headline: data.title } : {}),
       description: data.description,
       url: pageUrl,
-      inLanguage: isZh ? 'zh-CN' : 'en',
+      inLanguage: contentLang,
       isPartOf: {
         '@type': 'WebSite',
         name: 'Human Cognition with AI',
@@ -55,17 +59,31 @@ const pathWithinSite = Astro.url.pathname.startsWith(basePath)
   : Astro.url.pathname.replace(/^\//, '');
 const englishPath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite.slice('zh-cn/'.length) : pathWithinSite;
 const chinesePath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite : `zh-cn/${pathWithinSite}`;
+
+// English is the editorial default, but translated Chinese pages are independent
+// indexable documents. Paired pages self-canonicalize through Starlight's default
+// head and are connected with reciprocal hreflang links. Raw reference mirrors are
+// intentionally excluded because their visible metadata remains predominantly English.
 const hasLanguagePair =
-  isHomepage ||
-  /^(zh-cn\/)?(weekly|baseline|research|research-map|methodology|topics|people|references)(\/|$)/.test(id);
+  !isFallback &&
+  !/^(zh-cn\/)?references(\/|$)/.test(id) &&
+  (isHomepage || /^(zh-cn\/)?(weekly|baseline|research|research-map|methodology|topics|people)(\/|$)/.test(id));
+
 const englishUrl = new URL(`${basePath}${englishPath}`, Astro.url.origin).href;
 const chineseUrl = new URL(`${basePath}${chinesePath}`, Astro.url.origin).href;
 ---
 
 <Default><slot /></Default>
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta
+  name="robots"
+  content={shouldIndex
+    ? 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'
+    : 'noindex,follow'}
+/>
 <meta name="theme-color" content="#0b1118" media="(prefers-color-scheme: dark)" />
 <meta name="theme-color" content="#f4f2eb" media="(prefers-color-scheme: light)" />
+<meta property="og:locale" content={isZh ? 'zh_CN' : 'en_US'} />
+{hasLanguagePair && <meta property="og:locale:alternate" content={isZh ? 'en_US' : 'zh_CN'} />}
 {hasLanguagePair && <link rel="alternate" hreflang="en" href={englishUrl} />}
 {hasLanguagePair && <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />}
 {hasLanguagePair && <link rel="alternate" hreflang="x-default" href={englishUrl} />}
