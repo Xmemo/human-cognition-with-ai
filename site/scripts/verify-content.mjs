@@ -8,19 +8,24 @@ const siteRoot = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(siteRoot, '..');
 const docsRoot = path.join(siteRoot, 'src', 'content', 'docs');
 
+const corePairs = [
+  ['README.md', 'README.zh-CN.md'],
+  ['research/README.md', 'research/README.zh-CN.md'],
+  ['research/research-history.en.md', 'research/research-history.zh-CN.md'],
+  ['methodology/research-map.md', 'methodology/research-map.zh-CN.md'],
+  ['methodology/search-protocol.md', 'methodology/search-protocol.zh-CN.md'],
+  ['methodology/evidence-grading.md', 'methodology/evidence-grading.zh-CN.md'],
+  ['methodology/publishing-policy.md', 'methodology/publishing-policy.zh-CN.md'],
+  ['topics/human-cognitive-change.md', 'topics/human-cognitive-change.zh-CN.md'],
+  ['topics/cognitive-augmentation-governance.md', 'topics/cognitive-augmentation-governance.zh-CN.md'],
+  ['topics/machine-culture-collective-cognition.md', 'topics/machine-culture-collective-cognition.zh-CN.md'],
+  ['people/iyad-rahwan.md', 'people/iyad-rahwan.zh-CN.md'],
+];
+
 const requiredCanonical = [
-  'README.md',
-  'README.zh-CN.md',
-  'research/README.md',
-  'research/README.zh-CN.md',
-  'methodology/research-map.md',
-  'methodology/search-protocol.md',
-  'methodology/evidence-grading.md',
-  'topics/human-cognitive-change.md',
-  'topics/cognitive-augmentation-governance.md',
-  'topics/machine-culture-collective-cognition.md',
-  'people/iyad-rahwan.md',
+  ...new Set(corePairs.flat()),
   'references/master-bibliography.md',
+  'references/consensus.md',
 ];
 
 const requiredGenerated = [
@@ -33,18 +38,33 @@ const requiredGenerated = [
   'weekly/index.md',
   'zh-cn/weekly/index.md',
   'research-map.md',
+  'zh-cn/research-map.md',
   'methodology/search-protocol.md',
+  'zh-cn/methodology/search-protocol.md',
   'methodology/evidence-grading.md',
+  'zh-cn/methodology/evidence-grading.md',
+  'methodology/publishing-policy.md',
+  'zh-cn/methodology/publishing-policy.md',
   'topics/human-cognitive-change.md',
+  'zh-cn/topics/human-cognitive-change.md',
   'topics/cognitive-augmentation-governance.md',
+  'zh-cn/topics/cognitive-augmentation-governance.md',
   'topics/machine-culture-collective-cognition.md',
+  'zh-cn/topics/machine-culture-collective-cognition.md',
   'people/iyad-rahwan.md',
+  'zh-cn/people/iyad-rahwan.md',
   'references/bibliography.md',
+  'zh-cn/references/bibliography.md',
+  'references/consensus/index.md',
+  'zh-cn/references/consensus/index.md',
 ];
 
 const universallyProhibited = ['半神之后'];
 const policyExampleMarkers = ['专家说', '元认知重构'];
-const policyPage = 'methodology/publishing-policy.md';
+const policyPages = new Set([
+  'methodology/publishing-policy.md',
+  'zh-cn/methodology/publishing-policy.md',
+]);
 
 async function assertFile(base, rel) {
   const full = path.join(base, rel);
@@ -59,6 +79,11 @@ async function assertFile(base, rel) {
 for (const rel of requiredCanonical) await assertFile(repoRoot, rel);
 for (const rel of requiredGenerated) await assertFile(docsRoot, rel);
 
+for (const [en, zh] of corePairs) {
+  await assertFile(repoRoot, en);
+  await assertFile(repoRoot, zh);
+}
+
 async function collectMarkdown(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   const out = [];
@@ -71,7 +96,7 @@ async function collectMarkdown(dir) {
 }
 
 const generated = await collectMarkdown(docsRoot);
-if (generated.length < 16) throw new Error(`Expected at least 16 generated Markdown pages, found ${generated.length}`);
+if (generated.length < 26) throw new Error(`Expected at least 26 generated Markdown pages, found ${generated.length}`);
 
 for (const file of generated) {
   const text = await fs.readFile(file, 'utf8');
@@ -83,10 +108,10 @@ for (const file of generated) {
     }
   }
 
-  if (rel !== policyPage) {
+  if (!policyPages.has(rel)) {
     for (const needle of policyExampleMarkers) {
       if (text.includes(needle)) {
-        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside the publishing-policy page: ${rel}`);
+        throw new Error(`Private-only marker ${JSON.stringify(needle)} found outside publishing-policy pages: ${rel}`);
       }
     }
   }
@@ -103,6 +128,16 @@ if (weeklyEn.length === 0 || weeklyZh.length === 0) {
   throw new Error('Expected at least one dated weekly page in both English and Chinese');
 }
 
+const latestEnDate = weeklyEn
+  .map((file) => path.basename(file, '.md'))
+  .sort()
+  .at(-1);
+const latestZhDates = new Set(weeklyZh.map((file) => path.basename(file, '.md')));
+if (!latestEnDate || !latestZhDates.has(latestEnDate)) {
+  throw new Error(`Latest weekly research lacks Chinese parity: ${latestEnDate || 'unknown'}`);
+}
+
 console.log(`Verified ${generated.length} generated Markdown pages.`);
-console.log(`Weekly pairs available: EN=${weeklyEn.length}, ZH=${weeklyZh.length}.`);
-console.log('Public-content scan passed with policy-only marker exceptions.');
+console.log(`Bilingual core contract passed for ${corePairs.length} canonical page pairs.`);
+console.log(`Weekly pages available: EN=${weeklyEn.length}, ZH=${weeklyZh.length}; latest date is paired.`);
+console.log('Public-content scan passed with publishing-policy-only marker exceptions.');
