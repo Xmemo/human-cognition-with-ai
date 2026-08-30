@@ -1,23 +1,12 @@
 ---
 import Default from '@astrojs/starlight/components/Hero.astro';
+import CognitiveField from './CognitiveField.astro';
 
 const route = Astro.locals.starlightRoute;
 const { data } = route.entry;
 const isHomepage = route.id === '' || route.id === 'zh-cn';
 const isZh = route.id === 'zh-cn';
 const { title = data.title, tagline = '', actions = [] } = data.hero || {};
-
-const axes = isZh
-  ? [
-      { index: '01', name: 'CONTROL', question: '关键认知节点由谁控制？', token: 'GOALS · VERIFY · JUDGE' },
-      { index: '02', name: 'RETENTION', question: 'AI 离开后，人还保留什么？', token: 'EXPLAIN · TRANSFER · REPAIR' },
-      { index: '03', name: 'VARIANCE', question: '群体还剩多少探索空间？', token: 'DIVERSITY · SEARCH · CULTURE' },
-    ]
-  : [
-      { index: '01', name: 'CONTROL', question: 'Who controls the critical cognitive nodes?', token: 'GOALS · VERIFY · JUDGE' },
-      { index: '02', name: 'RETENTION', question: 'What remains when AI is removed?', token: 'EXPLAIN · TRANSFER · REPAIR' },
-      { index: '03', name: 'VARIANCE', question: 'How much collective search space remains?', token: 'DIVERSITY · SEARCH · CULTURE' },
-    ];
 ---
 
 {
@@ -29,7 +18,7 @@ const axes = isZh
         <div class="eyebrow">
           <span class="eyebrow-mark" aria-hidden="true"></span>
           <span>{isZh ? 'AI 时代人类认知研究观测站' : 'HUMAN COGNITION RESEARCH OBSERVATORY'}</span>
-          <span class="eyebrow-code">CRV / 03</span>
+          <span class="eyebrow-code">FIELD / LIVE</span>
         </div>
 
         <h1 id="_top" data-page-title set:html={title} />
@@ -37,8 +26,8 @@ const axes = isZh
 
         <p class="hero-thesis">
           {isZh
-            ? '不只追踪 AI 让人做得更好还是更差，而是持续观察：哪些认知控制权被保留、哪些能力真正留下，以及群体搜索空间如何变化。'
-            : 'We track more than whether AI improves output: which cognitive control points remain human, what capability survives after assistance, and how collective search space changes.'}
+            ? '我们关注的不只是 AI 让结果变好还是变差，而是人的认知控制、真正保留下来的能力，以及这些变化如何扩散到群体与文化。'
+            : 'We track more than whether AI improves output: how human cognitive control, retained capability, and collective search change as intelligence becomes increasingly external.'}
         </p>
 
         {actions.length > 0 && (
@@ -55,36 +44,7 @@ const axes = isZh
         )}
       </div>
 
-      <aside class="crv-instrument" aria-label={isZh ? 'Control、Retention、Variance 工作模型' : 'Control, Retention, Variance working model'}>
-        <div class="instrument-head">
-          <span>{isZh ? '工作模型' : 'WORKING MODEL'}</span>
-          <span class="instrument-status"><i aria-hidden="true"></i>{isZh ? '证据持续更新' : 'EVIDENCE UPDATING'}</span>
-        </div>
-
-        <div class="axis-stack">
-          {axes.map((axis) => (
-            <div class="axis-row">
-              <div class="axis-index">{axis.index}</div>
-              <div class="axis-copy">
-                <strong>{axis.name}</strong>
-                <span>{axis.question}</span>
-                <small>{axis.token}</small>
-              </div>
-              <div class="axis-mark" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div class="instrument-foot">
-          <span>PERSON</span>
-          <span class="flow-line" aria-hidden="true"></span>
-          <span>SYSTEM</span>
-          <span class="flow-line" aria-hidden="true"></span>
-          <span>CULTURE</span>
-        </div>
-      </aside>
+      <CognitiveField />
     </section>
   )
 }
