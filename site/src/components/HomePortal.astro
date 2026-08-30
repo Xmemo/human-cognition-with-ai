@@ -1,0 +1,129 @@
+---
+const route = Astro.locals.starlightRoute;
+const isZh = route.lang.toLowerCase().startsWith('zh');
+const rawBasePath = import.meta.env.BASE_URL || '/';
+const basePath = rawBasePath === '/' ? '' : rawBasePath.replace(/\/$/, '');
+const href = (path) => `${basePath}${path}`;
+
+const copy = isZh
+  ? {
+      stateKicker: '01 / 当前状态',
+      stateTitle: '先看现在知道什么',
+      stateLead: '首页只承担发现与导航。完整证据、限制、论文与方法进入对应研究页面阅读。',
+      latestTitle: '最新研究更新',
+      latestText: '查看最近一轮 9 条研究雷达扫描：新增了什么、哪些判断被强化、哪些结论仍不能下。',
+      baselineTitle: '当前研究基线',
+      baselineText: '查看目前证据能够支持的核心判断、证据等级、反证、限制与下一轮研究缺口。',
+      mapKicker: '02 / 研究地图',
+      mapTitle: '从人，到系统，再到文化',
+      humanTitle: '人类认知变化',
+      humanText: '认知外包、技能形成、专业能力、元认知、批判性思维、记忆、创造力与写作认知。',
+      systemTitle: '认知增强与治理',
+      systemText: '思维工具、人机协作、混合智能、认知韧性、作者性与责任。',
+      cultureTitle: '机器文化与集体认知',
+      cultureText: '机器文化、文化演化、集体智能、社会学习、规范与文化反馈。',
+      evidenceKicker: '03 / 证据与方法',
+      evidenceTitle: '研究是怎样被找到、核验和分级的',
+      hubTitle: '研究导航',
+      hubText: '查看当前状态、研究流、证据库与研究演化。',
+      protocolTitle: '检索协议',
+      protocolText: '三层检索、时间标签、原始来源核验与去重规则。',
+      gradingTitle: '证据分级',
+      gradingText: '理解 [A] / [B] / [C] / [S] 分别允许多强的结论语气。',
+      bibliographyTitle: '主参考文献',
+      bibliographyText: '论文标题、作者、期刊、会议和 DOI 保持原始英文书目信息。',
+      frontierKicker: '04 / 前沿追踪',
+      frontierTitle: 'Machine Culture 与 Iyad Rahwan',
+      frontierText: '持续追踪机器行为、机器文化、文化演化、社会学习、人机群体与 AI 元认知的前沿工作。',
+      open: '进入 →',
+    }
+  : {
+      stateKicker: '01 / CURRENT STATE',
+      stateTitle: 'Start with what the evidence supports now',
+      stateLead: 'The homepage is a discovery layer. Full evidence, limitations, papers, and methods live in the research documents behind it.',
+      latestTitle: 'Latest Research',
+      latestText: 'See the newest full scan across nine research radars: what changed, what strengthened, and what remains unsupported.',
+      baselineTitle: 'Current Evidence Baseline',
+      baselineText: 'See the project’s current claims, evidence grades, counterevidence, limitations, and highest-priority gaps.',
+      mapKicker: '02 / RESEARCH MAP',
+      mapTitle: 'From person, to system, to culture',
+      humanTitle: 'Human Cognitive Change',
+      humanText: 'Cognitive offloading, skill formation, expertise, metacognition, critical thinking, memory, creativity, and writing cognition.',
+      systemTitle: 'Cognitive Augmentation & Governance',
+      systemText: 'Tools for Thought, human–AI collaboration, hybrid intelligence, cognitive resilience, authorship, and responsibility.',
+      cultureTitle: 'Machine Culture & Collective Cognition',
+      cultureText: 'Machine Culture, cultural evolution, collective intelligence, social learning, norms, and cultural feedback.',
+      evidenceKicker: '03 / EVIDENCE & METHOD',
+      evidenceTitle: 'How research is found, verified, and graded',
+      hubTitle: 'Research Hub',
+      hubText: 'Navigate current state, research stream, evidence base, and research evolution.',
+      protocolTitle: 'Search Protocol',
+      protocolText: 'Three-layer retrieval, time labels, canonical-source verification, and deduplication rules.',
+      gradingTitle: 'Evidence Grading',
+      gradingText: 'Understand what [A] / [B] / [C] / [S] allow us to claim.',
+      bibliographyTitle: 'Master Bibliography',
+      bibliographyText: 'Paper titles, authors, venues, and DOI metadata remain in their canonical English form.',
+      frontierKicker: '04 / FRONTIER WATCH',
+      frontierTitle: 'Machine Culture and Iyad Rahwan',
+      frontierText: 'Tracking frontier work connecting machine behaviour, Machine Culture, cultural evolution, social learning, human–AI groups, and AI metacognition.',
+      open: 'Open →',
+    };
+
+const localePrefix = isZh ? '/zh-cn' : '';
+---
+
+<div class="observatory-home-shell portal-home" data-observatory-portal>
+  <section class="home-module module-latest" aria-labelledby="portal-state">
+    <div class="module-kicker"><span>01</span><b>{copy.stateKicker.replace(/^01 \/ /, '')}</b></div>
+    <h2 id="portal-state">{copy.stateTitle}</h2>
+    <p>{copy.stateLead}</p>
+    <article class="signal-card">
+      <strong>{copy.latestTitle}</strong>
+      <p>{copy.latestText}</p>
+      <a href={href(`${localePrefix}/weekly/`)}>{copy.open}</a>
+    </article>
+    <article class="signal-card">
+      <strong>{copy.baselineTitle}</strong>
+      <p>{copy.baselineText}</p>
+      <a href={href(`${localePrefix}/baseline/`)}>{copy.open}</a>
+    </article>
+  </section>
+
+  <section class="home-module module-map" aria-labelledby="portal-map">
+    <div class="module-kicker"><span>02</span><b>{copy.mapKicker.replace(/^02 \/ /, '')}</b></div>
+    <h2 id="portal-map">{copy.mapTitle}</h2>
+    <article class="domain-card">
+      <h3>{copy.humanTitle}</h3>
+      <p>{copy.humanText}</p>
+      <a href={href(`${localePrefix}/topics/human-cognitive-change/`)}>{copy.open}</a>
+    </article>
+    <article class="domain-card">
+      <h3>{copy.systemTitle}</h3>
+      <p>{copy.systemText}</p>
+      <a href={href(`${localePrefix}/topics/cognitive-augmentation-governance/`)}>{copy.open}</a>
+    </article>
+    <article class="domain-card">
+      <h3>{copy.cultureTitle}</h3>
+      <p>{copy.cultureText}</p>
+      <a href={href(`${localePrefix}/topics/machine-culture-collective-cognition/`)}>{copy.open}</a>
+    </article>
+  </section>
+
+  <section class="home-module module-start" aria-labelledby="portal-evidence">
+    <div class="module-kicker"><span>03</span><b>{copy.evidenceKicker.replace(/^03 \/ /, '')}</b></div>
+    <h2 id="portal-evidence">{copy.evidenceTitle}</h2>
+    <div class="portal-link-grid">
+      <a class="portal-link-card" href={href(`${localePrefix}/research/`)}><strong>{copy.hubTitle}</strong><span>{copy.hubText}</span></a>
+      <a class="portal-link-card" href={href(`${localePrefix}/methodology/search-protocol/`)}><strong>{copy.protocolTitle}</strong><span>{copy.protocolText}</span></a>
+      <a class="portal-link-card" href={href(`${localePrefix}/methodology/evidence-grading/`)}><strong>{copy.gradingTitle}</strong><span>{copy.gradingText}</span></a>
+      <a class="portal-link-card" href={href('/references/bibliography/')}><strong>{copy.bibliographyTitle}</strong><span>{copy.bibliographyText}</span></a>
+    </div>
+  </section>
+
+  <section class="home-module module-frontier featured-module" aria-labelledby="portal-frontier">
+    <div class="module-kicker"><span>04</span><b>{copy.frontierKicker.replace(/^04 \/ /, '')}</b></div>
+    <h2 id="portal-frontier">{copy.frontierTitle}</h2>
+    <p>{copy.frontierText}</p>
+    <p><a href={href(`${localePrefix}/people/iyad-rahwan/`)}>{copy.open}</a></p>
+  </section>
+</div>
