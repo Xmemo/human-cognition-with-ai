@@ -69,4 +69,4 @@ const chineseUrl = new URL(`${basePath}${chinesePath}`, Astro.url.origin).href;
 {hasLanguagePair && <link rel="alternate" hreflang="en" href={englishUrl} />}
 {hasLanguagePair && <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />}
 {hasLanguagePair && <link rel="alternate" hreflang="x-default" href={englishUrl} />}
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
