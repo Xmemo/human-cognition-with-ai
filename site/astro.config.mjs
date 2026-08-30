@@ -1,14 +1,15 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const siteUrl = process.env.SITE_URL?.trim();
+const siteUrl = process.env.SITE_URL?.trim() || 'https://xmemo.github.io';
 const rawBase = process.env.BASE_PATH?.trim() || '/';
 const normalizedBase = rawBase === '/'
   ? '/'
   : `/${rawBase.replace(/^\/+|\/+$/g, '')}`;
+const assetBase = normalizedBase === '/' ? '' : normalizedBase;
 
 export default defineConfig({
-  ...(siteUrl ? { site: siteUrl } : {}),
+  site: siteUrl,
   base: normalizedBase,
   trailingSlash: 'always',
   integrations: [
@@ -27,10 +28,17 @@ export default defineConfig({
         },
       ],
       customCss: ['./src/styles/custom.css'],
+      components: {
+        Hero: './src/components/ObservatoryHero.astro',
+        Head: './src/components/StructuredHead.astro',
+      },
       pagefind: true,
       head: [
+        { tag: 'link', attrs: { rel: 'icon', type: 'image/svg+xml', href: `${assetBase}/favicon.svg` } },
         { tag: 'meta', attrs: { property: 'og:site_name', content: 'Human Cognition with AI' } },
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+        { tag: 'meta', attrs: { name: 'application-name', content: 'Human Cognition with AI' } },
+        { tag: 'meta', attrs: { name: 'color-scheme', content: 'light dark' } },
       ],
       sidebar: [
         {

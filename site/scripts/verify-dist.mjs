@@ -33,6 +33,7 @@ const requiredRoutes = [
   'topics/machine-culture-collective-cognition/index.html',
   'people/iyad-rahwan/index.html',
   'references/bibliography/index.html',
+  'llms.txt',
 ];
 
 for (const rel of requiredRoutes) {
@@ -75,6 +76,33 @@ for (const file of htmlFiles) {
       }
     }
   }
+
+  if (!html.includes('application/ld+json')) {
+    throw new Error(`Missing structured JSON-LD metadata: ${rel}`);
+  }
+
+  if (html.includes('name="robots" content="noindex')) {
+    throw new Error(`Unexpected noindex directive in production page: ${rel}`);
+  }
+}
+
+const homeHtml = await fs.readFile(path.join(distRoot, 'index.html'), 'utf8');
+const zhHomeHtml = await fs.readFile(path.join(distRoot, 'zh-cn', 'index.html'), 'utf8');
+for (const [label, html] of [['English homepage', homeHtml], ['Chinese homepage', zhHomeHtml]]) {
+  if (!html.includes('data-observatory-hero')) {
+    throw new Error(`${label} did not render the ObservatoryHero override`);
+  }
+  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"')) {
+    throw new Error(`${label} is missing bilingual hreflang alternates`);
+  }
+}
+
+const llms = await fs.readFile(path.join(distRoot, 'llms.txt'), 'utf8');
+for (const needle of ['Current evidence baseline', 'Latest research update', '3×3 research map', 'Master bibliography']) {
+  if (!llms.includes(needle)) throw new Error(`llms.txt missing required entry: ${needle}`);
+}
+if (!llms.includes('not presented as a search-ranking signal')) {
+  throw new Error('llms.txt must retain the explicit non-ranking disclaimer');
 }
 
 const pagefindCandidates = ['pagefind/pagefind.js', '_pagefind/pagefind.js'];
@@ -83,5 +111,6 @@ if (!(await Promise.all(pagefindCandidates.map(exists))).some(Boolean)) {
 }
 
 console.log(`Verified ${requiredRoutes.length} required routes and ${htmlFiles.length} HTML pages.`);
+console.log('Observatory hero, JSON-LD, hreflang, and llms.txt checks passed.');
 console.log('Pagefind search bundle detected.');
 console.log('Built public-output scan passed with policy-only marker exceptions.');
