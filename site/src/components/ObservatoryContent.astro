@@ -1,0 +1,147 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+
+const route = Astro.locals.starlightRoute;
+const isHomepage = route.id === '' || route.id === 'zh-cn';
+---
+
+{
+  isHomepage ? (
+    <div class="observatory-home-shell" data-observatory-home>
+      <Default><slot /></Default>
+    </div>
+  ) : (
+    <Default><slot /></Default>
+  )
+}
+
+{isHomepage && (
+  <script is:inline>
+    (() => {
+      const shell = document.querySelector('[data-observatory-home]');
+      const root = shell?.querySelector('.sl-markdown-content');
+      if (!root || root.dataset.observatoryGrouped === 'true') return;
+      root.dataset.observatoryGrouped = 'true';
+
+      const normalize = (text) => text.replace(/\s+/g, ' ').trim().toLowerCase();
+      const moduleFor = (title) => {
+        const value = normalize(title);
+        if (value.includes('latest research') || value.includes('最新研究更新')) return 'latest';
+        if (value.includes('current findings') || value.includes('核心研究成果')) return 'findings';
+        if (value.includes('start here') || value.includes('从这里开始')) return 'start';
+        if (value === 'research map' || value === '研究地图') return 'map';
+        if (value.includes('frontier track') || value.includes('前沿专线')) return 'frontier';
+        if (value.includes('how we research') || value.includes('我们怎么做研究')) return 'method';
+        if (value.includes('bilingual publishing') || value.includes('双语、引用与研究边界')) return 'scope';
+        return 'other';
+      };
+
+      const labels = {
+        latest: ['01', 'LATEST SIGNALS', '最新研究信号'],
+        findings: ['02', 'CURRENT STATE', '当前研究结论'],
+        crv: ['03', 'WORKING MODEL', '工作模型'],
+        start: ['04', 'START HERE', '从这里开始'],
+        map: ['05', 'RESEARCH MAP', '研究地图'],
+        frontier: ['06', 'FRONTIER', '前沿专线'],
+        method: ['07', 'METHOD', '研究方法'],
+        scope: ['08', 'SCOPE', '发布边界'],
+        other: ['—', 'RESEARCH', '研究'],
+      };
+      const isZh = document.documentElement.lang.toLowerCase().startsWith('zh');
+
+      const original = [...root.children];
+      const intro = document.createElement('div');
+      intro.className = 'home-source-intro';
+      root.prepend(intro);
+
+      let currentSection = null;
+      for (const node of original) {
+        if (node.tagName === 'H2') {
+          const kind = moduleFor(node.textContent || '');
+          const section = document.createElement('section');
+          section.className = `home-module module-${kind}`;
+          section.dataset.module = kind;
+          const id = node.id || `home-${kind}`;
+          node.id = id;
+          section.setAttribute('aria-labelledby', id);
+
+          const [number, enLabel, zhLabel] = labels[kind] || labels.other;
+          const kicker = document.createElement('div');
+          kicker.className = 'module-kicker';
+          kicker.innerHTML = `<span>${number}</span><b>${isZh ? zhLabel : enLabel}</b>`;
+          section.appendChild(kicker);
+          section.appendChild(node);
+          root.appendChild(section);
+          currentSection = section;
+        } else if (currentSection) {
+          currentSection.appendChild(node);
+        } else {
+          intro.appendChild(node);
+        }
+      }
+
+      // The hero already communicates the project positioning. Keep the source intro in
+      // the canonical Markdown, but remove the duplicate prose from the visual homepage.
+      intro.hidden = true;
+
+      const findings = root.querySelector('.module-findings');
+      if (findings) {
+        const crvHeading = [...findings.querySelectorAll(':scope > h3')].find((heading) => {
+          const value = normalize(heading.textContent || '');
+          return value.includes('working model') || value.includes('当前工作模型');
+        });
+        if (crvHeading) {
+          const crv = document.createElement('section');
+          crv.className = 'home-module module-crv';
+          crv.dataset.module = 'crv';
+          crv.setAttribute('aria-labelledby', crvHeading.id || 'home-crv');
+          crvHeading.id = crvHeading.id || 'home-crv';
+          const [number, enLabel, zhLabel] = labels.crv;
+          const kicker = document.createElement('div');
+          kicker.className = 'module-kicker';
+          kicker.innerHTML = `<span>${number}</span><b>${isZh ? zhLabel : enLabel}</b>`;
+          crv.appendChild(kicker);
+          let cursor = crvHeading;
+          while (cursor) {
+            const next = cursor.nextSibling;
+            crv.appendChild(cursor);
+            cursor = next;
+          }
+          findings.after(crv);
+        }
+      }
+
+      const wrapHeadingGroups = (section, selector, className) => {
+        if (!section) return;
+        const headings = [...section.querySelectorAll(':scope > h3')].filter((heading) => selector.test((heading.textContent || '').trim()));
+        for (const heading of headings) {
+          if (heading.parentElement !== section) continue;
+          const card = document.createElement('article');
+          card.className = className;
+          section.insertBefore(card, heading);
+          let cursor = heading;
+          while (cursor) {
+            const next = cursor.nextSibling;
+            card.appendChild(cursor);
+            if (!next || (next.nodeType === 1 && next.tagName === 'H3')) break;
+            cursor = next;
+          }
+        }
+      };
+
+      const latest = root.querySelector('.module-latest');
+      latest?.querySelectorAll(':scope > p').forEach((paragraph) => {
+        const lead = paragraph.querySelector(':scope > strong');
+        if (lead && /^[1-4][｜|]/.test((lead.textContent || '').trim())) paragraph.classList.add('signal-card');
+      });
+
+      wrapHeadingGroups(root.querySelector('.module-findings'), /^(0[1-5])[｜|]/, 'finding-card');
+      wrapHeadingGroups(root.querySelector('.module-map'), /^[1-3][｜|]/, 'domain-card');
+
+      root.querySelector('.module-start table')?.classList.add('start-table');
+      root.querySelector('.module-crv table')?.classList.add('crv-table');
+      root.querySelector('.module-frontier')?.classList.add('featured-module');
+      root.querySelector('.module-method pre')?.classList.add('method-flow');
+    })();
+  </script>
+)}
