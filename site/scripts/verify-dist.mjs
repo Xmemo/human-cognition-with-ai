@@ -26,14 +26,27 @@ const requiredRoutes = [
   'weekly/index.html',
   'zh-cn/weekly/index.html',
   'research-map/index.html',
+  'zh-cn/research-map/index.html',
   'methodology/search-protocol/index.html',
+  'zh-cn/methodology/search-protocol/index.html',
   'methodology/evidence-grading/index.html',
+  'zh-cn/methodology/evidence-grading/index.html',
+  'methodology/publishing-policy/index.html',
+  'zh-cn/methodology/publishing-policy/index.html',
   'topics/human-cognitive-change/index.html',
+  'zh-cn/topics/human-cognitive-change/index.html',
   'topics/cognitive-augmentation-governance/index.html',
+  'zh-cn/topics/cognitive-augmentation-governance/index.html',
   'topics/machine-culture-collective-cognition/index.html',
+  'zh-cn/topics/machine-culture-collective-cognition/index.html',
   'people/iyad-rahwan/index.html',
+  'zh-cn/people/iyad-rahwan/index.html',
   'references/bibliography/index.html',
+  'zh-cn/references/bibliography/index.html',
+  'references/consensus/index.html',
+  'zh-cn/references/consensus/index.html',
   'llms.txt',
+  'sitemap-index.xml',
 ];
 
 for (const rel of requiredRoutes) {
@@ -92,8 +105,34 @@ for (const [label, html] of [['English homepage', homeHtml], ['Chinese homepage'
   if (!html.includes('data-observatory-hero')) {
     throw new Error(`${label} did not render the ObservatoryHero override`);
   }
+  if (!html.includes('data-cognitive-field')) {
+    throw new Error(`${label} did not render the animated CognitiveField visual`);
+  }
+  if (html.includes('class="crv-instrument"')) {
+    throw new Error(`${label} still renders the retired working-model hero panel`);
+  }
+  if (!html.includes('data-observatory-home')) {
+    throw new Error(`${label} did not render the structured homepage content shell`);
+  }
   if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"')) {
     throw new Error(`${label} is missing bilingual hreflang alternates`);
+  }
+}
+
+const chineseRouteMarkers = new Map([
+  ['zh-cn/research-map/index.html', '研究地图｜3 个领域 × 9 条雷达'],
+  ['zh-cn/methodology/search-protocol/index.html', '每周检索协议'],
+  ['zh-cn/methodology/evidence-grading/index.html', '证据分级'],
+  ['zh-cn/topics/human-cognitive-change/index.html', '人类认知变化'],
+  ['zh-cn/topics/cognitive-augmentation-governance/index.html', '认知增强与治理'],
+  ['zh-cn/topics/machine-culture-collective-cognition/index.html', '机器文化与集体认知'],
+  ['zh-cn/people/iyad-rahwan/index.html', '前沿追踪'],
+]);
+
+for (const [route, marker] of chineseRouteMarkers) {
+  const html = await fs.readFile(path.join(distRoot, route), 'utf8');
+  if (!html.includes(marker)) {
+    throw new Error(`Chinese parity route ${route} does not contain expected Chinese source marker ${JSON.stringify(marker)}`);
   }
 }
 
@@ -111,6 +150,7 @@ if (!(await Promise.all(pagefindCandidates.map(exists))).some(Boolean)) {
 }
 
 console.log(`Verified ${requiredRoutes.length} required routes and ${htmlFiles.length} HTML pages.`);
-console.log('Observatory hero, JSON-LD, hreflang, and llms.txt checks passed.');
-console.log('Pagefind search bundle detected.');
-console.log('Built public-output scan passed with policy-only marker exceptions.');
+console.log('Animated CognitiveField hero and structured homepage shell checks passed.');
+console.log(`Chinese parity markers passed for ${chineseRouteMarkers.size} core routes.`);
+console.log('JSON-LD, hreflang, sitemap, llms.txt, and Pagefind checks passed.');
+console.log('Built public-output scan passed with publishing-policy-only marker exceptions.');
