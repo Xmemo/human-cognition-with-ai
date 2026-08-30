@@ -6,6 +6,7 @@ const rawBase = process.env.BASE_PATH?.trim() || '/';
 const normalizedBase = rawBase === '/'
   ? '/'
   : `/${rawBase.replace(/^\/+|\/+$/g, '')}`;
+const assetBase = normalizedBase === '/' ? '' : normalizedBase;
 
 export default defineConfig({
   ...(siteUrl ? { site: siteUrl } : {}),
@@ -33,6 +34,7 @@ export default defineConfig({
       },
       pagefind: true,
       head: [
+        { tag: 'link', attrs: { rel: 'icon', type: 'image/svg+xml', href: `${assetBase}/favicon.svg` } },
         { tag: 'meta', attrs: { property: 'og:site_name', content: 'Human Cognition with AI' } },
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
         { tag: 'meta', attrs: { name: 'application-name', content: 'Human Cognition with AI' } },
