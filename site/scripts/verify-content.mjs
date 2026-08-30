@@ -65,6 +65,18 @@ const policyPages = new Set([
   'methodology/publishing-policy.md',
   'zh-cn/methodology/publishing-policy.md',
 ]);
+const untranslatedChineseEditorialMarkers = [
+  '**Source:**',
+  '**Authors:**',
+  '**Status:**',
+  '**Radars:**',
+  '**Why it matters：**',
+  'Field Signals',
+  'Domain 1｜Human Cognitive Change',
+  'Domain 2｜Cognitive Augmentation & Governance',
+  'Domain 3｜Machine Culture & Collective Cognition',
+  'R1 Cognitive Offloading, Skill Formation & Expertise',
+];
 
 async function assertFile(base, rel) {
   const full = path.join(base, rel);
@@ -116,6 +128,14 @@ for (const file of generated) {
     }
   }
 
+  if (rel.startsWith('zh-cn/') && !rel.startsWith('zh-cn/references/')) {
+    for (const needle of untranslatedChineseEditorialMarkers) {
+      if (text.includes(needle)) {
+        throw new Error(`Chinese editorial page still contains untranslated interface/taxonomy marker ${JSON.stringify(needle)}: ${rel}`);
+      }
+    }
+  }
+
   const unresolved = text.match(/\]\((?!https?:|mailto:|#)[^)]+\.md(?:#[^)]+)?\)/);
   if (unresolved) {
     throw new Error(`Unresolved Markdown source link in ${rel}: ${unresolved[0]}`);
@@ -131,16 +151,17 @@ if (weeklyEn.length === 0 || weeklyZh.length === 0) {
   throw new Error('Expected at least one dated weekly page in both English and Chinese');
 }
 
-const latestEnDate = weeklyEn
-  .map((file) => path.basename(file, '.md'))
-  .sort()
-  .at(-1);
-const latestZhDates = new Set(weeklyZh.map((file) => path.basename(file, '.md')));
-if (!latestEnDate || !latestZhDates.has(latestEnDate)) {
-  throw new Error(`Latest weekly research lacks Chinese parity: ${latestEnDate || 'unknown'}`);
+const enDates = new Set(weeklyEn.map((file) => path.basename(file, '.md')));
+const zhDates = new Set(weeklyZh.map((file) => path.basename(file, '.md')));
+for (const date of enDates) {
+  if (!zhDates.has(date)) throw new Error(`English weekly research lacks Chinese translation: ${date}`);
+}
+for (const date of zhDates) {
+  if (!enDates.has(date)) throw new Error(`Chinese weekly research lacks English source edition: ${date}`);
 }
 
 console.log(`Verified ${generated.length} generated Markdown pages.`);
 console.log(`Bilingual core contract passed for ${corePairs.length} canonical page pairs.`);
-console.log(`Weekly pages available: EN=${weeklyEn.length}, ZH=${weeklyZh.length}; latest date is paired.`);
+console.log(`Weekly parity passed for ${enDates.size} English/Chinese dated research updates.`);
+console.log('Chinese editorial-label localization checks passed; paper titles remain exempt.');
 console.log('Public-content scan passed with publishing-policy-only marker exceptions.');
