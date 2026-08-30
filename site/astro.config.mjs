@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const siteUrl = process.env.SITE_URL?.trim();
+const siteUrl = process.env.SITE_URL?.trim() || 'https://xmemo.github.io';
 const rawBase = process.env.BASE_PATH?.trim() || '/';
 const normalizedBase = rawBase === '/'
   ? '/'
@@ -9,7 +9,7 @@ const normalizedBase = rawBase === '/'
 const assetBase = normalizedBase === '/' ? '' : normalizedBase;
 
 export default defineConfig({
-  ...(siteUrl ? { site: siteUrl } : {}),
+  site: siteUrl,
   base: normalizedBase,
   trailingSlash: 'always',
   integrations: [
