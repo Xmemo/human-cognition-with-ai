@@ -9,7 +9,9 @@ const isHomepage = id === '' || id === 'zh-cn';
 const isResearchUpdate = /^(zh-cn\/)?weekly\/\d{4}-\d{2}-\d{2}$/.test(id);
 const dateMatch = id.match(/(\d{4}-\d{2}-\d{2})/);
 const pageUrl = Astro.url.href;
-const baseUrl = new URL(import.meta.env.BASE_URL, Astro.url.origin).href;
+const rawBasePath = import.meta.env.BASE_URL || '/';
+const basePath = rawBasePath.endsWith('/') ? rawBasePath : `${rawBasePath}/`;
+const baseUrl = new URL(basePath, Astro.url.origin).href;
 const githubUrl = 'https://github.com/Xmemo/human-cognition-with-ai';
 
 const schema = isHomepage
@@ -48,7 +50,6 @@ const schema = isHomepage
       ],
     };
 
-const basePath = import.meta.env.BASE_URL;
 const pathWithinSite = Astro.url.pathname.startsWith(basePath)
   ? Astro.url.pathname.slice(basePath.length)
   : Astro.url.pathname.replace(/^\//, '');
