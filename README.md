@@ -10,6 +10,8 @@ As memory, search, writing, reasoning, and judgment become increasingly external
 
 **Bilingual · Updated weekly · Evidence-first**
 
+🌐 **[Open the research website](https://xmemo.github.io/human-cognition-with-ai/)**
+
 [中文](README.zh-CN.md) · **[Current Findings](#current-findings)** · **[Latest Research](#latest-research)** · **[Research Map](#research-map)**
 
 ---
