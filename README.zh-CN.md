@@ -10,6 +10,8 @@
 
 **双语 · 每周更新 · Evidence-first（证据优先）**
 
+🌐 **[访问研究网站](https://xmemo.github.io/human-cognition-with-ai/)**
+
 [English](README.md) · **[核心研究成果](#核心研究成果)** · **[最新研究更新](#最新研究更新)** · **[研究地图](#研究地图)**
 
 ---
