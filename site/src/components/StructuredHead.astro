@@ -57,7 +57,7 @@ const englishPath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite.slice('
 const chinesePath = pathWithinSite.startsWith('zh-cn/') ? pathWithinSite : `zh-cn/${pathWithinSite}`;
 const hasLanguagePair =
   isHomepage ||
-  /^(zh-cn\/)?(weekly|baseline|research)(\/|$)/.test(id);
+  /^(zh-cn\/)?(weekly|baseline|research|research-map|methodology|topics|people|references)(\/|$)/.test(id);
 const englishUrl = new URL(`${basePath}${englishPath}`, Astro.url.origin).href;
 const chineseUrl = new URL(`${basePath}${chinesePath}`, Astro.url.origin).href;
 ---
