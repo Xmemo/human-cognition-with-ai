@@ -2,9 +2,15 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const siteUrl = process.env.SITE_URL?.trim();
+const rawBase = process.env.BASE_PATH?.trim() || '/';
+const normalizedBase = rawBase === '/'
+  ? '/'
+  : `/${rawBase.replace(/^\/+|\/+$/g, '')}`;
 
 export default defineConfig({
   ...(siteUrl ? { site: siteUrl } : {}),
+  base: normalizedBase,
+  trailingSlash: 'always',
   integrations: [
     starlight({
       title: 'Human Cognition with AI',
