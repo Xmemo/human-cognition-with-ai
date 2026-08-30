@@ -8,9 +8,18 @@ const siteRoot = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(siteRoot, '..');
 const docsRoot = path.join(siteRoot, 'src', 'content', 'docs');
 const repoUrl = 'https://github.com/Xmemo/human-cognition-with-ai';
+const rawBasePath = process.env.BASE_PATH?.trim() || '';
+const basePath = rawBasePath && rawBasePath !== '/'
+  ? `/${rawBasePath.replace(/^\/+|\/+$/g, '')}`
+  : '';
 
 const toPosix = (value) => value.split(path.sep).join('/');
 const yamlQuote = (value) => JSON.stringify(String(value));
+const publicRoute = (route) => {
+  const normalized = route.startsWith('/') ? route : `/${route}`;
+  if (!basePath) return normalized;
+  return normalized === '/' ? `${basePath}/` : `${basePath}${normalized}`;
+};
 
 async function exists(filePath) {
   try {
@@ -168,7 +177,7 @@ function rewriteLinks(markdown, sourceRel) {
     const suffix = fragment ? `#${fragment}` : '';
 
     const mapped = sourceToRoute.get(resolved) || directoryRoutes.get(resolved);
-    if (mapped) return `](${mapped}${suffix})`;
+    if (mapped) return `](${publicRoute(mapped)}${suffix})`;
 
     if (resolved.endsWith('.md') || resolved.endsWith('.bib') || resolved === 'CITATION.cff') {
       return `](${fallbackGitHubUrl(resolved)}${suffix})`;
@@ -194,10 +203,10 @@ function frontmatter({ title, description, source, locale, home }) {
       `  tagline: ${yamlQuote(zh ? '持续追踪 AI 如何改变人类认知、协作与文化的双语证据观测站。' : 'A bilingual, evidence-first observatory tracking how AI changes human cognition, collaboration, and culture.')}`,
       '  actions:',
       `    - text: ${yamlQuote(zh ? '阅读最新研究' : 'Read latest research')}`,
-      `      link: ${yamlQuote(zh ? `/zh-cn/weekly/${latestWeeklyDate}/` : `/weekly/${latestWeeklyDate}/`)}`,
+      `      link: ${yamlQuote(publicRoute(zh ? `/zh-cn/weekly/${latestWeeklyDate}/` : `/weekly/${latestWeeklyDate}/`))}`,
       '      icon: right-arrow',
       `    - text: ${yamlQuote(zh ? '当前研究基线' : 'Current Baseline')}`,
-      `      link: ${yamlQuote(zh ? '/zh-cn/baseline/' : '/baseline/')}`,
+      `      link: ${yamlQuote(publicRoute(zh ? '/zh-cn/baseline/' : '/baseline/'))}`,
       '      variant: minimal',
     );
   }
@@ -251,7 +260,7 @@ function weeklyArchive(locale) {
     const sourceSuffix = zh ? `${date}.zh-CN.md` : `${date}.en.md`;
     const hasLocale = weeklyFiles.some((file) => file.endsWith(sourceSuffix));
     if (!hasLocale) continue;
-    lines.push(`- **[${date}](${prefix}/weekly/${date}/)**`);
+    lines.push(`- **[${date}](${publicRoute(`${prefix}/weekly/${date}/`)})**`);
   }
   return `${lines.join('\n')}\n`;
 }
@@ -263,3 +272,4 @@ await fs.writeFile(path.join(docsRoot, 'zh-cn', 'weekly', 'index.md'), weeklyArc
 
 console.log(`Generated ${registrations.length + 2} Starlight pages from canonical repository content.`);
 console.log(`Current baseline: ${latestBaselineDate}; latest research update: ${latestWeeklyDate}.`);
+console.log(`Public base path: ${basePath || '/'}; generated internal links use deployment-safe routes.`);
