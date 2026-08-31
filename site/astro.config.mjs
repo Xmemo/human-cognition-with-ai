@@ -69,6 +69,7 @@ export default defineConfig({
           label: 'Evidence',
           translations: { 'zh-CN': '证据与方法' },
           items: [
+            { label: 'Open Questions & Research Gaps', translations: { 'zh-CN': '开放问题与研究缺口' }, slug: 'methodology/open-questions-research-gaps' },
             { label: 'Search Protocol', translations: { 'zh-CN': '检索协议' }, slug: 'methodology/search-protocol' },
             { label: 'Evidence Grading', translations: { 'zh-CN': '证据分级' }, slug: 'methodology/evidence-grading' },
             { label: 'Bibliography', translations: { 'zh-CN': '参考文献' }, slug: 'references/bibliography' },
