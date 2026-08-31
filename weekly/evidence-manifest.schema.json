@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xmemo.github.io/human-cognition-with-ai/schemas/weekly-evidence-manifest-v1.json",
+  "title": "Human Cognition with AI Weekly Evidence Manifest",
+  "description": "Machine-readable frozen evidence set shared by the English and Simplified Chinese weekly research editions. The manifest is a transport and QA contract, not an independent source of scientific truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_version",
+    "run_date",
+    "retrofitted",
+    "editorial_languages",
+    "retrieval_layers",
+    "coverage",
+    "baseline_compared_to",
+    "baseline_decision",
+    "new_baseline",
+    "items",
+    "gap_changes"
+  ],
+  "properties": {
+    "manifest_version": { "const": "1.0" },
+    "run_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "retrofitted": { "type": "boolean" },
+    "editorial_languages": {
+      "type": "array",
+      "const": ["en", "zh-CN"]
+    },
+    "retrieval_layers": {
+      "type": "array",
+      "const": ["CONSENSUS", "FRESHNESS", "FRONTIER"]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9"],
+      "properties": {
+        "R1": { "$ref": "#/$defs/coverageLevel" },
+        "R2": { "$ref": "#/$defs/coverageLevel" },
+        "R3": { "$ref": "#/$defs/coverageLevel" },
+        "R4": { "$ref": "#/$defs/coverageLevel" },
+        "R5": { "$ref": "#/$defs/coverageLevel" },
+        "R6": { "$ref": "#/$defs/coverageLevel" },
+        "R7": { "$ref": "#/$defs/coverageLevel" },
+        "R8": { "$ref": "#/$defs/coverageLevel" },
+        "R9": { "$ref": "#/$defs/coverageLevel" }
+      }
+    },
+    "baseline_compared_to": { "type": "string", "pattern": "^research/baseline-\\d{4}-\\d{2}-\\d{2}\\.en\\.md$" },
+    "baseline_decision": { "enum": ["NO_CHANGE", "NEW_BASELINE"] },
+    "new_baseline": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string", "pattern": "^research/baseline-\\d{4}-\\d{2}-\\d{2}\\.en\\.md$" }
+      ]
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": { "$ref": "#/$defs/evidenceItem" }
+    },
+    "gap_changes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["newly_exposed", "persistent", "narrowed", "closed"],
+      "properties": {
+        "newly_exposed": { "$ref": "#/$defs/gapIdArray" },
+        "persistent": { "$ref": "#/$defs/gapIdArray" },
+        "narrowed": { "$ref": "#/$defs/gapIdArray" },
+        "closed": { "$ref": "#/$defs/gapIdArray" }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "coverageLevel": { "enum": ["HIGH", "MEDIUM", "LOW"] },
+    "gapIdArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^G\\d{2,3}$" }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "canonical_title",
+        "publication_date",
+        "temporal_status",
+        "radars",
+        "evidence_grade",
+        "item_type",
+        "doi",
+        "canonical_url"
+      ],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 3 },
+        "canonical_title": { "type": "string", "minLength": 5 },
+        "publication_date": { "type": "string", "pattern": "^\\d{4}(-\\d{2}-\\d{2})?$" },
+        "temporal_status": { "enum": ["NEW", "NEWLY_INDEXED", "NEWLY_DISCOVERED"] },
+        "radars": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9"] }
+        },
+        "evidence_grade": { "enum": ["A", "B", "C", "S"] },
+        "item_type": { "type": "string", "minLength": 2 },
+        "doi": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^10\\.\\d{4,9}/\\S+$" }
+          ]
+        },
+        "canonical_url": { "type": "string", "pattern": "^https://" }
+      }
+    }
+  }
+}
