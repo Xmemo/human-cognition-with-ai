@@ -1,0 +1,53 @@
+name: Deterministic Research QA
+
+on:
+  pull_request:
+    paths:
+      - 'weekly/**'
+      - 'references/**'
+      - 'research/**'
+      - 'methodology/**'
+      - 'topics/**'
+      - 'people/**'
+      - 'docs/architecture/**'
+      - '.github/scripts/research_qa.py'
+      - '.github/scripts/test_research_qa.py'
+      - '.github/workflows/research-qa.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'weekly/**'
+      - 'references/**'
+      - 'research/**'
+      - 'methodology/**'
+      - 'topics/**'
+      - 'people/**'
+      - 'docs/architecture/**'
+      - '.github/scripts/research_qa.py'
+      - '.github/scripts/test_research_qa.py'
+      - '.github/workflows/research-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout full history for PR risk classification
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Self-test research risk classification
+        run: python .github/scripts/test_research_qa.py
+
+      - name: Validate frozen evidence manifests and research invariants
+        run: python .github/scripts/research_qa.py

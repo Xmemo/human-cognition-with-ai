@@ -1,0 +1,165 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-08-29",
+  "retrofitted": true,
+  "editorial_languages": ["en", "zh-CN"],
+  "retrieval_layers": ["CONSENSUS", "FRESHNESS", "FRONTIER"],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "HIGH",
+    "R7": "MEDIUM",
+    "R8": "HIGH",
+    "R9": "HIGH"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1906199",
+      "canonical_title": "Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes",
+      "publication_date": "2026-08-28",
+      "temporal_status": "NEW",
+      "radars": ["R1", "R2", "R3", "R4"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.3389/fpsyg.2026.1906199",
+      "canonical_url": "https://doi.org/10.3389/fpsyg.2026.1906199"
+    },
+    {
+      "source_id": "doi:10.1073/pnas.2422633122",
+      "canonical_title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "publication_date": "2025",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R1", "R4"],
+      "evidence_grade": "A",
+      "item_type": "journal_article",
+      "doi": "10.1073/pnas.2422633122",
+      "canonical_url": "https://doi.org/10.1073/pnas.2422633122"
+    },
+    {
+      "source_id": "doi:10.1145/3772318.3791185",
+      "canonical_title": "Partnering with Generative AI: Experimental Evaluation of Model-Led and Human-Led Interaction in Human-AI Co-Creation",
+      "publication_date": "2026",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R3", "R4", "R5", "R6"],
+      "evidence_grade": "A",
+      "item_type": "conference_paper",
+      "doi": "10.1145/3772318.3791185",
+      "canonical_url": "https://doi.org/10.1145/3772318.3791185"
+    },
+    {
+      "source_id": "doi:10.1038/s41598-026-42312-6",
+      "canonical_title": "Relying on AI at work reduces self-efficacy, ownership, and meaning while active collaboration mitigates the effects",
+      "publication_date": "2026-03-15",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R1", "R4", "R6"],
+      "evidence_grade": "A",
+      "item_type": "journal_article",
+      "doi": "10.1038/s41598-026-42312-6",
+      "canonical_url": "https://doi.org/10.1038/s41598-026-42312-6"
+    },
+    {
+      "source_id": "doi:10.1080/10447318.2026.2669041",
+      "canonical_title": "Expertise Elevates AI Usage: Experimental Evidence Comparing Laypeople and Professional Artists",
+      "publication_date": "2026-05-18",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R1", "R3", "R5"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.1080/10447318.2026.2669041",
+      "canonical_url": "https://doi.org/10.1080/10447318.2026.2669041"
+    },
+    {
+      "source_id": "doi:10.1016/j.chbr.2026.101103",
+      "canonical_title": "Understanding Critical Thinking in Generative Artificial Intelligence Use",
+      "publication_date": "2026",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R2", "R3", "R6"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.1016/j.chbr.2026.101103",
+      "canonical_url": "https://doi.org/10.1016/j.chbr.2026.101103"
+    },
+    {
+      "source_id": "doi:10.1145/3742413.3789121",
+      "canonical_title": "Whose Code Is It? How AI Autonomy Reshapes Ownership, Responsibility, and Disclosure in AI-Assisted Programming",
+      "publication_date": "2026",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R3", "R6"],
+      "evidence_grade": "B",
+      "item_type": "conference_paper",
+      "doi": "10.1145/3742413.3789121",
+      "canonical_url": "https://doi.org/10.1145/3742413.3789121"
+    },
+    {
+      "source_id": "doi:10.1007/s43681-026-01330-w",
+      "canonical_title": "Identical errors, different responsibilities: epistemic duty in AI-assisted scientific writing",
+      "publication_date": "2026-08-26",
+      "temporal_status": "NEW",
+      "radars": ["R2", "R6"],
+      "evidence_grade": "C",
+      "item_type": "journal_article",
+      "doi": "10.1007/s43681-026-01330-w",
+      "canonical_url": "https://doi.org/10.1007/s43681-026-01330-w"
+    },
+    {
+      "source_id": "doi:10.1038/s41746-026-02918-6",
+      "canonical_title": "Human-AI Collaboration in Healthcare: A Scoping Review",
+      "publication_date": "2026-06-20",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R5", "R6"],
+      "evidence_grade": "B",
+      "item_type": "scoping_review",
+      "doi": "10.1038/s41746-026-02918-6",
+      "canonical_url": "https://doi.org/10.1038/s41746-026-02918-6"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2602.10001",
+      "canonical_title": "Human-AI Synergy Supports Collective Creative Search",
+      "publication_date": "2026",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R3", "R5", "R8"],
+      "evidence_grade": "B",
+      "item_type": "preprint",
+      "doi": "10.48550/arXiv.2602.10001",
+      "canonical_url": "https://doi.org/10.48550/arXiv.2602.10001"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2607.07021",
+      "canonical_title": "Learning social norms enhances compatibility in dynamic human-AI coordination",
+      "publication_date": "2026-07-08",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R5", "R9"],
+      "evidence_grade": "B",
+      "item_type": "preprint",
+      "doi": "10.48550/arXiv.2607.07021",
+      "canonical_url": "https://doi.org/10.48550/arXiv.2607.07021"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2507.13524",
+      "canonical_title": "Humans learn to prefer trustworthy AI over human partners",
+      "publication_date": "2025",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R8", "R9"],
+      "evidence_grade": "B",
+      "item_type": "preprint",
+      "doi": "10.48550/arXiv.2507.13524",
+      "canonical_url": "https://doi.org/10.48550/arXiv.2507.13524"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": ["G01", "G02", "G03", "G04", "G05", "G06"],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Retrofitted after publication to establish the v1 manifest baseline. The public Markdown files were not rewritten for this backfill.",
+    "Future non-retrofitted manifests are held to stricter bilingual title/DOI/grade checks by deterministic Research QA."
+  ]
+}
