@@ -1,0 +1,100 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-09-04",
+  "retrofitted": false,
+  "editorial_languages": ["en", "zh-CN"],
+  "retrieval_layers": ["CONSENSUS", "FRESHNESS", "FRONTIER"],
+  "coverage": {
+    "R1": "LOW",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "MEDIUM",
+    "R7": "LOW",
+    "R8": "HIGH",
+    "R9": "HIGH"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.1073/pnas.2530627123",
+      "canonical_title": "Personality pairing improves human-AI collaboration",
+      "publication_date": "2026-08-28",
+      "temporal_status": "NEW",
+      "radars": ["R5"],
+      "evidence_grade": "A",
+      "item_type": "journal_article",
+      "doi": "10.1073/pnas.2530627123",
+      "canonical_url": "https://www.pnas.org/doi/10.1073/pnas.2530627123"
+    },
+    {
+      "source_id": "doi:10.1038/s44488-026-00018-8",
+      "canonical_title": "Large language models outperform humans at estimating society’s everyday norms",
+      "publication_date": "2026-09-01",
+      "temporal_status": "NEW",
+      "radars": ["R5", "R8", "R9"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.1038/s44488-026-00018-8",
+      "canonical_url": "https://doi.org/10.1038/s44488-026-00018-8"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1830103",
+      "canonical_title": "From tool to scaffold: structured human–AI collaboration and its effects on academic writing and digital critical thinking among Saudi EFL learners",
+      "publication_date": "2026-05-26",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R2", "R3", "R4", "R6"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.3389/fpsyg.2026.1830103",
+      "canonical_url": "https://doi.org/10.3389/fpsyg.2026.1830103"
+    },
+    {
+      "source_id": "doi:10.1002/jcal.70223",
+      "canonical_title": "Group-AI Collaboration Enhances Creativity Performance: The Roles of Perspective-Taking and AI Utilisation Strategies",
+      "publication_date": "2026-03-09",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R3", "R5", "R8"],
+      "evidence_grade": "B",
+      "item_type": "journal_article",
+      "doi": "10.1002/jcal.70223",
+      "canonical_url": "https://doi.org/10.1002/jcal.70223"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2604.08678",
+      "canonical_title": "Scaffolding Human-AI Collaboration: A Field Experiment on Behavioral Protocols and Cognitive Reframing",
+      "publication_date": "2026-04-09",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R4", "R5"],
+      "evidence_grade": "B",
+      "item_type": "preprint",
+      "doi": "10.48550/arXiv.2604.08678",
+      "canonical_url": "https://doi.org/10.48550/arXiv.2604.08678"
+    },
+    {
+      "source_id": "institution:acm-ci-2026-program",
+      "canonical_title": "ACM Collective Intelligence 2026 — Draft Program",
+      "publication_date": "2026-09-01",
+      "temporal_status": "NEW",
+      "radars": ["R5", "R8"],
+      "evidence_grade": "S",
+      "item_type": "conference_program",
+      "doi": null,
+      "canonical_url": "https://ci.acm.org/2026/index.html"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": ["G01", "G02", "G03", "G04", "G05", "G06"],
+    "narrowed": ["G05"],
+    "closed": []
+  },
+  "notes": [
+    "The PNAS personality-pairing paper was previously available as arXiv:2511.13979 and entered the formal journal record during this scan window; the journal publication is treated as NEW because its version of record was published on 2026-08-28.",
+    "G05 is narrowed, not closed: the new norm-estimation study identifies correlated model error versus more independent human error as one concrete mechanism for hybrid advantage, but does not map general network topologies or long-run collective variance.",
+    "No fresh R7 empirical result displaced the 2026-08-18 Machine Culture transmission study as the current anchor."
+  ]
+}
