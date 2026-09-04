@@ -120,9 +120,9 @@ Each gap should contain:
 - **Radars:** R3, R5, R8, R9
 - **Type:** MECHANISM GAP / ECOLOGICAL GAP
 - **Status:** `REPEAT`
-- **Observed basis:** Model-led co-creation can reduce diversity, while some hybrid human–AI collective-search designs preserve both performance and outcome diversity.
-- **Why unresolved:** Effects appear conditional on interaction structure, group composition, model heterogeneity, and transmission, but these variables have not been mapped systematically.
-- **Last reviewed:** 2026-08-29
+- **Observed basis:** Model-led co-creation can reduce diversity, while some hybrid human–AI collective-search designs preserve both performance and outcome diversity. A 2026-09-01 norm-estimation study adds a concrete complementarity mechanism: across 555 everyday scenarios, strong LLMs outperformed individual humans, but model errors were substantially more correlated while human errors were more independent; human aggregation improved strongly and human–LLM hybrids achieved the lowest error.
+- **Why unresolved:** Error correlation now provides one empirically supported mechanism for hybrid advantage, but the field still has not mapped how interaction topology, group composition, model heterogeneity, transmission, task type, and time scale jointly determine performance and collective variance in real systems.
+- **Last reviewed:** 2026-09-04
 
 ## G06｜Do Machine Culture feedback loops persist in real social systems?
 
