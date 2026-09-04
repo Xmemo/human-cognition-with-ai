@@ -88,7 +88,7 @@
   ],
   "gap_changes": {
     "newly_exposed": [],
-    "persistent": ["G01", "G02", "G03", "G04", "G05", "G06"],
+    "persistent": ["G01", "G02", "G03", "G04", "G06"],
     "narrowed": ["G05"],
     "closed": []
   },
