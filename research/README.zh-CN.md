@@ -22,7 +22,7 @@
 
 Baseline 是这个项目关于“目前证据能支持什么”的标准版本。它包含证据边界、限制、目前不能下的结论、重要未解决问题，以及当前 **Control / Retention / Variance** 工作模型。
 
-**2026-08-29 完整重扫结论：Baseline 保持不变。** 新研究明显增强了 Control 与 Retention 的实证基础，并让 Variance 的表述变得更条件化，但没有改变三维工作模型或 3×3 Research Map，因此没有为了“有更新”而创建重复 Baseline。
+**2026-09-04 周报判断：Baseline 保持不变。** 本周新增证据强化了 person–agent fit（人—Agent 匹配）、工作流摩擦以及人类 / 模型错误结构互补，但仍不足以推翻 2026-08-29 Baseline 或创建新的带日期版本。
 
 ### 当前研究地图
 
@@ -47,22 +47,27 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 - 什么样的人机网络能同时提高绩效并保留群体差异与探索空间；
 - Machine Culture（机器文化）的传播、规范与伙伴选择效应能否长期进入真实组织和文化生态。
 
+**2026-09-04：G05 被缩小，但没有关闭。** 新的社会规范估计证据表明，“模型错误更相关、人的错误更独立”是混合智能获得优势的一个具体机制；一般性网络拓扑与长期 collective variance 仍未解决。
+
 每个 gap 使用 `OBSERVE`、`REPEAT` 或 `CANDIDATE` 三种状态。**只有人工决策才能把一个反复出现的 gap 升级到未来 Research Lab。**
 
 ---
 
 ## 3｜Research Stream｜研究流
 
-### 最新完整研究刷新
+### 最新每周研究简报
 
-- 🇨🇳 **[2026-08-29 中文研究刷新](../weekly/2026/2026-08-29.zh-CN.md)**
-- 🇬🇧 **[2026-08-29 English Research Refresh](../weekly/2026/2026-08-29.en.md)**
+- 🇨🇳 **[2026-09-04 中文每周研究简报](../weekly/2026/2026-09-04.zh-CN.md)**
+- 🇬🇧 **[2026-09-04 English Weekly Research Brief](../weekly/2026/2026-09-04.en.md)**
+- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-04.evidence.json)**
 
-这次不是只补一两篇论文，而是按当前正式机制重新扫描全部 **9 条雷达 × 3 层检索**。最重要的新变化是：直接测量无 AI 迁移 / 重新独立工作的研究开始增加，使 **Retention** 从研究理念进一步进入实验设计；同时不同领域对人主导、受约束、主动协作与模型主导、被动使用、开放式委托的比较，使 **Control** 获得更强的实证支撑。
+本周最重要的两个新变化是：一项大型 PNAS 随机实验显示，**人—AI 的 personality pairing（个性配对）**可以因果性地改变团队合作和任务表现；另一项新的 *Communications AI & Computing* 研究则发现，强 LLM 可以在社会规范估计上胜过单个普通人，但模型之间的错误更相关，因此多人聚合与人机混合仍然具有特殊价值。
+
+本周也加入了一组有用的限制性证据：在一个课堂环境里，验证丰富、责任导向的结构化 AI 写作有积极效果；但在企业现场实验中，僵硬的强制协作流程却可能引入显著的实施摩擦。
 
 Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了变化？”** 只有新证据真正改变结论强度、边界、重要证据缺口或工作模型时，才创建新的带日期 Baseline。
 
-从下一轮开始，每次 Weekly Brief / Research Refresh 都在末尾固定加入 **Open Questions & Research Gaps｜开放问题与研究缺口**，区分“本轮新暴露”“持续存在”“已缩小 / 已关闭”。这个栏目必须来自已经核验的证据，而不是自由生成研究假设。
+每次 Weekly Brief / Research Refresh 都在末尾固定加入 **Open Questions & Research Gaps｜开放问题与研究缺口**，区分“本轮新暴露”“持续存在”“已缩小 / 已关闭”。这个栏目必须来自已经核验的证据，而不是自由生成研究假设。
 
 ### 历史周报
 
@@ -81,6 +86,7 @@ Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了�
 
 - **[首批 Consensus 文献台账](../references/consensus.md)**
 - **[2026-08-29 Consensus 增量与完整重扫台账](../references/consensus/2026-08-29.md)**
+- **[2026-09-04 Consensus 每周台账](../references/consensus/2026-09-04.md)**
 
 Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为基础证据。**
 
