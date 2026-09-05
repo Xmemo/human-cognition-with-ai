@@ -22,7 +22,7 @@ This is the second-layer navigation hub behind the public dashboard. It separate
 
 The Baseline is the canonical statement of what the project currently believes the evidence can support. It contains evidence boundaries, caveats, unsupported conclusions, open questions, and the current **Control / Retention / Variance** working model.
 
-**Full-rescan decision on 2026-08-29: Baseline unchanged.** New research strengthened the empirical basis for Control and Retention and made the Variance story more explicitly conditional, but did not change the three-dimensional model or the 3×3 Research Map. No duplicate Baseline was created merely to signal activity.
+**2026-09-04 weekly decision: Baseline unchanged.** New research adds stronger evidence for person–agent fit, workflow friction, and complementary human/model error structure, but does not overturn the 2026-08-29 Baseline or justify a new dated version.
 
 ### Current Research Map
 
@@ -47,22 +47,27 @@ Current recurring gaps include:
 - human–AI network structures that raise performance while preserving collective variance;
 - real-world persistence of Machine Culture transmission, norm, and partner-selection effects.
 
+**2026-09-04:** G05 was narrowed, not closed. New norm-estimation evidence identifies correlated model error versus more independent human error as one concrete mechanism for hybrid advantage, while general network topology and long-run collective variance remain unresolved.
+
 Each gap is tracked as `OBSERVE`, `REPEAT`, or `CANDIDATE`. **Only a human decision can promote a recurring gap into a future Research Lab.**
 
 ---
 
 ## 3｜Research Stream
 
-### Latest Full Research Refresh
+### Latest Weekly Research Brief
 
-- 🇬🇧 **[2026-08-29 English Research Refresh](../weekly/2026/2026-08-29.en.md)**
-- 🇨🇳 **[2026-08-29 中文研究刷新](../weekly/2026/2026-08-29.zh-CN.md)**
+- 🇬🇧 **[2026-09-04 English Weekly Research Brief](../weekly/2026/2026-09-04.en.md)**
+- 🇨🇳 **[2026-09-04 中文每周研究简报](../weekly/2026/2026-09-04.zh-CN.md)**
+- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-04.evidence.json)**
 
-This was not a narrow paper update. It re-scanned all **9 radars × 3 retrieval layers** under the repository's current protocol. The most important change is that more studies now directly measure no-AI transfer or return-to-manual-work outcomes, moving **Retention** further into experimental design. Cross-domain comparisons between `human-led / bounded / active` and `model-led / passive / open delegation` also give **Control** stronger empirical support.
+The strongest fresh changes this week are twofold: a large randomized PNAS study shows that **person–agent personality pairing** can causally alter human–AI teamwork and task performance, while a new *Communications AI & Computing* study shows that strong LLMs can outperform individual humans at estimating average social norms yet still share correlated errors, making human aggregation and human–LLM hybrids especially valuable.
 
-Weekly briefs and research refreshes answer **“Where did the field change?”** A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the working model.
+The week also adds bounded counterevidence to simple workflow prescriptions: structured verification-rich writing can help in one context, while a rigid mandated collaboration protocol can create substantial implementation friction in another.
 
-Future Weekly Briefs / Research Refreshes also end with **Open Questions & Research Gaps**, distinguishing newly exposed gaps, persistent gaps, and narrowed/closed gaps. The section must be grounded in the verified evidence set rather than free-form hypothesis generation.
+Weekly briefs answer **“Where did the field change?”** A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the working model.
+
+Every Weekly Brief / Research Refresh ends with **Open Questions & Research Gaps**, distinguishing newly exposed gaps, persistent gaps, and narrowed/closed gaps. The section must be grounded in the verified evidence set rather than free-form hypothesis generation.
 
 ### Archive
 
@@ -81,6 +86,7 @@ Future Weekly Briefs / Research Refreshes also end with **Open Questions & Resea
 
 - **[Initial Consensus ledger](../references/consensus.md)**
 - **[2026-08-29 Consensus refresh + full-rescan ledger](../references/consensus/2026-08-29.md)**
+- **[2026-09-04 Consensus weekly ledger](../references/consensus/2026-09-04.md)**
 
 A Consensus ledger records fetch-verified discovery provenance; inclusion in a ledger does not automatically promote a paper to foundational evidence.
 

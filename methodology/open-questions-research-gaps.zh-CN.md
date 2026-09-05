@@ -118,9 +118,9 @@ Open Questions & Research Gaps
 - **Radars：** R3、R5、R8、R9
 - **Type：** MECHANISM GAP / ECOLOGICAL GAP
 - **Status：** `REPEAT`
-- **Observed basis：** 模型主导的共同创作可能降低多样性，而部分混合人机群体搜索设计却可以同时维持高表现与高结果多样性。
-- **Why unresolved：** 结果似乎依赖交互结构、群体构成、模型异质性与传播机制，但这些变量还没有被系统绘制。
-- **Last reviewed：** 2026-08-29
+- **Observed basis：** 模型主导的共同创作可能降低多样性，而部分混合人机群体搜索设计却可以同时维持高表现与高结果多样性。2026-09-01 新发表的社会规范估计研究进一步给出一个具体的互补机制：在 555 个日常情境中，强 LLM 单独表现优于普通个体，但模型之间的错误明显更相关，而人的错误更独立；因此多人聚合获得显著增益，人类 + LLM 的混合聚合取得最低误差。
+- **Why unresolved：** error correlation（错误相关性）现在成为一个得到直接实证支持的混合优势机制，但研究仍未系统绘制交互拓扑、群体构成、模型异质性、传播方式、任务类型与时间尺度如何共同决定真实系统中的表现和 collective variance（集体差异）。
+- **Last reviewed：** 2026-09-04
 
 ## G06｜Machine Culture（机器文化）的反馈循环能否在真实社会系统里持续存在？
 
