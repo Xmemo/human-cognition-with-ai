@@ -1,5 +1,4 @@
 {
-  "$schema": "../evidence-manifest.schema.json",
   "manifest_version": "1.0",
   "run_date": "2026-09-10",
   "retrofitted": false,
