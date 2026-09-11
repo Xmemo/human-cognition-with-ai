@@ -1,0 +1,107 @@
+{
+  "$schema": "../evidence-manifest.schema.json",
+  "manifest_version": "1.0",
+  "run_date": "2026-09-10",
+  "retrofitted": false,
+  "editorial_languages": ["en", "zh-CN"],
+  "retrieval_layers": ["CONSENSUS", "FRESHNESS", "FRONTIER"],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "MEDIUM",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "MEDIUM",
+    "R7": "HIGH",
+    "R8": "HIGH",
+    "R9": "HIGH"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.1057/s41599-026-08959-2",
+      "canonical_title": "The dependency trap: a systematic review of the contributing factors and consequences of student over-reliance on generative AI in higher education",
+      "publication_date": "2026-09-04",
+      "temporal_status": "NEW",
+      "radars": ["R1", "R2", "R4", "R6"],
+      "evidence_grade": "B",
+      "item_type": "systematic review of 54 empirical studies",
+      "doi": "10.1057/s41599-026-08959-2",
+      "canonical_url": "https://www.nature.com/articles/s41599-026-08959-2"
+    },
+    {
+      "source_id": "doi:10.3389/feduc.2026.1878665",
+      "canonical_title": "Between cognitive offloading and critical autonomy: a systematic review of the epistemic implications of generative AI in higher education",
+      "publication_date": "2026-09-03",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R1", "R2", "R3", "R4"],
+      "evidence_grade": "B",
+      "item_type": "PRISMA systematic review of 26 empirical studies",
+      "doi": "10.3389/feduc.2026.1878665",
+      "canonical_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1878665/full"
+    },
+    {
+      "source_id": "doi:10.3389/fcomp.2026.1915035",
+      "canonical_title": "Behind the screen: laypersons' mental models about ChatGPT",
+      "publication_date": "2026-09-07",
+      "temporal_status": "NEW",
+      "radars": ["R2", "R4", "R6"],
+      "evidence_grade": "C",
+      "item_type": "qualitative interview study, N=21",
+      "doi": "10.3389/fcomp.2026.1915035",
+      "canonical_url": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1915035/full"
+    },
+    {
+      "source_id": "doi:10.1038/s41598-026-65454-z",
+      "canonical_title": "Text comprehension moderates cognitive biases toward AI authorship in literary content",
+      "publication_date": "2026-09-08",
+      "temporal_status": "NEW",
+      "radars": ["R3", "R6"],
+      "evidence_grade": "B",
+      "item_type": "empirical literary-evaluation study",
+      "doi": "10.1038/s41598-026-65454-z",
+      "canonical_url": "https://www.nature.com/articles/s41598-026-65454-z"
+    },
+    {
+      "source_id": "doi:10.1057/s41599-026-09043-5",
+      "canonical_title": "Dancing with AI: how human-AI interaction affects employee task performance",
+      "publication_date": "2026-09-09",
+      "temporal_status": "NEW",
+      "radars": ["R2", "R5", "R6"],
+      "evidence_grade": "B",
+      "item_type": "grounded-theory, scale-development, and workplace survey study",
+      "doi": "10.1057/s41599-026-09043-5",
+      "canonical_url": "https://www.nature.com/articles/s41599-026-09043-5"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2609.02122",
+      "canonical_title": "AI agents reshape consensus formation in human groups",
+      "publication_date": "2026-09-02",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R5", "R7", "R8", "R9"],
+      "evidence_grade": "B",
+      "item_type": "controlled mixed human-LLM group experiment, preprint",
+      "doi": "10.48550/arXiv.2609.02122",
+      "canonical_url": "https://arxiv.org/abs/2609.02122"
+    },
+    {
+      "source_id": "doi:10.1038/s41586-026-10950-5",
+      "canonical_title": "Explainable deep learning improves human mental models of self-driving cars",
+      "publication_date": "2026-09-02",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": ["R2", "R4", "R5", "R6"],
+      "evidence_grade": "A",
+      "item_type": "multi-study explainable-AI deployment with real autonomous vehicles",
+      "doi": "10.1038/s41586-026-10950-5",
+      "canonical_url": "https://www.nature.com/articles/s41586-026-10950-5"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": ["G01", "G02", "G03", "G04", "G06"],
+    "narrowed": ["G05"],
+    "closed": []
+  }
+}
