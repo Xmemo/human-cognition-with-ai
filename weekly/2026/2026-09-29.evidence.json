@@ -1,0 +1,184 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-09-29",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "MEDIUM",
+    "R7": "LOW",
+    "R8": "MEDIUM",
+    "R9": "MEDIUM"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3390/bs16091671",
+      "canonical_title": "Telling Students to Evaluate Does Not Make It Happen: Task Stage, Offloading Tendency, and Error Detection in AI-Assisted Student Writing",
+      "publication_date": "2026-09-17",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "A",
+      "item_type": "two-site randomized experiment with AI-withdrawal transfer testing",
+      "doi": "10.3390/bs16091671",
+      "canonical_url": "https://www.mdpi.com/2076-328X/16/9/1671"
+    },
+    {
+      "source_id": "doi:10.1002/jcal.70322",
+      "canonical_title": "Generative AI and Learning Dynamics in Higher Education: A Longitudinal Empirical Study",
+      "publication_date": "2026-09-10",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "semester-long quasi-experimental study, N=87",
+      "doi": "10.1002/jcal.70322",
+      "canonical_url": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70322"
+    },
+    {
+      "source_id": "doi:10.1080/10447318.2026.2728615",
+      "canonical_title": "Comparison of Human-AI Collaboration Modes in Cross-Platform Public Opinion Analysis: An Experimental Study on Analyst Performance and Cognitive Load",
+      "publication_date": "2026-09-15",
+      "temporal_status": "NEW",
+      "radars": [
+        "R2",
+        "R5",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "between-subjects human-AI collaboration experiment, N=320",
+      "doi": "10.1080/10447318.2026.2728615",
+      "canonical_url": "https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2728615"
+    },
+    {
+      "source_id": "doi:10.1371/journal.pone.0358542",
+      "canonical_title": "Generative AI as a cognitive support tool in early-stage design ideation: A human–AI co-ideation experiment",
+      "publication_date": "2026-09-17",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "counterbalanced within-subject design ideation experiment, N=32",
+      "doi": "10.1371/journal.pone.0358542",
+      "canonical_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0358542"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1880052",
+      "canonical_title": "The role of generative AI in facilitating children's creative thinking and cognitive development: a systematic scoping review",
+      "publication_date": "2026-09-14",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "JBI/PRISMA-ScR systematic scoping review, 24 evidence sources",
+      "doi": "10.3389/fpsyg.2026.1880052",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1880052/full"
+    },
+    {
+      "source_id": "doi:10.1002/ejsp.70112",
+      "canonical_title": "Artificial Intelligence (AI) Can't Feel Me: Lower Perceived AI Perspective–Taking Impedes Human–AI Cooperation",
+      "publication_date": "2026-09-11",
+      "temporal_status": "NEW",
+      "radars": [
+        "R5",
+        "R8",
+        "R9"
+      ],
+      "evidence_grade": "B",
+      "item_type": "five-study exploratory human-AI cooperation program",
+      "doi": "10.1002/ejsp.70112",
+      "canonical_url": "https://onlinelibrary.wiley.com/doi/10.1002/ejsp.70112"
+    },
+    {
+      "source_id": "doi:10.1038/s43588-026-01060-3",
+      "canonical_title": "Large language models as human proxies",
+      "publication_date": "2026-09-18",
+      "temporal_status": "NEW",
+      "radars": [
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "evidence_grade": "C",
+      "item_type": "methodological review article",
+      "doi": "10.1038/s43588-026-01060-3",
+      "canonical_url": "https://www.nature.com/articles/s43588-026-01060-3"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1957029",
+      "canonical_title": "Associations between generative AI usage orientations and critical thinking disposition among college students in China",
+      "publication_date": "2026-09-28",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "cross-sectional survey, N=430",
+      "doi": "10.3389/fpsyg.2026.1957029",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1957029/full"
+    },
+    {
+      "source_id": "doi:10.1080/00218499.2026.2702092",
+      "canonical_title": "Human-GenAI Collaboration in Creative Ideation: A Study with Advertising Professionals",
+      "publication_date": "2026-09-01",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "randomized professional creative-ideation experiment, N=98",
+      "doi": "10.1080/00218499.2026.2702092",
+      "canonical_url": "https://www.tandfonline.com/doi/full/10.1080/00218499.2026.2702092"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Catch-up run covering the missed 2026-09-18 and 2026-09-25 weekly cycles; it does not pretend those runs occurred on schedule.",
+    "One 2026-09-01 professional-creativity paper is retained as NEWLY_DISCOVERED because it was first captured by this observatory during the catch-up scan.",
+    "G03 receives a mechanism-level signal around the direction of evaluative judgment, but no long-lived gap status is changed because the experiment does not orthogonally isolate all task components."
+  ]
+}
