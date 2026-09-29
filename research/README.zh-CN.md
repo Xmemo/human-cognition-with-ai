@@ -22,7 +22,7 @@
 
 Baseline 是这个项目关于“目前证据能支持什么”的标准版本。它包含证据边界、限制、目前不能下的结论、重要未解决问题，以及当前 **Control / Retention / Variance** 工作模型。
 
-**2026-09-04 周报判断：Baseline 保持不变。** 本周新增证据强化了 person–agent fit（人—Agent 匹配）、工作流摩擦以及人类 / 模型错误结构互补，但仍不足以推翻 2026-08-29 Baseline 或创建新的带日期版本。
+**2026-09-29 补扫判断：Baseline 保持不变。** 本轮新增了一项更强的随机实验，显示撤掉 AI 后的能力迁移取决于评价判断由谁、在哪个任务阶段执行；同时补充了学期级学习、人机协作模式、创造力以及 LLM human proxy 等证据。这些结果进一步细化“交互架构”，但还不足以创建新的 Baseline。
 
 ### 当前研究地图
 
@@ -47,7 +47,7 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 - 什么样的人机网络能同时提高绩效并保留群体差异与探索空间；
 - Machine Culture（机器文化）的传播、规范与伙伴选择效应能否长期进入真实组织和文化生态。
 
-**2026-09-04：G05 被缩小，但没有关闭。** 新的社会规范估计证据表明，“模型错误更相关、人的错误更独立”是混合智能获得优势的一个具体机制；一般性网络拓扑与长期 collective variance 仍未解决。
+**2026-09-29 补扫：长期 Gap 状态不作正式修改。** G03 因两地随机写作实验而变得更具体——**评价判断的方向**成为一个机制级信号，但实验条件仍同时改变多个任务成分，因此机制缺口仍然开放。G05 则保留 2026-09-10 已获得的 error correlation 与 agent proportion 两条缩小线索。
 
 每个 gap 使用 `OBSERVE`、`REPEAT` 或 `CANDIDATE` 三种状态。**只有人工决策才能把一个反复出现的 gap 升级到未来 Research Lab。**
 
@@ -57,13 +57,13 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 
 ### 最新每周研究简报
 
-- 🇨🇳 **[2026-09-04 中文每周研究简报](../weekly/2026/2026-09-04.zh-CN.md)**
-- 🇬🇧 **[2026-09-04 English Weekly Research Brief](../weekly/2026/2026-09-04.en.md)**
-- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-04.evidence.json)**
+- 🇨🇳 **[2026-09-29 停更补扫 Full Research Refresh](../weekly/2026/2026-09-29.zh-CN.md)**
+- 🇬🇧 **[2026-09-29 Catch-up Full Research Refresh](../weekly/2026/2026-09-29.en.md)**
+- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-29.evidence.json)**
 
-本周最重要的两个新变化是：一项大型 PNAS 随机实验显示，**人—AI 的 personality pairing（个性配对）**可以因果性地改变团队合作和任务表现；另一项新的 *Communications AI & Computing* 研究则发现，强 LLM 可以在社会规范估计上胜过单个普通人，但模型之间的错误更相关，因此多人聚合与人机混合仍然具有特殊价值。
+这次补扫用于补回定时任务暂停后错过的两个周周期。最重要的新证据来自一项两地随机写作实验，并且在后测时**完全撤掉 AI**：结果显示，**评价判断由谁执行、发生在哪个任务阶段，会改变 AI 移除以后真正能迁移的能力**；而独立写作迁移与错误检测还可能彼此分离。
 
-本周也加入了一组有用的限制性证据：在一个课堂环境里，验证丰富、责任导向的结构化 AI 写作有积极效果；但在企业现场实验中，僵硬的强制协作流程却可能引入显著的实施摩擦。
+本轮同时补充了一个学期的教育研究、320 人的 AI-led / human-led / hybrid 协作比较、不同维度的创造力证据、Iyad Rahwan 共同署名的 LLM human proxy 方法论综述，以及“使用取向比单纯使用频率更有信息量”的新证据。当前 Baseline 仍保持 **2026-08-29**。
 
 Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了变化？”** 只有新证据真正改变结论强度、边界、重要证据缺口或工作模型时，才创建新的带日期 Baseline。
 
@@ -87,6 +87,7 @@ Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了�
 - **[首批 Consensus 文献台账](../references/consensus.md)**
 - **[2026-08-29 Consensus 增量与完整重扫台账](../references/consensus/2026-08-29.md)**
 - **[2026-09-04 Consensus 每周台账](../references/consensus/2026-09-04.md)**
+- **[2026-09-29 Consensus 补扫台账](../references/consensus/2026-09-29.md)**
 
 Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为基础证据。**
 
