@@ -22,7 +22,7 @@ This is the second-layer navigation hub behind the public dashboard. It separate
 
 The Baseline is the canonical statement of what the project currently believes the evidence can support. It contains evidence boundaries, caveats, unsupported conclusions, open questions, and the current **Control / Retention / Variance** working model.
 
-**2026-09-04 weekly decision: Baseline unchanged.** New research adds stronger evidence for person–agent fit, workflow friction, and complementary human/model error structure, but does not overturn the 2026-08-29 Baseline or justify a new dated version.
+**2026-09-29 catch-up decision: Baseline unchanged.** The catch-up adds stronger randomized evidence that the direction and stage of evaluative judgment matter after AI withdrawal, plus new semester-long, collaboration-mode, creativity, and human-proxy evidence. These findings sharpen the interaction-architecture view but do not yet justify a new dated Baseline.
 
 ### Current Research Map
 
@@ -47,7 +47,7 @@ Current recurring gaps include:
 - human–AI network structures that raise performance while preserving collective variance;
 - real-world persistence of Machine Culture transmission, norm, and partner-selection effects.
 
-**2026-09-04:** G05 was narrowed, not closed. New norm-estimation evidence identifies correlated model error versus more independent human error as one concrete mechanism for hybrid advantage, while general network topology and long-run collective variance remain unresolved.
+**2026-09-29 catch-up:** no long-lived gap status changes. G03 becomes more concrete because a two-site randomized writing experiment identifies the **direction of evaluative judgment** as a mechanism-level signal, but multiple task components still vary together, so the mechanism gap remains open. G05 retains the 2026-09-10 narrowing around error correlation and agent proportion.
 
 Each gap is tracked as `OBSERVE`, `REPEAT`, or `CANDIDATE`. **Only a human decision can promote a recurring gap into a future Research Lab.**
 
@@ -57,13 +57,13 @@ Each gap is tracked as `OBSERVE`, `REPEAT`, or `CANDIDATE`. **Only a human decis
 
 ### Latest Weekly Research Brief
 
-- 🇬🇧 **[2026-09-04 English Weekly Research Brief](../weekly/2026/2026-09-04.en.md)**
-- 🇨🇳 **[2026-09-04 中文每周研究简报](../weekly/2026/2026-09-04.zh-CN.md)**
-- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-04.evidence.json)**
+- 🇬🇧 **[2026-09-29 Catch-up Full Research Refresh](../weekly/2026/2026-09-29.en.md)**
+- 🇨🇳 **[2026-09-29 停更补扫 Full Research Refresh](../weekly/2026/2026-09-29.zh-CN.md)**
+- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-29.evidence.json)**
 
-The strongest fresh changes this week are twofold: a large randomized PNAS study shows that **person–agent personality pairing** can causally alter human–AI teamwork and task performance, while a new *Communications AI & Computing* study shows that strong LLMs can outperform individual humans at estimating average social norms yet still share correlated errors, making human aggregation and human–LLM hybrids especially valuable.
+This catch-up fills the two missed weekly cycles after the scheduled task was paused. The strongest new signal is a two-site randomized writing experiment with an AI-withdrawal post-test: **who performs evaluative judgment, and at which task stage, changes what transfers after AI is removed**. Independent writing transfer and error detection can also dissociate.
 
-The week also adds bounded counterevidence to simple workflow prescriptions: structured verification-rich writing can help in one context, while a rigid mandated collaboration protocol can create substantial implementation friction in another.
+The refresh also adds a semester-long education study with no automatic extra learning advantage from AI integration, a 320-person comparison of AI-led / human-led / hybrid collaboration, dimension-specific creativity evidence, an Iyad Rahwan co-authored methodological review of LLMs as human proxies, and new evidence that usage orientation matters more than raw AI-use frequency. The Baseline remains **2026-08-29**.
 
 Weekly briefs answer **“Where did the field change?”** A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the working model.
 
@@ -87,6 +87,7 @@ Every Weekly Brief / Research Refresh ends with **Open Questions & Research Gaps
 - **[Initial Consensus ledger](../references/consensus.md)**
 - **[2026-08-29 Consensus refresh + full-rescan ledger](../references/consensus/2026-08-29.md)**
 - **[2026-09-04 Consensus weekly ledger](../references/consensus/2026-09-04.md)**
+- **[2026-09-29 Consensus catch-up ledger](../references/consensus/2026-09-29.md)**
 
 A Consensus ledger records fetch-verified discovery provenance; inclusion in a ledger does not automatically promote a paper to foundational evidence.
 
