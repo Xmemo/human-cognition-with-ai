@@ -98,11 +98,24 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Yuan, F., Liu, C., & Yang, J. (2026). **The Impact of Generative AI Dependence on University Students’ Creativity: The Mediating Role of Critical Thinking and the Moderating Role of Thinking Orientation.** *Journal of Intelligence, 14*(8), 168. https://doi.org/10.3390/jintelligence14080168 — `R1 R3`
 - Bestvater, S., Smith, A., TerBush, C., Baronavski, C., & Chavda, J. (2026). **How Much of the Internet Is Written With AI?** Pew Research Center. https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/ — `R9`
 
+## Catch-up additions — 2026-09-29
+
+- Fan, M., & Chang, P. (2026). **Telling Students to Evaluate Does Not Make It Happen: Task Stage, Offloading Tendency, and Error Detection in AI-Assisted Student Writing.** *Behavioral Sciences, 16*(9), 1671. https://doi.org/10.3390/bs16091671 — two-site randomized experiment with AI-withdrawal transfer testing; `R1 R2 R3 R4`
+- Melanou, C., Beege, M., & Kimmig, M. (2026). **Generative AI and Learning Dynamics in Higher Education: A Longitudinal Empirical Study.** *Journal of Computer Assisted Learning, 42*(5), e70322. https://doi.org/10.1002/jcal.70322 — semester-long quasi-experimental study; `R1 R2 R4`
+- Wang, L., Huang, Q., Wang, K., Lou, J., & Yuan, C. (2026). **Comparison of Human-AI Collaboration Modes in Cross-Platform Public Opinion Analysis: An Experimental Study on Analyst Performance and Cognitive Load.** *International Journal of Human–Computer Interaction* (advance online). https://doi.org/10.1080/10447318.2026.2728615 — between-subjects experiment, N=320; `R2 R5 R6`
+- Lin, Y.-J. (2026). **Generative AI as a cognitive support tool in early-stage design ideation: A human–AI co-ideation experiment.** *PLOS ONE, 21*(9), e0358542. https://doi.org/10.1371/journal.pone.0358542 — counterbalanced within-subject experiment, N=32; `R3 R4 R5`
+- Niu, T., Liu, H., Pang, P., Luo, Y. T., & Liu, T. (2026). **The role of generative AI in facilitating children's creative thinking and cognitive development: a systematic scoping review.** *Frontiers in Psychology, 17*, 1880052. https://doi.org/10.3389/fpsyg.2026.1880052 — JBI / PRISMA-ScR review; `R3 R4`
+- Wu, X., Li, Y., Wang, R., & Hai, M. (2026). **Artificial Intelligence (AI) Can't Feel Me: Lower Perceived AI Perspective–Taking Impedes Human–AI Cooperation.** *European Journal of Social Psychology* (advance online). https://doi.org/10.1002/ejsp.70112 — five-study exploratory program; `R5 R8 R9`
+- Karetnikov, N., Rahwan, I., & Svetinovic, D. (2026). **Large language models as human proxies.** *Nature Computational Science* (advance online). https://doi.org/10.1038/s43588-026-01060-3 — methodological review; `R7 R8 R9`
+- Yin, S., Gan, Y., & Zhao, Q. (2026). **Associations between generative AI usage orientations and critical thinking disposition among college students in China.** *Frontiers in Psychology, 17*, 1957029. https://doi.org/10.3389/fpsyg.2026.1957029 — cross-sectional survey, N=430; `R1 R2 R3 R4`
+- Milano, I. C., Bagatini, F. Z., Perin, M. G., & Barros, L. S. G. (2026). **Human-GenAI Collaboration in Creative Ideation: A Study with Advertising Professionals.** *Journal of Advertising Research* (advance online). https://doi.org/10.1080/00218499.2026.2702092 — randomized professional ideation experiment, N=98; `R2 R3 R5`
+
 ## Consensus traceability
 
 Every unique paper surfaced through Consensus and retained during project research is recorded in a fetch-verified ledger even when it is not promoted to the curated bibliography:
 
 - [Initial Consensus ledger — 2026-08-28](consensus.md)
 - [Baseline refresh + full-radar ledger — 2026-08-29](consensus/2026-08-29.md)
+- [2026-09-29 catch-up ledger](consensus/2026-09-29.md)
 
 Freshness-layer papers that are not yet indexed by Consensus are still retained when canonical publisher metadata is verifiable; the ledger marks that provenance explicitly.
