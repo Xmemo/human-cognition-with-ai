@@ -1,0 +1,139 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-10-08",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "MEDIUM",
+    "R6": "MEDIUM",
+    "R7": "LOW",
+    "R8": "LOW",
+    "R9": "LOW"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1962005",
+      "canonical_title": "The layer of lesson preparation delegated to AI predicts classroom discourse quality: a four-wave video study of 90 junior secondary mathematics teachers",
+      "publication_date": "2026-10-06",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "four-wave ecological professional study with embedded micro-randomized comparison",
+      "doi": "10.3389/fpsyg.2026.1962005",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1962005/abstract"
+    },
+    {
+      "source_id": "doi:10.1057/s41599-026-09291-5",
+      "canonical_title": "Artificial intelligence use, creative thinking disposition, and metacognitive awareness among EFL learners: a structural equation modelling approach",
+      "publication_date": "2026-10-03",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "cross-sectional correlational structural-equation study, N=713",
+      "doi": "10.1057/s41599-026-09291-5",
+      "canonical_url": "https://www.nature.com/articles/s41599-026-09291-5"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1956939",
+      "canonical_title": "Generative AI in creative education: baseline-linked evidence on learning processes, artistic performance, and authorship",
+      "publication_date": "2026-10-02",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R4",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "baseline-linked observational course study with assessed performance and robustness checks, N=133",
+      "doi": "10.3389/fpsyg.2026.1956939",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1956939/full"
+    },
+    {
+      "source_id": "doi:10.1007/s10648-026-10224-6",
+      "canonical_title": "Augmentation or Erosion? Regulating Cognitive Offloading in Generative AI-Supported STEM Learning",
+      "publication_date": "2026-10-01",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "C",
+      "item_type": "integrative review and theory-building article",
+      "doi": "10.1007/s10648-026-10224-6",
+      "canonical_url": "https://link.springer.com/article/10.1007/s10648-026-10224-6"
+    },
+    {
+      "source_id": "doi:10.1186/s12909-026-10504-3",
+      "canonical_title": "Integrating generative AI into cognitive apprenticeship–based problem-based learning in biochemistry: a quasi-experimental study",
+      "publication_date": "2026-10-08",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "quasi-experimental three-condition instructional study",
+      "doi": "10.1186/s12909-026-10504-3",
+      "canonical_url": "https://link.springer.com/article/10.1186/s12909-026-10504-3"
+    },
+    {
+      "source_id": "doi:10.1007/s00146-026-03326-w",
+      "canonical_title": "Against mandatory prompt disclosure in AI-assisted scholarship",
+      "publication_date": "2026-10-05",
+      "temporal_status": "NEW",
+      "radars": [
+        "R6"
+      ],
+      "evidence_grade": "C",
+      "item_type": "normative review and policy analysis",
+      "doi": "10.1007/s00146-026-03326-w",
+      "canonical_url": "https://link.springer.com/article/10.1007/s00146-026-03326-w"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [
+      "G02",
+      "G03"
+    ],
+    "closed": []
+  },
+  "notes": [
+    "Completion of the 2026-10-08 weekly run after the prior attempt stopped before evidence freeze; the Consensus Evidence Backbone was rerun on 2026-10-09 after the connector update.",
+    "All nine radars were searched across Consensus, freshness, and frontier layers. R7-R9 remained quiet for qualifying new empirical evidence and were not padded with weaker material.",
+    "G02 is narrowed because a four-wave, school-year study adds repeated real-world evidence from working teachers, but it does not measure durable expert capability after AI withdrawal.",
+    "G03 is narrowed because the same study separates generative-layer from formulation-layer offloading and embeds a human-first micro-randomized comparison, but independent capability retention remains unresolved."
+  ]
+}
