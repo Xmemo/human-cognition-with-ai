@@ -110,6 +110,16 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Yin, S., Gan, Y., & Zhao, Q. (2026). **Associations between generative AI usage orientations and critical thinking disposition among college students in China.** *Frontiers in Psychology, 17*, 1957029. https://doi.org/10.3389/fpsyg.2026.1957029 — cross-sectional survey, N=430; `R1 R2 R3 R4`
 - Milano, I. C., Bagatini, F. Z., Perin, M. G., & Barros, L. S. G. (2026). **Human-GenAI Collaboration in Creative Ideation: A Study with Advertising Professionals.** *Journal of Advertising Research* (advance online). https://doi.org/10.1080/00218499.2026.2702092 — randomized professional ideation experiment, N=98; `R2 R3 R5`
 
+
+## Weekly additions — 2026-10-08
+
+- Chen, H., Wang, N., Chen, C., Zhang, D., & Dang, X. (2026). **The layer of lesson preparation delegated to AI predicts classroom discourse quality: a four-wave video study of 90 junior secondary mathematics teachers.** *Frontiers in Psychology, 17*, 1962005. https://doi.org/10.3389/fpsyg.2026.1962005 — four-wave ecological professional study with embedded micro-randomized comparison; `R1 R2 R4`
+- Al-khresheh, M. H., & Almayez, M. (2026). **Artificial intelligence use, creative thinking disposition, and metacognitive awareness among EFL learners: a structural equation modelling approach.** *Humanities and Social Sciences Communications*. https://doi.org/10.1057/s41599-026-09291-5 — cross-sectional structural-equation study, N=713; `R1 R2 R3 R4`
+- Shen, N., Lee, L. S., & He, A. (2026). **Generative AI in creative education: baseline-linked evidence on learning processes, artistic performance, and authorship.** *Frontiers in Psychology, 17*, 1956939. https://doi.org/10.3389/fpsyg.2026.1956939 — baseline-linked observational course study, N=133; `R3 R4 R6`
+- Nakamura, D. (2026). **Augmentation or Erosion? Regulating Cognitive Offloading in Generative AI-Supported STEM Learning.** *Educational Psychology Review, 38*, 124. https://doi.org/10.1007/s10648-026-10224-6 — integrative theory-building review; `R1 R2 R4`
+- Sheng, M., Gong, Y., Hu, W., & Liu, Y. (2026). **Integrating generative AI into cognitive apprenticeship–based problem-based learning in biochemistry: a quasi-experimental study.** *BMC Medical Education*. https://doi.org/10.1186/s12909-026-10504-3 — three-condition quasi-experimental instructional study; `R3 R4 R5`
+- Earp, B. D., Schüklenk, U., Savulescu, J., & Porsdam Mann, S. (2026). **Against mandatory prompt disclosure in AI-assisted scholarship.** *AI & Society*. https://doi.org/10.1007/s00146-026-03326-w — normative review and policy analysis; `R6`
+
 ## Consensus traceability
 
 Every unique paper surfaced through Consensus and retained during project research is recorded in a fetch-verified ledger even when it is not promoted to the curated bibliography:
@@ -117,5 +127,6 @@ Every unique paper surfaced through Consensus and retained during project resear
 - [Initial Consensus ledger — 2026-08-28](consensus.md)
 - [Baseline refresh + full-radar ledger — 2026-08-29](consensus/2026-08-29.md)
 - [2026-09-29 catch-up ledger](consensus/2026-09-29.md)
+- [2026-10-08 weekly ledger](consensus/2026-10-08.md)
 
 Freshness-layer papers that are not yet indexed by Consensus are still retained when canonical publisher metadata is verifiable; the ledger marks that provenance explicitly.
