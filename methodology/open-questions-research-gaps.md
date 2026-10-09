@@ -93,18 +93,18 @@ Each gap should contain:
 - **Radars:** R1, R3, R5
 - **Type:** POPULATION GAP / TIME-HORIZON GAP
 - **Status:** `REPEAT`
-- **Observed basis:** Evidence that professional artists retain advantages in AI-mediated work argues against simple leveling, while much of the broader literature still relies on students or short tasks.
-- **Why unresolved:** We do not yet know whether expertise is preserved, amplified, reorganized, or partly eroded under sustained AI use.
-- **Last reviewed:** 2026-08-29
+- **Observed basis:** Evidence that professional artists retain advantages in AI-mediated work argues against simple leveling. A 2026-10-06 four-wave study now adds repeated evidence from 90 working mathematics teachers across one school year: the cognitive layer delegated during AI-assisted lesson preparation predicts later classroom-discourse quality within teachers, and generative-layer offloading also dissociates from post-preparation confidence.
+- **Why unresolved:** The professional and time-horizon gap is narrower, but the teacher study does not directly measure durable expert cognition after AI withdrawal. We still do not know whether expertise is preserved, amplified, reorganized, or partly eroded under sustained AI use.
+- **Last reviewed:** 2026-10-08
 
 ## G03｜Which component of bounded AI support actually preserves independent capability?
 
 - **Radars:** R1, R2, R3, R4
 - **Type:** MECHANISM GAP / METHOD GAP
 - **Status:** `REPEAT`
-- **Observed basis:** Guardrails, compulsory reflection, draft-first workflows, verification prompts, and delayed assistance often appear together in successful interventions.
-- **Why unresolved:** Bundled interventions make it difficult to isolate whether reflection, delayed help, self-generation, verification, or another component drives retention.
-- **Last reviewed:** 2026-08-29
+- **Observed basis:** Guardrails, compulsory reflection, draft-first workflows, verification prompts, and delayed assistance often appear together in successful interventions. The 2026-10-06 teacher study separates generative-layer from formulation-layer offloading and embeds a micro-randomized human-first condition in which teachers generate questioning and variation sequences before consulting AI; that sequence reduces generative-layer offloading and increases substantive uptake of student contributions.
+- **Why unresolved:** The mechanism gap is narrower because one sequencing component is now more cleanly isolated, but the outcome is immediate professional classroom practice rather than delayed independent capability. Other successful interventions, including structured AI-supported cognitive-apprenticeship designs, still bundle multiple components.
+- **Last reviewed:** 2026-10-08
 
 ## G04｜Do measures of epistemic agency predict durable real-world behavior?
 
