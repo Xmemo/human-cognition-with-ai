@@ -91,18 +91,18 @@ Open Questions & Research Gaps
 - **Radars：** R1、R3、R5
 - **Type：** POPULATION GAP / TIME-HORIZON GAP
 - **Status：** `REPEAT`
-- **Observed basis：** 专业艺术家在 AI 中仍保留优势的证据反驳了“AI 简单拉平所有人”的叙事，但更大范围研究依然大量依赖学生与短任务。
-- **Why unresolved：** 还不知道长期 AI 使用会让专业能力被保留、扩大、重组，还是部分衰减。
-- **Last reviewed：** 2026-08-29
+- **Observed basis：** 专业艺术家在 AI 中仍保留优势的证据反驳了“AI 简单拉平所有人”的叙事。2026-10-06 的四波次研究进一步加入了 90 名在职数学教师、跨一个学年的重复真实场景证据：AI 辅助备课时究竟委托哪一层认知操作，与同一位教师后续课堂话语质量相关；生成层外包还与备课后的主观信心出现分离。
+- **Why unresolved：** 专业人群与时间尺度缺口已经缩小，但教师研究没有直接测量撤掉 AI 后的长期专家认知。我们仍不知道持续使用 AI 会让专业能力被保留、扩大、重组，还是部分衰减。
+- **Last reviewed：** 2026-10-08
 
 ## G03｜受约束 AI 支持中，究竟哪个成分真正帮助保留独立能力？
 
 - **Radars：** R1、R2、R3、R4
 - **Type：** MECHANISM GAP / METHOD GAP
 - **Status：** `REPEAT`
-- **Observed basis：** guardrails（保护机制）、强制反思、先独立起草、验证提示、延迟帮助等设计经常作为组合包一起出现。
-- **Why unresolved：** 捆绑式干预使我们无法区分到底是反思、延迟帮助、自主生成、验证，还是其他成分真正驱动 Retention（保留）。
-- **Last reviewed：** 2026-08-29
+- **Observed basis：** guardrails（保护机制）、强制反思、先独立起草、验证提示、延迟帮助等设计经常作为组合包一起出现。2026-10-06 的教师研究进一步把 generative-layer offloading（生成层外包）与 formulation-layer offloading（表述层外包）区分开，并嵌入一个 human-first 微随机条件：教师先自己生成提问与变式序列，再咨询 AI；这一顺序降低了生成层外包，并提高了对学生意外贡献的实质性承接。
+- **Why unresolved：** 机制缺口已经缩小，因为一个顺序成分得到更干净的隔离；但结果仍是即时的专业课堂实践，而不是延迟的独立能力。其他成功干预，包括结构化 AI + 认知学徒制设计，仍同时捆绑多个成分。
+- **Last reviewed：** 2026-10-08
 
 ## G04｜epistemic agency（认识论能动性）等量表能否预测真实、长期的行为？
 
