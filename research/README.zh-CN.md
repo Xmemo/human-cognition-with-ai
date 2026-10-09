@@ -32,6 +32,15 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 
 ---
 
+### 横向研究透镜：认知生态（2026-10-09）
+
+- **[认知生态：从认知外包到人—AI—世界耦合](cognitive-ecology.zh-CN.md)** — 连接延展、具身、分布式和社会认知，区分理论解释与 AI 产品实证效果。
+- **[认知循环评估协议](../methodology/cognitive-loop-protocol.zh-CN.md)** — 可跳过、可证伪的交互设计与对照实验，明确测量指标和产品关卡。
+
+这是一个**跨雷达的探索性机制透镜**：不增设 R10、不更改现行 Baseline，也不绕过未来 Research Lab 的人工升级决策。参见[英文专题](cognitive-ecology.md)。
+
+---
+
 ## 2｜Open Questions & Research Gaps｜开放问题与研究缺口
 
 **[查看长期缺口台账与升级规则](../methodology/open-questions-research-gaps.zh-CN.md)**

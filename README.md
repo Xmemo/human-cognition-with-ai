@@ -16,6 +16,16 @@ As memory, search, writing, reasoning, and judgment become increasingly external
 
 ---
 
+## Research Spotlight · 2026-10-09 (Conceptual Lens, Not a New Baseline)
+
+**From Cognitive Offloading to Cognitive Ecology** connects the project's established **Control / Retention / Variance** model with embodied, extended, distributed, and social cognition. It explicitly separates **AI-off internal retention**, **coupled extended capability**, and **system resilience**; none of these concept-level additions establishes product efficacy.
+
+→ [Read Cognitive Ecology](research/cognitive-ecology.md) · [Cognitive Loop Protocol](methodology/cognitive-loop-protocol.md) · [中文专题](research/cognitive-ecology.zh-CN.md)
+
+The **3 domains × 9 radars** and the **2026-08-29 canonical Baseline** are unchanged. This exploratory layer is not a tenth radar and is not a new evidence baseline.
+
+---
+
 ## Latest Research
 
 ### Full Research Refresh · 2026-08-29
@@ -88,6 +98,7 @@ This is a **research-organizing working model, not a fully validated grand theor
 | **What has this project found so far?** | [Current Evidence Baseline](research/baseline-2026-08-29.en.md) |
 | **What did the latest full scan find?** | [2026-08-29 English Research Refresh](weekly/2026/2026-08-29.en.md) |
 | **What exactly does the project track?** | [3×3 Research Map](methodology/research-map.md) |
+| **How do body, environment, and social interaction shape AI-assisted thinking?** | [Cognitive Ecology](research/cognitive-ecology.md) · [Cognitive Loop Protocol](methodology/cognitive-loop-protocol.md) |
 | **Where are the papers and DOIs?** | [Master Bibliography](references/master-bibliography.md) |
 | **How did the framework evolve?** | [Research History & Migration](research/research-history.en.md) |
 | **How are papers found and graded?** | [Research Hub](research/README.md) · [Search Protocol](methodology/search-protocol.md) · [Evidence Grading](methodology/evidence-grading.md) |

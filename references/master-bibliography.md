@@ -110,6 +110,19 @@ Curated bibliography for the **Human Cognition with AI** 3×3 research map. Bibl
 - Yin, S., Gan, Y., & Zhao, Q. (2026). **Associations between generative AI usage orientations and critical thinking disposition among college students in China.** *Frontiers in Psychology, 17*, 1957029. https://doi.org/10.3389/fpsyg.2026.1957029 — cross-sectional survey, N=430; `R1 R2 R3 R4`
 - Milano, I. C., Bagatini, F. Z., Perin, M. G., & Barros, L. S. G. (2026). **Human-GenAI Collaboration in Creative Ideation: A Study with Advertising Professionals.** *Journal of Advertising Research* (advance online). https://doi.org/10.1080/00218499.2026.2702092 — randomized professional ideation experiment, N=98; `R2 R3 R5`
 
+## Cross-cutting lens — Cognitive Ecology (2026-10-09)
+
+These sources clarify extended/distributed/embodied cognition and human–AI coupling; they **do not** alter the canonical evidence baseline. Theoretical work is identified separately from domain-specific behavioral experiments. [Synthesis](../research/cognitive-ecology.md) · [Protocol](../methodology/cognitive-loop-protocol.md).
+
+- Clark, A., & Chalmers, D. (1998). **The Extended Mind.** *Analysis, 58*(1), 7–19. https://doi.org/10.1093/analys/58.1.7 — conceptual foundation; `R1 R4 R6`.
+- Hutchins, E. (1995). **Cognition in the Wild.** *MIT Press*. https://doi.org/10.7551/mitpress/1881.001.0001 — distributed cognition and social organization; `R4 R5 R8 R9`.
+- Kirsh, D., & Maglio, P. (1994). **On Distinguishing Epistemic from Pragmatic Action.** *Cognitive Science, 18*(4), 513–549. https://doi.org/10.1207/S15516709COG1804_1 — epistemic actions in a spatial task; `R3 R4`.
+- Oppezzo, M., & Schwartz, D. L. (2014). **Give Your Ideas Some Legs: The Positive Effect of Walking on Creative Thinking.** *Journal of Experimental Psychology: Learning, Memory, and Cognition, 40*(4), 1142–1152. https://doi.org/10.1037/a0036577 — experimental, divergent creativity tasks; `R3 R4`.
+- Goldin-Meadow, S., Cook, S. W., & Mitchell, Z. A. (2009). **Gesturing Gives Children New Ideas About Math.** *Psychological Science, 20*(3), 267–272. https://doi.org/10.1111/j.1467-9280.2009.02297.x — specific learning / embodied action experiment; `R1 R3 R4`.
+- Zhao, H., & Han, Z. (2026). **Understanding the mechanism of human–AI interaction: a distributed cognition perspective.** *Journal of Documentation, 82*(4), 1042–1063. https://doi.org/10.1108/JD-01-2026-0003 — conceptual human–AI cycle, not an intervention effect; `R2 R4 R5`.
+- Cassinadri, G., & Bianchini, F. (2026). **Varieties and dynamics of cognitive extensions via AI systems.** *Cognitive Systems Research, 99*, 101507. https://doi.org/10.1016/j.cogsys.2026.101507 — constitutive/complementary/substitutive extension; conceptual; `R1 R4 R6`.
+- Paul, A. M. (2021). **The Extended Mind: The Power of Thinking Outside the Brain.** *Houghton Mifflin Harcourt*. ISBN 9780544947665. https://www.publishersweekly.com/9780544947665 — secondary science synthesis, not primary evidence; `R3 R4 R8`.
+
 ## Consensus traceability
 
 Every unique paper surfaced through Consensus and retained during project research is recorded in a fetch-verified ledger even when it is not promoted to the curated bibliography:

@@ -16,6 +16,16 @@
 
 ---
 
+## 新增研究专题｜2026-10-09（理论透镜，不是新版证据基线）
+
+**从认知外包到认知生态**：把现有 **Control / Retention / Variance** 与具身、延展、分布式和社会认知研究连接起来，并区分 **AI 离场后的内部能力**、**人与工具耦合形成的延展能力**和**整个系统的韧性**。这些理论增量不等于产品效果已经被证实。
+
+→ [阅读认知生态专题](research/cognitive-ecology.zh-CN.md) · [认知循环评估协议](methodology/cognitive-loop-protocol.zh-CN.md) · [English](research/cognitive-ecology.md)
+
+原有 **3 个领域 × 9 条雷达**和 **2026-08-29 正式 Baseline** 不变；新增的是横向解释层，而非第十条雷达或新的证据基线。
+
+---
+
 ## 最新研究更新
 
 ### 完整研究刷新｜2026-08-29
@@ -88,6 +98,7 @@ AI 可能提高个体平均表现，同时改变群体中的差异、语言、�
 | **这个项目目前到底研究出了什么？** | [当前证据基线](research/baseline-2026-08-29.zh-CN.md) |
 | **最近一轮完整扫描发现了什么？** | [2026-08-29 中文研究刷新](weekly/2026/2026-08-29.zh-CN.md) |
 | **这个项目到底追踪哪些问题？** | [3×3 研究地图](methodology/research-map.zh-CN.md) |
+| **身体、环境、真实对话如何参与 AI 辅助思考？** | [认知生态](research/cognitive-ecology.zh-CN.md) · [认知循环协议](methodology/cognitive-loop-protocol.zh-CN.md) |
 | **我要找具体论文、DOI 和证据** | [主参考文献](references/master-bibliography.md) |
 | **这套框架是怎么一步步形成的？** | [研究演化与迁移](research/research-history.zh-CN.md) |
 | **你们怎么找论文、核验和分级？** | [研究导航](research/README.zh-CN.md) · [检索协议](methodology/search-protocol.zh-CN.md) · [证据分级](methodology/evidence-grading.zh-CN.md) |

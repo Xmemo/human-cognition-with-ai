@@ -166,6 +166,12 @@ This map is optimized for **weekly discovery**, not for producing a perfectly ex
 
 ---
 
+## Cross-Cutting Mechanism Lens — Cognitive Ecology (2026-10-09)
+
+The existing 3×3 search radars remain unchanged. The exploratory [Cognitive Ecology](../research/cognitive-ecology.md) topic crosses R1–R9 to study how body, external representations, AI, and other people participate in cognitive loops. Use optional mechanism tags (#embodied, #distributed-cognition, #extended-mind, #epistemic-action, #human-AI-world-loop), **not an R10**. Study designs and falsification criteria are in the [Cognitive Loop Protocol](cognitive-loop-protocol.md). This is not a new canonical evidence baseline.
+
+---
+
 ## Cross-Cutting Context Tags
 
 Expertise, writers, researchers, programmers, students, medicine, education, and other populations are **context tags**, not separate top-level domains. For example:

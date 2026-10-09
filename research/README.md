@@ -32,6 +32,15 @@ The map is a search architecture rather than a claim that the research field div
 
 ---
 
+### Cross-cutting lens: Cognitive Ecology (2026-10-09)
+
+- **[Cognitive Ecology: From Cognitive Offloading to Human–AI–World Coupling](cognitive-ecology.md)** — integrates extended, embodied, distributed, and social cognition, explicitly distinguished from empirical claims of AI augmentation.
+- **[Cognitive Loop Protocol](../methodology/cognitive-loop-protocol.md)** — optional, falsifiable interaction architecture with controls, measurable outcomes, and product gates.
+
+This is an **exploratory cross-radar mechanism lens**. It does not create R10, change the dated baseline, or bypass the human promotion rule for the future Research Lab. See the [Chinese topic](cognitive-ecology.zh-CN.md).
+
+---
+
 ## 2｜Open Questions & Research Gaps
 
 **[Living gap ledger and promotion rules](../methodology/open-questions-research-gaps.md)**
