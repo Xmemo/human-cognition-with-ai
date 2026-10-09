@@ -166,6 +166,12 @@
 
 ---
 
+## 跨领域机制透镜：认知生态（2026-10-09）
+
+原有 3×3 检索雷达保持不变。新增探索性专题[认知生态](../research/cognitive-ecology.zh-CN.md)，横跨 R1–R9，研究身体、外部表征、AI 与他人如何共同参与认知循环。可加上 #embodied、#distributed-cognition、#extended-mind、#epistemic-action、#human-AI-world-loop 等机制标签，**不增设 R10**。可证伪设计见[认知循环评估协议](cognitive-loop-protocol.zh-CN.md)。这不是新版正式证据基线。
+
+---
+
 ## 跨领域情境标签
 
 专家、写作者、研究人员、程序员、学生、医疗、教育等属于**情境标签**，而不是新的顶层领域。例如：
