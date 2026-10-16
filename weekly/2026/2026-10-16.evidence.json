@@ -1,0 +1,198 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-10-16",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "MEDIUM",
+    "R6": "MEDIUM",
+    "R7": "MEDIUM",
+    "R8": "MEDIUM",
+    "R9": "MEDIUM"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.1016/j.compedu.2026.105675",
+      "canonical_title": "What task to offload to GenAI in the writing feedback process? – Effects of task-offloading approaches on EFL learners’ writing skill development",
+      "publication_date": "2026",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed quasi-experiment in EFL writing, N=101",
+      "doi": "10.1016/j.compedu.2026.105675",
+      "canonical_url": "https://research.cuhk.edu.hk/en/publications/what-task-to-offload-to-genai-in-the-writing-feedback-process-eff/"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1947198",
+      "canonical_title": "The impact of artificial intelligence on students’ metacognition: a systematic review",
+      "publication_date": "2026-10-08",
+      "temporal_status": "NEW",
+      "radars": [
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "systematic review of 22 heterogeneous empirical studies",
+      "doi": "10.3389/fpsyg.2026.1947198",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1947198/full"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1986050",
+      "canonical_title": "The impact of human-AI co-creation on perceived creativity in generative AI art: a serial mediation mechanism of psychological ownership, perceived agency, and creative flow",
+      "publication_date": "2026-10-09",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R5",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "two between-subjects digital-art experiments, total N=600; subjective outcomes",
+      "doi": "10.3389/fpsyg.2026.1986050",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1986050/full"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1956939",
+      "canonical_title": "Generative AI in creative education: baseline-linked evidence on learning processes, artistic performance, and authorship",
+      "publication_date": "2026-10-02",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R3",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "baseline-adjusted observational art-course study, N=133",
+      "doi": "10.3389/fpsyg.2026.1956939",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1956939/full"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1926110",
+      "canonical_title": "College students' metacognitive awareness of generative-AI reliance: an experimental study of decision confidence and attribution bias",
+      "publication_date": "2026-09-15",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R2",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "three-arm between-subjects academic decision experiment, N=342; Consensus fetched",
+      "doi": "10.3389/fpsyg.2026.1926110",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1926110/full"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2609.20143",
+      "canonical_title": "Designing Against Deskilling: Metacognitive Feedback Reduces Cognitive Offloading to LLM Assistants",
+      "publication_date": "2026-09-17",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "preregistered online experiment, N=704; preprint, not peer-reviewed",
+      "doi": "10.48550/arXiv.2609.20143",
+      "canonical_url": "https://arxiv.org/abs/2609.20143"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2609.21194",
+      "canonical_title": "Your Programming Students' Cognition with ChatGPT: Higher Performance, Lower Retention, and Reduced Ownership",
+      "publication_date": "2026-09-18",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R3",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "controlled programming experiment, N=55 analyzed; preprint",
+      "doi": "10.48550/arXiv.2609.21194",
+      "canonical_url": "https://arxiv.org/abs/2609.21194"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1969743",
+      "canonical_title": "Self-reported learning-oriented GenAI use under perceived teacher-referenced normative tension in Chinese higher education",
+      "publication_date": "2026-10-02",
+      "temporal_status": "NEW",
+      "radars": [
+        "R2",
+        "R9"
+      ],
+      "evidence_grade": "B",
+      "item_type": "cross-sectional three-university self-report survey, N=1004",
+      "doi": "10.3389/fpsyg.2026.1969743",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1969743/full"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2609.02620",
+      "canonical_title": "Collective creativity in hybrid societies",
+      "publication_date": "2026-09-02",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R3",
+        "R7",
+        "R8"
+      ],
+      "evidence_grade": "C",
+      "item_type": "conceptual synthesis preprint on novelty, diversity and hybrid composition",
+      "doi": "10.48550/arXiv.2609.02620",
+      "canonical_url": "https://arxiv.org/abs/2609.02620"
+    },
+    {
+      "source_id": "url:imprs-life-2026-27",
+      "canonical_title": "LIFE Seminar Winter 2026/27",
+      "publication_date": "2026",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "evidence_grade": "S",
+      "item_type": "official research seminar program; event dates are not publication dates",
+      "doi": null,
+      "canonical_url": "https://www.imprs-life.mpg.de/713235/winter-2026-27"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Scan prioritised 2026-10-09 through 2026-10-16 and covered the 2026-09-30 through 2026-10-08 interval since the 2026-09-29 catch-up; older omitted studies are marked NEWLY_DISCOVERED, never NEW.",
+    "The Lai et al. journal and university records specify October 2026 without a reliable day, so publication_date records the known year rather than inventing a day; the Max Planck seminar programme has no verified posting date, so its event dates are not treated as publication dates.",
+    "Consensus discovery was run across all nine radars; the retained Ren record was fetched (Consensus ID 12531827b8065d769185562e78e257ee) and independently verified against the publisher.",
+    "No long-lived gap state change or new Baseline is justified: results sharpen short-task reflection and stage-specific delegation but do not resolve long-term retention, expert trajectories, mechanisms, behavioural validity or collective-cultural persistence."
+  ]
+}
