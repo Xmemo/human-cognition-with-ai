@@ -57,13 +57,11 @@ Each gap is tracked as `OBSERVE`, `REPEAT`, or `CANDIDATE`. **Only a human decis
 
 ### Latest Weekly Research Brief
 
-- 🇬🇧 **[2026-09-29 Catch-up Full Research Refresh](../weekly/2026/2026-09-29.en.md)**
-- 🇨🇳 **[2026-09-29 停更补扫 Full Research Refresh](../weekly/2026/2026-09-29.zh-CN.md)**
-- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-29.evidence.json)**
+- 🇬🇧 **[2026-10-23 Weekly Evidence Observatory](../weekly/2026/2026-10-23.en.md)**
+- 🇨🇳 **[2026-10-23 每周证据观测](../weekly/2026/2026-10-23.zh-CN.md)**
+- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-10-23.evidence.json)**
 
-This catch-up fills the two missed weekly cycles after the scheduled task was paused. The strongest new signal is a two-site randomized writing experiment with an AI-withdrawal post-test: **who performs evaluative judgment, and at which task stage, changes what transfers after AI is removed**. Independent writing transfer and error detection can also dissociate.
-
-The refresh also adds a semester-long education study with no automatic extra learning advantage from AI integration, a 320-person comparison of AI-led / human-led / hybrid collaboration, dimension-specific creativity evidence, an Iyad Rahwan co-authored methodological review of LLMs as human proxies, and new evidence that usage orientation matters more than raw AI-use frequency. The Baseline remains **2026-08-29**.
+This edition contrasts a new formal account of human–AI error correction with a randomized null result on clinician trust from explanation features. It also examines self-efficacy versus skill retention, creativity during AI-generation waits, and upstream selection in social learning. The **2026-08-29 Baseline remains unchanged**; G01–G06 remain open.
 
 Weekly briefs answer **“Where did the field change?”** A new dated Baseline is created only when verified evidence materially changes a conclusion's strength, boundary, an important evidence gap, or the working model.
 
@@ -88,6 +86,7 @@ Every Weekly Brief / Research Refresh ends with **Open Questions & Research Gaps
 - **[2026-08-29 Consensus refresh + full-rescan ledger](../references/consensus/2026-08-29.md)**
 - **[2026-09-04 Consensus weekly ledger](../references/consensus/2026-09-04.md)**
 - **[2026-09-29 Consensus catch-up ledger](../references/consensus/2026-09-29.md)**
+- **[2026-10-23 Consensus provenance](../references/consensus/2026-10-23.md)**
 
 A Consensus ledger records fetch-verified discovery provenance; inclusion in a ledger does not automatically promote a paper to foundational evidence.
 

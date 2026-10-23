@@ -117,5 +117,16 @@ Every unique paper surfaced through Consensus and retained during project resear
 - [Initial Consensus ledger — 2026-08-28](consensus.md)
 - [Baseline refresh + full-radar ledger — 2026-08-29](consensus/2026-08-29.md)
 - [2026-09-29 catch-up ledger](consensus/2026-09-29.md)
+- [2026-10-23 weekly provenance](consensus/2026-10-23.md)
 
 Freshness-layer papers that are not yet indexed by Consensus are still retained when canonical publisher metadata is verifiable; the ledger marks that provenance explicitly.
+
+## 2026-10-23 Weekly evidence additions
+
+- Frank, C., Stevens, A., Hsu, Y.-J., Gao, G., Streiff, M. B., & Engineer, L. (2026). **Transparency features alone are insufficient for trust calibration in artificial intelligence diagnostic support.** *Journal of the American Medical Informatics Association* (online first, 14 October). https://doi.org/10.1093/jamia/ocag176 — randomized clinician vignettes, N=220; `R2 R5 R6`.
+- Campagner, A., Cabitza, F., & Crupi, V. (2026). **When Do Humans and Machines Truly Complement Each Other? Formal Conditions and Empirical Evidence for Human-AI Synergy.** *arXiv:2610.27965*. https://doi.org/10.48550/arXiv.2610.27965 — theoretical conditions and seven clinical case analyses; preprint; `R5 R8`.
+- Li, Y., Yang, Y., & Bao, S. (2026). **How generative AI becomes embedded in design learning: a 14-instructional-day intensive longitudinal study of reciprocal dynamics between AI use and self-efficacy.** *Frontiers in Psychology, 17*, 1975841. https://doi.org/10.3389/fpsyg.2026.1975841 — 260-student intensive diary; `R1 R2 R3`.
+- Zhu, Z., & Xu, J. (2026). **Behavioral differentiation during the AIGC image generation waiting period: effects on creativity in conceptual design.** *Frontiers in Psychology, 17*, 1924155. https://doi.org/10.3389/fpsyg.2026.1924155 — three small design-student experiments; `R3 R4 R5`.
+- Kang, E. J., Duan, P., & Mishra, S. (2026). **Novice Reliance Calibration in AI-Assisted Decision Making: The Role of Explanations and Self-Assessment.** *arXiv:2610.07800*. https://doi.org/10.48550/arXiv.2610.07800 — novice between-subjects experiment, N=110; preprint; `R2 R4 R5`.
+- Nakamura, D. (2026). **Augmentation or Erosion? Regulating Cognitive Offloading in Generative AI-Supported STEM Learning.** *Educational Psychology Review, 38*, 124. https://doi.org/10.1007/s10648-026-10224-6 — conceptual review, not new causal evidence; `R1 R2 R4`.
+- Brady, W. J., Yu, C.-W., Ornstein, N., Sun, B., & Jackson, J. C. (2026). **Artificial intelligence systems distort upstream selection in human social learning.** *Current Opinion in Psychology, 73*, 102412. https://doi.org/10.1016/j.copsyc.2026.102412 — conceptual synthesis; fetched Consensus provenance; `R7 R8 R9`.

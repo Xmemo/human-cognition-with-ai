@@ -57,13 +57,11 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 
 ### 最新每周研究简报
 
-- 🇨🇳 **[2026-09-29 停更补扫 Full Research Refresh](../weekly/2026/2026-09-29.zh-CN.md)**
-- 🇬🇧 **[2026-09-29 Catch-up Full Research Refresh](../weekly/2026/2026-09-29.en.md)**
-- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-29.evidence.json)**
+- 🇨🇳 **[2026-10-23 每周证据观测](../weekly/2026/2026-10-23.zh-CN.md)**
+- 🇬🇧 **[2026-10-23 Weekly Evidence Observatory](../weekly/2026/2026-10-23.en.md)**
+- 🧊 **[冻结证据清单](../weekly/2026/2026-10-23.evidence.json)**
 
-这次补扫用于补回定时任务暂停后错过的两个周周期。最重要的新证据来自一项两地随机写作实验，并且在后测时**完全撤掉 AI**：结果显示，**评价判断由谁执行、发生在哪个任务阶段，会改变 AI 移除以后真正能迁移的能力**；而独立写作迁移与错误检测还可能彼此分离。
-
-本轮同时补充了一个学期的教育研究、320 人的 AI-led / human-led / hybrid 协作比较、不同维度的创造力证据、Iyad Rahwan 共同署名的 LLM human proxy 方法论综述，以及“使用取向比单纯使用频率更有信息量”的新证据。当前 Baseline 仍保持 **2026-08-29**。
+本期关注纠错条件、解释界面的信任效果、学习自信与能力保留，以及社会学习中的信息可见性。Baseline 不变。
 
 Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了变化？”** 只有新证据真正改变结论强度、边界、重要证据缺口或工作模型时，才创建新的带日期 Baseline。
 
@@ -88,6 +86,7 @@ Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了�
 - **[2026-08-29 Consensus 增量与完整重扫台账](../references/consensus/2026-08-29.md)**
 - **[2026-09-04 Consensus 每周台账](../references/consensus/2026-09-04.md)**
 - **[2026-09-29 Consensus 补扫台账](../references/consensus/2026-09-29.md)**
+- **[2026-10-23 Consensus 来源记录](../references/consensus/2026-10-23.md)**
 
 Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为基础证据。**
 
