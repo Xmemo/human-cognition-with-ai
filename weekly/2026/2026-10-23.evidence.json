@@ -1,0 +1,154 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-10-23",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "MEDIUM",
+    "R2": "HIGH",
+    "R3": "MEDIUM",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "MEDIUM",
+    "R7": "MEDIUM",
+    "R8": "MEDIUM",
+    "R9": "MEDIUM"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.1093/jamia/ocag176",
+      "canonical_title": "Transparency features alone are insufficient for trust calibration in artificial intelligence diagnostic support",
+      "publication_date": "2026-10-14",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R2",
+        "R5",
+        "R6"
+      ],
+      "evidence_grade": "A",
+      "item_type": "peer-reviewed randomized clinician vignette experiment, N=220",
+      "doi": "10.1093/jamia/ocag176",
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/42872605/"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2610.27965",
+      "canonical_title": "When Do Humans and Machines Truly Complement Each Other? Formal Conditions and Empirical Evidence for Human-AI Synergy",
+      "publication_date": "2026-10-20",
+      "temporal_status": "NEW",
+      "radars": [
+        "R5",
+        "R8"
+      ],
+      "evidence_grade": "C",
+      "item_type": "formal theoretical analysis plus seven clinical case studies; unreviewed preprint",
+      "doi": "10.48550/arXiv.2610.27965",
+      "canonical_url": "https://arxiv.org/abs/2610.27965"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1975841",
+      "canonical_title": "How generative AI becomes embedded in design learning: a 14-instructional-day intensive longitudinal study of reciprocal dynamics between AI use and self-efficacy",
+      "publication_date": "2026-10-14",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed 14-instructional-day diary study, N=260, 3558 person-days",
+      "doi": "10.3389/fpsyg.2026.1975841",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1975841/full"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1924155",
+      "canonical_title": "Behavioral differentiation during the AIGC image generation waiting period: effects on creativity in conceptual design",
+      "publication_date": "2026-10-12",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed three-experiment design-student study, N=30/24/60",
+      "doi": "10.3389/fpsyg.2026.1924155",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1924155/full"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2610.07800",
+      "canonical_title": "Novice Reliance Calibration in AI-Assisted Decision Making: The Role of Explanations and Self-Assessment",
+      "publication_date": "2026-10-06",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R2",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "unreviewed preprint, between-subjects novice decision experiment, N=110",
+      "doi": "10.48550/arXiv.2610.07800",
+      "canonical_url": "https://arxiv.org/abs/2610.07800"
+    },
+    {
+      "source_id": "doi:10.1007/s10648-026-10224-6",
+      "canonical_title": "Augmentation or Erosion? Regulating Cognitive Offloading in Generative AI-Supported STEM Learning",
+      "publication_date": "2026-10-01",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "C",
+      "item_type": "peer-reviewed conceptual review and seven testable propositions",
+      "doi": "10.1007/s10648-026-10224-6",
+      "canonical_url": "https://link.springer.com/article/10.1007/s10648-026-10224-6"
+    },
+    {
+      "source_id": "doi:10.1016/j.copsyc.2026.102412",
+      "canonical_title": "Artificial intelligence systems distort upstream selection in human social learning",
+      "publication_date": "2026-09-09",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "evidence_grade": "C",
+      "item_type": "peer-reviewed conceptual synthesis in Current Opinion in Psychology; Consensus fetched",
+      "doi": "10.1016/j.copsyc.2026.102412",
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/42715802/"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Fresh scan prioritized 2026-10-16 through 2026-10-23, with a 30–90-day contextual catch-up. Only the 2026-10-20 arXiv item is labelled NEW; earlier items are NEWLY_DISCOVERED, not falsely dated to this week.",
+    "All R1–R9 radars scanned across Consensus, publisher/arXiv/conference, and researcher/lab/workshop layers. R7–R9 returned conceptual signals but no new field-changing longitudinal machine-culture experiment.",
+    "Consensus R3 initially hit a transient rate limit; the targeted retry succeeded. Brady et al. was fetched from Consensus (ID 81ab40b7d3095c9195c1be140746a31e) and verified against PubMed; Consensus search snippets were not cited.",
+    "The latest completed main-branch Weekly remains 2026-09-29. The 2026-10-16 evidence set exists only on a separate unpublished branch; its ten sources were screened to avoid repetition, but main remains canonical.",
+    "No Baseline change or material gap-ledger status change: new evidence differentiates trust, confidence and behavior, and refines collaboration conditions, but lacks sustained independent-skill and real-world cultural follow-up."
+  ]
+}
