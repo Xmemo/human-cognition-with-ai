@@ -57,17 +57,13 @@ Research Map 首先是一套搜索架构，并不是宣称整个研究领域天�
 
 ### 最新每周研究简报
 
-- 🇨🇳 **[2026-09-29 停更补扫 Full Research Refresh](../weekly/2026/2026-09-29.zh-CN.md)**
-- 🇬🇧 **[2026-09-29 Catch-up Full Research Refresh](../weekly/2026/2026-09-29.en.md)**
-- 🧊 **[Frozen evidence manifest](../weekly/2026/2026-09-29.evidence.json)**
+- 🇨🇳 **[2026-10-30 每周证据观测](../weekly/2026/2026-10-30.zh-CN.md)**
+- 🇬🇧 **[2026-10-30 Weekly Evidence Observatory](../weekly/2026/2026-10-30.en.md)**
+- 🧊 **[冻结证据清单](../weekly/2026/2026-10-30.evidence.json)**
 
-这次补扫用于补回定时任务暂停后错过的两个周周期。最重要的新证据来自一项两地随机写作实验，并且在后测时**完全撤掉 AI**：结果显示，**评价判断由谁执行、发生在哪个任务阶段，会改变 AI 移除以后真正能迁移的能力**；而独立写作迁移与错误检测还可能彼此分离。
+最新一期对照了总体均值为正但异质性极高的学习元分析、元认知脚手架短间隔收益、脚手架强度无额外收益的负结果，以及辅助后人类反而更少纠正 AI 错误的大样本研究。新发现的机器文化研究进一步区分个体作品质量与群体多样性。**Baseline：NO_CHANGE（2026-08-29）。** G01–G06 持续存在，长期缺口台账无状态变化。
 
-本轮同时补充了一个学期的教育研究、320 人的 AI-led / human-led / hybrid 协作比较、不同维度的创造力证据、Iyad Rahwan 共同署名的 LLM human proxy 方法论综述，以及“使用取向比单纯使用频率更有信息量”的新证据。当前 Baseline 仍保持 **2026-08-29**。
-
-Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了变化？”** 只有新证据真正改变结论强度、边界、重要证据缺口或工作模型时，才创建新的带日期 Baseline。
-
-每次 Weekly Brief / Research Refresh 都在末尾固定加入 **Open Questions & Research Gaps｜开放问题与研究缺口**，区分“本轮新暴露”“持续存在”“已缩小 / 已关闭”。这个栏目必须来自已经核验的证据，而不是自由生成研究假设。
+每期 Weekly 均以 **Open Questions & Research Gaps｜开放问题与研究缺口** 结尾，区分新暴露、持续存在及缩小／关闭；不会自动制定或升级 Research Lab 假说。
 
 ### 历史周报
 
@@ -88,6 +84,7 @@ Weekly Brief / Research Refresh 回答：**“最近研究领域哪里发生了�
 - **[2026-08-29 Consensus 增量与完整重扫台账](../references/consensus/2026-08-29.md)**
 - **[2026-09-04 Consensus 每周台账](../references/consensus/2026-09-04.md)**
 - **[2026-09-29 Consensus 补扫台账](../references/consensus/2026-09-29.md)**
+- **[2026-10-30 Consensus 来源台账](../references/consensus/2026-10-30.md)**
 
 Consensus ledger 保存的是经过 `fetch` 的发现与元数据核验轨迹；**进入 ledger 不等于自动升级为基础证据。**
 
