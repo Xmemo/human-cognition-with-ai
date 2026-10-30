@@ -1,0 +1,173 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-10-30",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "HIGH",
+    "R2": "HIGH",
+    "R3": "HIGH",
+    "R4": "HIGH",
+    "R5": "HIGH",
+    "R6": "MEDIUM",
+    "R7": "MEDIUM",
+    "R8": "HIGH",
+    "R9": "MEDIUM"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3389/feduc.2026.1971476",
+      "canonical_title": "A meta-analysis of the effects of generative artificial intelligence on learning, cognitive, and linguistic outcomes",
+      "publication_date": "2026-10-21",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed three-level meta-analysis; 58 studies and 68 effect sizes",
+      "doi": "10.3389/feduc.2026.1971476",
+      "canonical_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1971476/full"
+    },
+    {
+      "source_id": "arxiv:2610.30945",
+      "canonical_title": "Metacognitive Scaffolds Create Productive Friction for AI-Assisted Knowledge Work",
+      "publication_date": "2026-10-22",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "unreviewed preprint reporting randomized writing experiment; N=297",
+      "doi": null,
+      "canonical_url": "https://arxiv.org/abs/2610.30945"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2610.24969",
+      "canonical_title": "Towards Human-AI Complementarity for AI Safety",
+      "publication_date": "2026-10-18",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R2",
+        "R5",
+        "R8"
+      ],
+      "evidence_grade": "B",
+      "item_type": "unreviewed matched human-AI oversight experiment; 416 human raters",
+      "doi": "10.48550/arXiv.2610.24969",
+      "canonical_url": "https://arxiv.org/abs/2610.24969"
+    },
+    {
+      "source_id": "doi:10.1097/NNE.0000000000002355",
+      "canonical_title": "Applications of Generative Artificial Intelligence Teaching in Nursing Education: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+      "publication_date": "2026-10-23",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed systematic review and random-effects meta-analysis; 17 studies, N=1456",
+      "doi": "10.1097/NNE.0000000000002355",
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/42924599/"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1893874",
+      "canonical_title": "Within-person reciprocal processes between AI feedback literacy and agentic engagement: a three-wave random-intercept cross-lagged panel study",
+      "publication_date": "2026-10-22",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed three-wave observational panel; N=480, complete cases 399",
+      "doi": "10.3389/fpsyg.2026.1893874",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1893874/full"
+    },
+    {
+      "source_id": "doi:10.3390/educsci16040651",
+      "canonical_title": "Scaffolding Generative AI as a Tutor: A Quasi-Experimental Study of Learning Outcomes and Motivational, Cognitive and Metacognitive Processes",
+      "publication_date": "2026-04-20",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed four-hour three-condition quasi-experiment; N=175",
+      "doi": "10.3390/educsci16040651",
+      "canonical_url": "https://www.mdpi.com/2227-7102/16/4/651"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2607.26899",
+      "canonical_title": "Human diversity fuels collective creativity that large language models cannot simulate or sustain",
+      "publication_date": "2026-07-29",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R3",
+        "R5",
+        "R7",
+        "R8"
+      ],
+      "evidence_grade": "B",
+      "item_type": "unreviewed preregistered creative-metaphor experiment and model-simulation comparison",
+      "doi": "10.48550/arXiv.2607.26899",
+      "canonical_url": "https://arxiv.org/abs/2607.26899"
+    },
+    {
+      "source_id": "doi:10.48550/arXiv.2605.17141",
+      "canonical_title": "Dynamics of collective creativity in AI art competitions",
+      "publication_date": "2026-05-16",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R3",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "evidence_grade": "B",
+      "item_type": "unreviewed observational cultural-lineage analysis; 130882 images over 13 months",
+      "doi": "10.48550/arXiv.2605.17141",
+      "canonical_url": "https://arxiv.org/abs/2605.17141"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Scan prioritized 2026-10-23 through 2026-10-30 and extended to 30–90 days for catch-up; only the 2026-10-23 nursing review is labelled NEW. The October 27 revision of the October 18 Shi preprint is not a new publication.",
+    "All nine R1–R9 radars were queried in Consensus and cross-scanned against publisher/arXiv/conference and named researcher/lab/workshop signals. R6/R9 had no strong new standalone items; older cultural evidence was newly discovered and clearly dated.",
+    "Consensus searches were completed for R1–R9; three initially rate-limited radars were retried. The retained Melanou & Beege record was fetched in Consensus (ID 0a3333c6cf355da0991004d39707e3bd) and verified against publisher metadata. All other retained sources were read at publisher, PubMed, or arXiv primary records.",
+    "The latest main-branch Weekly remains 2026-09-29; unmerged 2026-10-16 and 2026-10-23 branches were consulted for duplicate screening. No long-lived gap status or Baseline revision is justified.",
+    "Preprint and observational findings are distinguished from causal long-term claims; the high pooled meta-analytic mean is tempered by I-squared approximately 88 percent, wide prediction intervals and small-study effects."
+  ]
+}

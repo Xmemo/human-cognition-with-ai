@@ -119,3 +119,14 @@ Every unique paper surfaced through Consensus and retained during project resear
 - [2026-09-29 catch-up ledger](consensus/2026-09-29.md)
 
 Freshness-layer papers that are not yet indexed by Consensus are still retained when canonical publisher metadata is verifiable; the ledger marks that provenance explicitly.
+
+## 2026-10-30 Weekly verified additions
+
+- Khodjaev, B. K., Masalimova, A. R., Chistyakov, A. A., & Ay, Y. (2026). **A meta-analysis of the effects of generative artificial intelligence on learning, cognitive, and linguistic outcomes.** *Frontiers in Education*. https://doi.org/10.3389/feduc.2026.1971476 — 58 studies, substantial heterogeneity and possible small-study inflation; `R1 R3 R4`.
+- Kewenig, V., Tankelevitch, L., Rintel, S., Sarkar, A., & Sellen, A. (2026). **Metacognitive Scaffolds Create Productive Friction for AI-Assisted Knowledge Work.** *arXiv*. https://arxiv.org/abs/2610.30945 — unreviewed randomized writing study, short-lag transfer; `R1 R2 R3 R4`.
+- Shi, S. L., Christ, M. A., Modesitt, E., et al. (2026). **Towards Human-AI Complementarity for AI Safety.** *arXiv*. https://doi.org/10.48550/arXiv.2610.24969 — unreviewed matched human/AI oversight judgments; `R2 R5 R8`.
+- Wan, Q., Long, X., Lin, T., Zhang, Z., & Meng, Y. (2026). **Applications of Generative Artificial Intelligence Teaching in Nursing Education: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.** *Nurse Educator*. https://doi.org/10.1097/NNE.0000000000002355 — 17 RCTs, extreme heterogeneity; `R1 R3 R4`.
+- Xu, S. (2026). **Within-person reciprocal processes between AI feedback literacy and agentic engagement: a three-wave random-intercept cross-lagged panel study.** *Frontiers in Psychology*. https://doi.org/10.3389/fpsyg.2026.1893874 — observational three-wave panel; `R1 R2 R6`.
+- Melanou, C., & Beege, M. (2026). **Scaffolding Generative AI as a Tutor: A Quasi-Experimental Study of Learning Outcomes and Motivational, Cognitive and Metacognitive Processes.** *Education Sciences, 16*(4), 651. https://doi.org/10.3390/educsci16040651 — null incremental scaffold-intensity comparison; `R1 R2 R4`.
+- Dong, M., & Yakura, H. (2026). **Human diversity fuels collective creativity that large language models cannot simulate or sustain.** *arXiv*. https://doi.org/10.48550/arXiv.2607.26899 — unreviewed preregistered creative-metaphor study; `R3 R5 R7 R8`.
+- Youngblood, M., Nusz, J., & Simon, J. (2026). **Dynamics of collective creativity in AI art competitions.** *arXiv*. https://doi.org/10.48550/arXiv.2605.17141 — unreviewed observational Artbreeder lineages; `R3 R7 R8 R9`.
