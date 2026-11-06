@@ -1,0 +1,125 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-11-06",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "MEDIUM",
+    "R2": "HIGH",
+    "R3": "MEDIUM",
+    "R4": "MEDIUM",
+    "R5": "LOW",
+    "R6": "LOW",
+    "R7": "LOW",
+    "R8": "LOW",
+    "R9": "LOW"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3389/feduc.2026.1939585",
+      "canonical_title": "Good Questions, Sound Measurement? Item-Writing Quality, Psychometric Functioning, and Competence-Level Alignment of AI-generated Multiple-Choice Assessments in Chemistry Education",
+      "publication_date": "2026-11-04",
+      "temporal_status": "NEW",
+      "radars": [
+        "R2",
+        "R4",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed single-context assessment validation, N=95",
+      "doi": "10.3389/feduc.2026.1939585",
+      "canonical_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1939585/abstract"
+    },
+    {
+      "source_id": "doi:10.3389/feduc.2026.1968048",
+      "canonical_title": "Disciplinary Thinking and AI Perception: A Case Study of Undergraduate Students' Evaluation of an AI Music Quiz",
+      "publication_date": "2026-11-04",
+      "temporal_status": "NEW",
+      "radars": [
+        "R3",
+        "R4",
+        "R6"
+      ],
+      "evidence_grade": "C",
+      "item_type": "single-course mixed-method case study, 34 post-activity surveys",
+      "doi": "10.3389/feduc.2026.1968048",
+      "canonical_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1968048/abstract"
+    },
+    {
+      "source_id": "doi:10.3390/jintelligence14100236",
+      "canonical_title": "Metacognition in AI-Supported Second Language Learning: A Systematic Review of Constructs, Measures, and Evidence (2016–2026)",
+      "publication_date": "2026-10-01",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "peer-reviewed systematic review, 60 studies; measurement-focused",
+      "doi": "10.3390/jintelligence14100236",
+      "canonical_url": "https://www.mdpi.com/2079-3200/14/10/236"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1998976",
+      "canonical_title": "University students’ overreliance on generative AI feedback in the learning process: the effects of perceived cognitive load, cognitive offloading, and metacognitive monitoring",
+      "publication_date": "2026-10-28",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R6"
+      ],
+      "evidence_grade": "B",
+      "item_type": "single-university cross-sectional self-report survey, N=600",
+      "doi": "10.3389/fpsyg.2026.1998976",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1998976/full"
+    },
+    {
+      "source_id": "doi:10.1007/s10648-026-10224-6",
+      "canonical_title": "Augmentation or Erosion? Regulating Cognitive Offloading in Generative AI-Supported STEM Learning",
+      "publication_date": "2026-10-01",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "evidence_grade": "C",
+      "item_type": "peer-reviewed conceptual review and testable framework, no new participant data",
+      "doi": "10.1007/s10648-026-10224-6",
+      "canonical_url": "https://link.springer.com/article/10.1007/s10648-026-10224-6"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Priority window 2026-10-30 through 2026-11-06; older papers marked NEWLY_DISCOVERED, not newly published.",
+    "Consensus searched R1-R9; rate-limited R4-R7 were retried. Retained Nakamura record fetched via Consensus ID 80644c2d5b475aefb993ce0ca583d62d and publisher-verified. Other items verified from primary journal records.",
+    "Freshness scan included publisher feeds and arXiv; frontier scan included Max Planck Center for Humans and Machines, Iyad Rahwan/Brinkmann and machine culture, social learning and collective intelligence terms. No new sufficiently verified R7-R9 empirical item selected.",
+    "No causal long-term deskilling inference from cross-sectional survey; no psychometric construct-validity inference from item fit alone. No durable gap-state or Baseline change warranted."
+  ]
+}
