@@ -1,0 +1,81 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-11-13",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "MEDIUM",
+    "R2": "MEDIUM",
+    "R3": "MEDIUM",
+    "R4": "LOW",
+    "R5": "MEDIUM",
+    "R6": "LOW",
+    "R7": "LOW",
+    "R8": "LOW",
+    "R9": "LOW"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.3389/fmed.2026.1994028",
+      "canonical_title": "Association between generative AI dependence and medical students’ clinical reasoning: the statistical mediating role of critical thinking and the moderating role of AI literacy",
+      "publication_date": "2026-11-06",
+      "temporal_status": "NEW",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "three-wave time-lagged observational survey, N=648",
+      "doi": "10.3389/fmed.2026.1994028",
+      "canonical_url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1994028/full"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1975833",
+      "canonical_title": "Metacognitive disengagement and knowledge innovation quality in human–AI collaboration: the mediating role of cognitive offloading and the moderating roles of task complexity and AI literacy",
+      "publication_date": "2026-10-28",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "evidence_grade": "B",
+      "item_type": "four task-level experiments with context-specific outcomes",
+      "doi": "10.3389/fpsyg.2026.1975833",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1975833/full"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Priority scan 2026-11-06 through 2026-11-13; 2026-10-28 paper NEWLY_DISCOVERED, not newly published.",
+    "All nine radars searched in Consensus, including rate-limit retries; primary publisher and arXiv freshness checks and named frontier/lab checks performed. R7-R9 quiet; no qualifying new primary source selected.",
+    "Observational time-lagged survey is not causal or independent clinical-skill assessment; task-level experimental disengagement is not evidence of long-term deskilling.",
+    "The publisher abstract of DOI 10.3389/fpsyg.2026.2041306 was checked but excluded because final publication date was not yet verified."
+  ]
+}
