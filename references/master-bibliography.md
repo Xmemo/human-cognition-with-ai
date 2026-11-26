@@ -130,3 +130,9 @@ Freshness-layer papers that are not yet indexed by Consensus are still retained 
 - Melanou, C., & Beege, M. (2026). **Scaffolding Generative AI as a Tutor: A Quasi-Experimental Study of Learning Outcomes and Motivational, Cognitive and Metacognitive Processes.** *Education Sciences, 16*(4), 651. https://doi.org/10.3390/educsci16040651 — null incremental scaffold-intensity comparison; `R1 R2 R4`.
 - Dong, M., & Yakura, H. (2026). **Human diversity fuels collective creativity that large language models cannot simulate or sustain.** *arXiv*. https://doi.org/10.48550/arXiv.2607.26899 — unreviewed preregistered creative-metaphor study; `R3 R5 R7 R8`.
 - Youngblood, M., Nusz, J., & Simon, J. (2026). **Dynamics of collective creativity in AI art competitions.** *arXiv*. https://doi.org/10.48550/arXiv.2605.17141 — unreviewed observational Artbreeder lineages; `R3 R7 R8 R9`.
+
+## 2026-11-27 Weekly verified additions
+
+- Berger, Julian and Burton, Jason W. and Hertwig, Ralph and Kosch, Thomas and Kurvers, Ralf H. J. M. and Kurzenberger, Benito and Lazik, Christopher and Onnasch, Linda and Rieger, Tobias and Thoma, Anna I. and Wulff, Dirk U. and Herzog, Stefan M. (2026). **Human learning is an understudied but promising lever for boosting human–AI synergy**. *Proceedings of the National Academy of Sciences*. https://doi.org/10.1073/pnas.2536100123
+- Yin, Han and Tao, Nan and Wu, Shengbing and Wang, Yifu and Niu, Tianyue (2026). **Effects of structured generative AI feedback on data science students' critical thinking: a propensity score matching approach**. *Frontiers in Psychology*. https://doi.org/10.3389/fpsyg.2026.1924393
+- Conrad, Matthias (2026). **From dyad to triad: human–AI collaboration and the changing roles of teachers and learners in formal education**. *Frontiers in Education*. https://doi.org/10.3389/feduc.2026.2009337
