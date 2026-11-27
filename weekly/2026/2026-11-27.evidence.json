@@ -1,0 +1,96 @@
+{
+  "manifest_version": "1.0",
+  "run_date": "2026-11-27",
+  "retrofitted": false,
+  "editorial_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "retrieval_layers": [
+    "CONSENSUS",
+    "FRESHNESS",
+    "FRONTIER"
+  ],
+  "coverage": {
+    "R1": "MEDIUM",
+    "R2": "MEDIUM",
+    "R3": "MEDIUM",
+    "R4": "MEDIUM",
+    "R5": "MEDIUM",
+    "R6": "MEDIUM",
+    "R7": "LOW",
+    "R8": "MEDIUM",
+    "R9": "LOW"
+  },
+  "baseline_compared_to": "research/baseline-2026-08-29.en.md",
+  "baseline_decision": "NO_CHANGE",
+  "new_baseline": null,
+  "items": [
+    {
+      "source_id": "doi:10.1073/pnas.2536100123",
+      "canonical_title": "Human learning is an understudied but promising lever for boosting human–AI synergy",
+      "publication_date": "2026-09-21",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R5",
+        "R8"
+      ],
+      "evidence_grade": "B",
+      "item_type": "secondary meta-regression of 74 studies",
+      "doi": "10.1073/pnas.2536100123",
+      "canonical_url": "https://doi.org/10.1073/pnas.2536100123"
+    },
+    {
+      "source_id": "doi:10.3389/fpsyg.2026.1924393",
+      "canonical_title": "Effects of structured generative AI feedback on data science students' critical thinking: a propensity score matching approach",
+      "publication_date": "2026-11-11",
+      "temporal_status": "NEWLY_DISCOVERED",
+      "radars": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "evidence_grade": "B",
+      "item_type": "two-class quasi-experiment; N=167",
+      "doi": "10.3389/fpsyg.2026.1924393",
+      "canonical_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1924393/full"
+    },
+    {
+      "source_id": "doi:10.3389/feduc.2026.2009337",
+      "canonical_title": "From dyad to triad: human–AI collaboration and the changing roles of teachers and learners in formal education",
+      "publication_date": "2026-11-23",
+      "temporal_status": "NEW",
+      "radars": [
+        "R2",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "evidence_grade": "C",
+      "item_type": "theoretical article",
+      "doi": "10.3389/feduc.2026.2009337",
+      "canonical_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.2009337/full"
+    }
+  ],
+  "gap_changes": {
+    "newly_exposed": [],
+    "persistent": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06"
+    ],
+    "narrowed": [],
+    "closed": []
+  },
+  "notes": [
+    "Window November 20–27; catch-up to September 21. Consensus searches across R1–R9, two rate limits retried; selected items sourced independently from publisher or institutional version of record. Frontier monitoring included CHM, Rahwan, Brinkmann, Baumann, Derex, Oudeyer and Microsoft Tools for Thought.",
+    "Berger: study-level feedback contrast uncertain and not randomized; Yin: two intact classes and residual confounding; Conrad: theoretical only.",
+    "Excluded Dewi and Fitri November 25 because abstract and body report materially inconsistent ANCOVA statistics; accepted-only Frontiers abstracts excluded pending publication date."
+  ]
+}
